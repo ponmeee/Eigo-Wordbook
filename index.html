@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CEFR-J 英単語帳</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ウェルカム画面 -->
+  <div id="screen-welcome" class="screen active">
+    <h1>CEFR-J 英単語帳</h1>
+    <p class="subtitle">レベルを選択してください</p>
+
+    <div id="level-selector">
+      <button class="level-btn" data-level="A1">A1</button>
+      <button class="level-btn" data-level="A2">A2</button>
+      <button class="level-btn" data-level="B1">B1</button>
+      <button class="level-btn" data-level="B2">B2</button>
+      <button class="level-btn" data-level="C1">C1</button>
+      <button class="level-btn" data-level="C2">C2</button>
+    </div>
+
+    <div id="mode-selector">
+      <button class="mode-btn" data-mode="normal">英 → 日</button>
+      <button class="mode-btn" data-mode="reverse">日 → 英</button>
+    </div>
+
+    <div id="mastery-section">
+      <div id="mastery-header">
+        <span class="section-label">習得判断</span>
+        <div id="mastery-mode">
+          <button class="mastery-btn" data-mastery="ratio">割合</button>
+          <button class="mastery-btn" data-mastery="count">回数</button>
+        </div>
+      </div>
+      <div id="mastery-input-ratio" class="mastery-input">
+        <span>正解率</span>
+        <input type="number" id="ratio-threshold" value="80" min="1" max="100">
+        <span>% 以上で習得</span>
+      </div>
+      <div id="mastery-input-count" class="mastery-input" style="display:none">
+        <span>正解</span>
+        <input type="number" id="count-threshold" value="2" min="1" max="99">
+        <span>回以上で習得</span>
+      </div>
+    </div>
+
+    <div id="save-section">
+      <label for="save-input">セーブデータ（任意）</label>
+      <textarea id="save-input" placeholder="以前のセーブデータのテキストを貼り付けると、続きから練習できます..."></textarea>
+      <p id="save-warning"></p>
+    </div>
+
+    <button id="btn-start">スタート</button>
+  </div>
+
+  <!-- 学習画面 -->
+  <div id="screen-study" class="screen">
+    <div id="study-header">
+      <span id="level-label">A1</span>
+      <span id="progress-label">1 / 15</span>
+      <button id="btn-interrupt">中断する</button>
+    </div>
+
+    <div id="card-area">
+      <div id="card-container">
+        <div id="card-inner">
+          <div id="card-front">
+            <p id="word-text">apple</p>
+            <p class="hint-text">タップして意味を確認</p>
+          </div>
+          <div id="card-back">
+            <p id="meaning-text">リンゴ（果物）</p>
+            <p id="pos-text">名詞</p>
+            <div id="swipe-hint">
+              <span class="hint-left">← 忘れた</span>
+              <span class="hint-right">覚えた →</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="overlay-forgotten"></div>
+    <div id="overlay-remembered"></div>
+  </div>
+
+  <!-- 結果画面 -->
+  <div id="screen-result" class="screen">
+    <h2 id="result-title">完了！</h2>
+
+    <div id="stats-card">
+      <p id="stat-total"></p>
+      <p id="stat-remembered"></p>
+      <p id="stat-forgotten"></p>
+      <p id="stat-accuracy"></p>
+    </div>
+
+    <div id="save-output-section">
+      <p class="save-label">セーブデータ（コピーして保存）</p>
+      <textarea id="save-textarea" readonly></textarea>
+      <button id="btn-save">ダウンロード</button>
+    </div>
+
+    <div id="result-actions">
+      <button id="btn-continue" class="btn-secondary">続きから再開</button>
+      <button id="btn-restart" class="btn-secondary">最初からやり直す</button>
+    </div>
+  </div>
+
+  <script src="words.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
