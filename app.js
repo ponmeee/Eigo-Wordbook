@@ -371,9 +371,13 @@ function animateOffScreen(dir, callback) {
     done = true;
     els.overlayRemembered.style.opacity = 0;
     els.overlayForgotten.style.opacity  = 0;
-    // Hide card before content update to prevent back-face flash on next card
     els.cardContainer.style.transition = 'none';
     els.cardContainer.style.opacity    = '0';
+    // Reset to front face in 0 seconds while card is hidden
+    els.cardInner.style.transition = 'none';
+    void els.cardInner.offsetHeight;
+    els.cardInner.classList.remove('flipped');
+    state.isFlipped = false;
     isAnimating = false;
     callback();
   };
@@ -550,4 +554,21 @@ document.addEventListener('DOMContentLoaded', () => {
   els.btnSave.addEventListener('click', downloadSave);
   els.btnRestart.addEventListener('click', restartApp);
   els.btnContinue.addEventListener('click', continueStudy);
+
+  document.addEventListener('keydown', (e) => {
+    if (!document.getElementById('screen-study').classList.contains('active')) return;
+    if (isAnimating) return;
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+
+    if (e.key === 'ArrowLeft' || e.key === 'a' || e.key === 'A') {
+      e.preventDefault();
+      animateOffScreen(-1, () => registerSwipe('forgotten'));
+    } else if (e.key === 'ArrowRight' || e.key === 'd' || e.key === 'D') {
+      e.preventDefault();
+      animateOffScreen(1, () => registerSwipe('remembered'));
+    } else if (e.key === ' ' || e.key === 'w' || e.key === 'W' || e.key === 'ArrowUp') {
+      e.preventDefault();
+      flipCard();
+    }
+  });
 });
