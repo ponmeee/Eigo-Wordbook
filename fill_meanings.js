@@ -1,5 +1,5 @@
 /**
- * Fill in Japanese meanings in words_template.js using EJDict-hand
+ * Fill in Japanese meanings in words_generated.js using EJDict-hand
  *
  * Dataset : EJDict by kujirahand
  *           https://github.com/kujirahand/EJDict
@@ -10,7 +10,7 @@
  *
  * Usage
  *   node fill_meanings.js [--out <file>]
- *   Default output: words.js
+ *   Default output: words_translated.js
  */
 
 'use strict';
@@ -24,10 +24,10 @@ const fs    = require('fs');
 
 const EJDICT_BASE   = 'https://raw.githubusercontent.com/kujirahand/EJDict/master/src/';
 const LETTERS       = 'abcdefghijklmnopqrstuvwxyz'.split('');
-const TEMPLATE_FILE = 'words_template.js';
+const TEMPLATE_FILE = 'words_generated.js';
 
 const outIndex    = process.argv.indexOf('--out');
-const OUTPUT_FILE = outIndex !== -1 ? process.argv[outIndex + 1] : 'words.js';
+const OUTPUT_FILE = outIndex !== -1 ? process.argv[outIndex + 1] : 'words_translated.js';
 
 const MAX_MEANINGS = 2; // max "/" segments to keep per EJDict entry
 

@@ -11,7 +11,7 @@
  *   Default: 50 words per level
  *
  * Output
- *   words_template.js  — fill in "meaning" (Japanese) to produce words.js
+ *   words_generated.js  — fill in "meaning" (Japanese) to produce words.js
  */
 
 'use strict';
@@ -24,7 +24,7 @@ const fs    = require('fs');
 // ---------------------------------------------------------------------------
 
 const WORDS_PER_LEVEL = parseInt(process.argv[2], 10) || 50;
-const OUTPUT_FILE     = 'words_template.js';
+const OUTPUT_FILE     = 'words_generated.js';
 
 const SOURCES = [
   {

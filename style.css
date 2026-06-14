@@ -185,6 +185,35 @@ h1 {
   border-color: #667eea;
 }
 
+#animation-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.animation-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #555;
+  cursor: pointer;
+  user-select: none;
+}
+
+.animation-label input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  accent-color: #667eea;
+}
+
+#card-inner.no-flip-animation {
+  transition: none !important;
+}
+
 #save-section {
   width: 100%;
   display: flex;
@@ -243,10 +272,71 @@ h1 {
 /* ===========================
    Study Screen
    =========================== */
+#screen-study {
+  position: relative;
+}
+
 #screen-study.active {
   padding: 20px 16px;
   min-height: 520px;
   gap: 16px;
+}
+
+#settings-modal {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+#settings-modal[hidden] {
+  display: none;
+}
+
+#settings-panel {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px 22px;
+  width: calc(100% - 48px);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+}
+
+#settings-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#settings-panel-header span {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+#btn-settings-close {
+  width: 28px;
+  height: 28px;
+  border: none;
+  background: #f0f0f0;
+  border-radius: 50%;
+  font-size: 0.8rem;
+  color: #666;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s;
+}
+
+#btn-settings-close:hover {
+  background: #e0e0e0;
 }
 
 #study-header {
@@ -273,6 +363,32 @@ h1 {
   font-size: 0.9rem;
   color: #888;
   font-weight: 500;
+}
+
+#study-header-right {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+#btn-settings {
+  width: 32px;
+  height: 32px;
+  border: 1.5px solid #ddd;
+  border-radius: 8px;
+  background: transparent;
+  color: #888;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.15s, color 0.15s;
+}
+
+#btn-settings:hover {
+  border-color: #667eea;
+  color: #667eea;
 }
 
 #btn-interrupt {
@@ -393,11 +509,13 @@ h1 {
 }
 
 .hint-left  { color: #e74c3c; font-size: 0.82rem; font-weight: 600; }
+.hint-down  { color: #888;    font-size: 0.82rem; font-weight: 600; }
 .hint-right { color: #27ae60; font-size: 0.82rem; font-weight: 600; }
 
 /* Drag Overlays (fixed, full-viewport) */
 #overlay-forgotten,
-#overlay-remembered {
+#overlay-remembered,
+#overlay-skip {
   position: fixed;
   inset: 0;
   pointer-events: none;
@@ -408,6 +526,7 @@ h1 {
 
 #overlay-forgotten  { background: rgba(231, 76,  60,  0.22); }
 #overlay-remembered { background: rgba(39,  174, 96,  0.22); }
+#overlay-skip       { background: rgba(120, 120, 120, 0.22); }
 
 /* ===========================
    Result Screen

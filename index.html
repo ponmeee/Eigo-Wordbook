@@ -47,6 +47,17 @@
       </div>
     </div>
 
+    <div id="animation-section">
+      <label class="animation-label">
+        <input type="checkbox" id="welcome-flip-anim" checked>
+        カードの回転アニメーション
+      </label>
+      <label class="animation-label">
+        <input type="checkbox" id="welcome-slide-anim" checked>
+        カードのスライドアニメーション
+      </label>
+    </div>
+
     <div id="save-section">
       <label for="save-input">セーブデータ（任意）</label>
       <textarea id="save-input" placeholder="以前のセーブデータのテキストを貼り付けると、続きから練習できます..."></textarea>
@@ -61,7 +72,10 @@
     <div id="study-header">
       <span id="level-label">A1</span>
       <span id="progress-label">1 / 15</span>
-      <button id="btn-interrupt">中断する</button>
+      <div id="study-header-right">
+        <button id="btn-settings">⚙</button>
+        <button id="btn-interrupt">中断する</button>
+      </div>
     </div>
 
     <div id="card-area">
@@ -76,6 +90,7 @@
             <p id="pos-text">名詞</p>
             <div id="swipe-hint">
               <span class="hint-left">← 忘れた</span>
+              <span class="hint-down">↓ SKIP</span>
               <span class="hint-right">覚えた →</span>
             </div>
           </div>
@@ -85,6 +100,25 @@
 
     <div id="overlay-forgotten"></div>
     <div id="overlay-remembered"></div>
+    <div id="overlay-skip"></div>
+
+    <!-- 設定モーダル -->
+    <div id="settings-modal" hidden>
+      <div id="settings-panel">
+        <div id="settings-panel-header">
+          <span>設定</span>
+          <button id="btn-settings-close">✕</button>
+        </div>
+        <label class="animation-label">
+          <input type="checkbox" id="flip-animation-checkbox" checked>
+          カードの回転アニメーション
+        </label>
+        <label class="animation-label">
+          <input type="checkbox" id="slide-animation-checkbox" checked>
+          カードのスライドアニメーション
+        </label>
+      </div>
+    </div>
   </div>
 
   <!-- 結果画面 -->

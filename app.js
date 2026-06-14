@@ -11,6 +11,7 @@ let state = {
   reverseMode: false,
   wrongCount: {},
   studyCount: {},
+  slideAnimation: true,
   mastery: {
     mode: 'ratio',       // 'ratio' | 'count'
     ratioThreshold: 80,  // percent (1–100)
@@ -26,7 +27,7 @@ let els = {};
 // ===========================
 // Drag State
 // ===========================
-let drag = { startX: 0, deltaX: 0, isDragging: false, isSwipeDragging: false };
+let drag = { startX: 0, startY: 0, deltaX: 0, deltaY: 0, isDragging: false, isSwipeDragging: false, isDownSwipe: false };
 
 // isAnimating is ONLY set during card fly-off (animateOffScreen).
 // The flip animation does NOT set this flag, so flipping is freely interruptible.
@@ -37,6 +38,10 @@ let isAnimating = false;
 // ===========================
 function getClientX(e) {
   return e.touches ? e.touches[0].clientX : e.clientX;
+}
+
+function getClientY(e) {
+  return e.touches ? e.touches[0].clientY : e.clientY;
 }
 
 function shuffle(arr) {
@@ -162,6 +167,11 @@ function initWelcomeScreen() {
 
     state.currentIndex = 0;
     state.isFlipped = false;
+    // ウェルカム画面の設定を設定モーダルに同期してから適用
+    els.settingsFlipAnim.checked  = els.welcomeFlipAnim.checked;
+    els.settingsSlideAnim.checked = els.welcomeSlideAnim.checked;
+    state.slideAnimation = els.settingsSlideAnim.checked;
+    els.cardInner.classList.toggle('no-flip-animation', !els.settingsFlipAnim.checked);
     showScreen('screen-study');
     renderCard();
   });
@@ -287,9 +297,12 @@ function flipCard() {
 function onDragStart(e) {
   if (isAnimating) return;
   drag.startX = getClientX(e);
+  drag.startY = getClientY(e);
   drag.deltaX = 0;
+  drag.deltaY = 0;
   drag.isDragging = false;
   drag.isSwipeDragging = false;
+  drag.isDownSwipe = false;
 
   document.addEventListener('mousemove', onDragMove);
   document.addEventListener('touchmove', onDragMove, { passive: false });
@@ -299,24 +312,40 @@ function onDragStart(e) {
 
 function onDragMove(e) {
   drag.deltaX = getClientX(e) - drag.startX;
+  drag.deltaY = getClientY(e) - drag.startY;
 
-  if (Math.abs(drag.deltaX) > 5) drag.isDragging = true;
+  const absDX = Math.abs(drag.deltaX);
+  const absDY = Math.abs(drag.deltaY);
+
+  if (!drag.isDragging && Math.max(absDX, absDY) > 5) {
+    drag.isDragging = true;
+    drag.isDownSwipe = drag.deltaY > 0 && absDY > absDX;
+    if (!drag.isDownSwipe) drag.isSwipeDragging = true;
+  }
 
   if (drag.isDragging) {
-    drag.isSwipeDragging = true;
     e.preventDefault();
 
-    els.cardContainer.style.transition = 'none';
-    els.cardContainer.style.transform =
-      `translateX(${drag.deltaX}px) rotate(${drag.deltaX * 0.05}deg)`;
-
-    const pct = Math.min(Math.abs(drag.deltaX) / 100, 1);
-    if (drag.deltaX > 0) {
-      els.overlayRemembered.style.opacity = pct * 0.5;
+    if (drag.isDownSwipe) {
+      const dy = Math.max(0, drag.deltaY);
+      els.cardContainer.style.transition = 'none';
+      els.cardContainer.style.transform  = `translateY(${dy}px)`;
+      const pct = Math.min(dy / 100, 1);
+      els.overlaySkip.style.opacity      = pct * 0.5;
+      els.overlayRemembered.style.opacity = 0;
       els.overlayForgotten.style.opacity  = 0;
     } else {
-      els.overlayForgotten.style.opacity  = pct * 0.5;
-      els.overlayRemembered.style.opacity = 0;
+      els.cardContainer.style.transition = 'none';
+      els.cardContainer.style.transform  =
+        `translateX(${drag.deltaX}px) rotate(${drag.deltaX * 0.05}deg)`;
+      const pct = Math.min(absDX / 100, 1);
+      if (drag.deltaX > 0) {
+        els.overlayRemembered.style.opacity = pct * 0.5;
+        els.overlayForgotten.style.opacity  = 0;
+      } else {
+        els.overlayForgotten.style.opacity  = pct * 0.5;
+        els.overlayRemembered.style.opacity = 0;
+      }
     }
   }
 }
@@ -327,7 +356,13 @@ function onDragEnd() {
   document.removeEventListener('mouseup', onDragEnd);
   document.removeEventListener('touchend', onDragEnd);
 
-  if (drag.isSwipeDragging) {
+  if (drag.isDownSwipe) {
+    if (drag.deltaY > 100) {
+      animateOffScreenDown(skipCard);
+    } else {
+      snapBackDown();
+    }
+  } else if (drag.isSwipeDragging) {
     if (Math.abs(drag.deltaX) > 100) {
       const dir    = drag.deltaX > 0 ? 1 : -1;
       const result = dir > 0 ? 'remembered' : 'forgotten';
@@ -341,13 +376,21 @@ function onDragEnd() {
 
   drag.isDragging = false;
   drag.isSwipeDragging = false;
+  drag.isDownSwipe = false;
 }
 
 function snapBack() {
-  els.cardContainer.style.transition = 'transform 0.3s ease';
-  els.cardContainer.style.transform  = 'translateX(0) rotate(0deg)';
   els.overlayRemembered.style.opacity = 0;
   els.overlayForgotten.style.opacity  = 0;
+
+  if (!state.slideAnimation) {
+    els.cardContainer.style.transition = 'none';
+    els.cardContainer.style.transform  = '';
+    return;
+  }
+
+  els.cardContainer.style.transition = 'transform 0.3s ease';
+  els.cardContainer.style.transform  = 'translateX(0) rotate(0deg)';
 
   let done = false;
   const cleanup = () => {
@@ -360,8 +403,87 @@ function snapBack() {
   setTimeout(cleanup, 400);
 }
 
+function snapBackDown() {
+  els.overlaySkip.style.opacity = 0;
+
+  if (!state.slideAnimation) {
+    els.cardContainer.style.transition = 'none';
+    els.cardContainer.style.transform  = '';
+    return;
+  }
+
+  els.cardContainer.style.transition = 'transform 0.3s ease';
+  els.cardContainer.style.transform  = 'translateY(0)';
+
+  let done = false;
+  const cleanup = () => {
+    if (done) return;
+    done = true;
+    els.cardContainer.style.transition = '';
+    els.cardContainer.style.transform  = '';
+  };
+  els.cardContainer.addEventListener('transitionend', cleanup, { once: true });
+  setTimeout(cleanup, 400);
+}
+
+function animateOffScreenDown(callback) {
+  isAnimating = true;
+
+  if (!state.slideAnimation) {
+    els.overlaySkip.style.opacity       = 0;
+    els.cardContainer.style.transition  = 'none';
+    els.cardContainer.style.opacity     = '0';
+    els.cardInner.style.transition      = 'none';
+    void els.cardInner.offsetHeight;
+    els.cardInner.classList.remove('flipped');
+    state.isFlipped = false;
+    isAnimating = false;
+    callback();
+    return;
+  }
+
+  els.cardContainer.style.transition = 'transform 0.35s ease';
+  els.cardContainer.style.transform  = 'translateY(600px)';
+
+  let done = false;
+  const finish = () => {
+    if (done) return;
+    done = true;
+    els.overlaySkip.style.opacity       = 0;
+    els.cardContainer.style.transition  = 'none';
+    els.cardContainer.style.opacity     = '0';
+    els.cardInner.style.transition      = 'none';
+    void els.cardInner.offsetHeight;
+    els.cardInner.classList.remove('flipped');
+    state.isFlipped = false;
+    isAnimating = false;
+    callback();
+  };
+  els.cardContainer.addEventListener('transitionend', finish, { once: true });
+  setTimeout(finish, 450);
+}
+
+function skipCard() {
+  nextCard();
+}
+
 function animateOffScreen(dir, callback) {
   isAnimating = true;
+
+  if (!state.slideAnimation) {
+    els.overlayRemembered.style.opacity = 0;
+    els.overlayForgotten.style.opacity  = 0;
+    els.cardContainer.style.transition = 'none';
+    els.cardContainer.style.opacity    = '0';
+    els.cardInner.style.transition = 'none';
+    void els.cardInner.offsetHeight;
+    els.cardInner.classList.remove('flipped');
+    state.isFlipped = false;
+    isAnimating = false;
+    callback();
+    return;
+  }
+
   els.cardContainer.style.transition = 'transform 0.35s ease';
   els.cardContainer.style.transform  = `translateX(${dir * 600}px) rotate(${dir * 20}deg)`;
 
@@ -522,9 +644,16 @@ document.addEventListener('DOMContentLoaded', () => {
     countThresholdInput: document.getElementById('count-threshold'),
     saveInput:           document.getElementById('save-input'),
     saveWarning:         document.getElementById('save-warning'),
+    welcomeFlipAnim:     document.getElementById('welcome-flip-anim'),
+    welcomeSlideAnim:    document.getElementById('welcome-slide-anim'),
     btnStart:            document.getElementById('btn-start'),
     levelLabel:          document.getElementById('level-label'),
     progressLabel:       document.getElementById('progress-label'),
+    btnSettings:         document.getElementById('btn-settings'),
+    settingsModal:       document.getElementById('settings-modal'),
+    settingsFlipAnim:    document.getElementById('flip-animation-checkbox'),
+    settingsSlideAnim:   document.getElementById('slide-animation-checkbox'),
+    btnSettingsClose:    document.getElementById('btn-settings-close'),
     btnInterrupt:        document.getElementById('btn-interrupt'),
     cardContainer:       document.getElementById('card-container'),
     cardInner:           document.getElementById('card-inner'),
@@ -535,6 +664,7 @@ document.addEventListener('DOMContentLoaded', () => {
     swipeHint:           document.getElementById('swipe-hint'),
     overlayRemembered:   document.getElementById('overlay-remembered'),
     overlayForgotten:    document.getElementById('overlay-forgotten'),
+    overlaySkip:         document.getElementById('overlay-skip'),
     resultTitle:         document.getElementById('result-title'),
     statTotal:           document.getElementById('stat-total'),
     statRemembered:      document.getElementById('stat-remembered'),
@@ -547,6 +677,22 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   initWelcomeScreen();
+
+  els.btnSettings.addEventListener('click', () => {
+    els.settingsModal.hidden = false;
+  });
+  els.btnSettingsClose.addEventListener('click', () => {
+    els.settingsModal.hidden = true;
+  });
+  els.settingsModal.addEventListener('click', (e) => {
+    if (e.target === els.settingsModal) els.settingsModal.hidden = true;
+  });
+  els.settingsFlipAnim.addEventListener('change', () => {
+    els.cardInner.classList.toggle('no-flip-animation', !els.settingsFlipAnim.checked);
+  });
+  els.settingsSlideAnim.addEventListener('change', () => {
+    state.slideAnimation = els.settingsSlideAnim.checked;
+  });
 
   els.btnInterrupt.addEventListener('click', () => showResult('interrupt'));
   els.cardContainer.addEventListener('mousedown', onDragStart);
@@ -569,6 +715,9 @@ document.addEventListener('DOMContentLoaded', () => {
     } else if (e.key === ' ' || e.key === 'w' || e.key === 'W' || e.key === 'ArrowUp') {
       e.preventDefault();
       flipCard();
+    } else if (e.key === 'ArrowDown' || e.key === 's' || e.key === 'S') {
+      e.preventDefault();
+      animateOffScreenDown(skipCard);
     }
   });
 });
