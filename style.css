@@ -334,6 +334,23 @@ h1 {
   opacity: 0.85;
 }
 
+#license-note {
+  font-size: 0.68rem;
+  color: #bbb;
+  text-align: center;
+  line-height: 1.7;
+}
+
+#license-note a {
+  color: #bbb;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+#license-note a:hover {
+  color: #667eea;
+}
+
 #btn-start {
   width: 100%;
   padding: 14px;
