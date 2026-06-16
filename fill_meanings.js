@@ -83,7 +83,7 @@ function getCandidates(word) {
   const w = word.toLowerCase();
   const seen = new Set([w]);
   const push = (s) => { if (s && s.length > 1) seen.add(s); };
-
+  /*
   // un- prefix (unpromising → promising)
   if (w.startsWith('un') && w.length > 4) push(w.slice(2));
 
@@ -113,6 +113,7 @@ function getCandidates(word) {
       push(stem.slice(0, -1));
     }
   }
+    */
 
   // -s plural (norms → norm)
   if (w.endsWith('s') && w.length > 3 && !w.endsWith('ss')) push(w.slice(0, -1));
