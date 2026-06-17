@@ -12,6 +12,7 @@ let state = {
   wrongCount: {},
   studyCount: {},
   slideAnimation: true,
+  deckSize: 20,
   mastery: {
     mode: 'ratio',       // 'ratio' | 'count'
     ratioThreshold: 80,  // percent (1–100)
@@ -32,6 +33,51 @@ let drag = { startX: 0, startY: 0, deltaX: 0, deltaY: 0, isDragging: false, isSw
 // isAnimating is ONLY set during card fly-off (animateOffScreen).
 // The flip animation does NOT set this flag, so flipping is freely interruptible.
 let isAnimating = false;
+
+let resultReason = '';
+
+// ===========================
+// LocalStorage
+// ===========================
+function storageKey() {
+  return 'wordbook-' + state.level;
+}
+
+function saveToLocalStorage() {
+  const data = {
+    wrongCount: state.wrongCount,
+    studyCount: state.studyCount,
+    savedAt: formatDate(new Date()),
+  };
+  localStorage.setItem(storageKey(), JSON.stringify(data));
+}
+
+function loadFromLocalStorage(level) {
+  const raw = localStorage.getItem('wordbook-' + level);
+  if (!raw) return null;
+  try {
+    const data = JSON.parse(raw);
+    if (typeof data.wrongCount !== 'object' || typeof data.studyCount !== 'object') return null;
+    return data;
+  } catch {
+    return null;
+  }
+}
+
+function clearLocalStorage() {
+  localStorage.removeItem(storageKey());
+}
+
+function updateSaveStatus() {
+  const data = loadFromLocalStorage(state.level);
+  if (!data) {
+    els.saveStatus.textContent = 'セーブデータなし';
+    els.btnClearSave.hidden = true;
+    return;
+  }
+  els.saveStatus.textContent = `セーブデータあり（${data.savedAt}）`;
+  els.btnClearSave.hidden = false;
+}
 
 // ===========================
 // Helpers
@@ -100,6 +146,7 @@ function initWelcomeScreen() {
       els.levelBtns.forEach(b => b.classList.remove('selected'));
       btn.classList.add('selected');
       state.level = btn.dataset.level;
+      updateSaveStatus();
     });
   });
 
@@ -140,21 +187,21 @@ function initWelcomeScreen() {
     state.mastery.countThreshold = v;
   });
 
+  els.deckSizeInput.addEventListener('change', () => {
+    let v = parseInt(els.deckSizeInput.value, 10);
+    if (isNaN(v) || v < 1) v = 1;
+    els.deckSizeInput.value = v;
+    state.deckSize = v;
+  });
+
   els.btnStart.addEventListener('click', () => {
-    const raw = els.saveInput.value.trim();
-    els.saveWarning.textContent = '';
     state.wrongCount = {};
     state.studyCount = {};
 
-    if (raw) {
-      const result = parseSaveData(raw);
-      if (!result) {
-        els.saveWarning.textContent = 'セーブデータの形式が正しくありません。無視して開始します。';
-      } else {
-        if (result.warning) els.saveWarning.textContent = result.warning;
-        state.wrongCount = result.wrongCount;
-        state.studyCount = result.studyCount;
-      }
+    const saved = loadFromLocalStorage(state.level);
+    if (saved) {
+      state.wrongCount = saved.wrongCount;
+      state.studyCount = saved.studyCount;
     }
 
     buildDeck();
@@ -182,48 +229,131 @@ function updateMasteryInputVisibility() {
   els.masteryInputCount.style.display = state.mastery.mode === 'count' ? 'flex' : 'none';
 }
 
+function generateSaveText(level, wrongCount, studyCount) {
+  const words = wordData[level] || [];
+  const lines = [
+    'CEFR-J英単語帳 セーブデータ',
+    `レベル: ${level}`,
+    `日付: ${formatDate(new Date())}`,
+    '---',
+    '単語,間違えた回数,やった回数',
+    ...words.map(w => `${w.word},${wrongCount[w.word] || 0},${studyCount[w.word] || 0}`),
+    '---',
+  ];
+  return lines.join('\n');
+}
+
 function parseSaveData(text) {
   const lines = text.split('\n').map(l => l.trim()).filter(l => l);
+  if (!lines[0]?.includes('CEFR-J英単語帳')) return null;
+  const first = lines.findIndex(l => l === '---');
+  if (first === -1) return null;
+  const second = lines.indexOf('---', first + 1);
+  if (second === -1) return null;
 
-  if (!lines[0] || !lines[0].includes('CEFR-J英単語帳')) return null;
-
-  const firstDelim = lines.findIndex(l => l === '---');
-  if (firstDelim === -1) return null;
-
-  const secondDelim = lines.indexOf('---', firstDelim + 1);
-  if (secondDelim === -1) return null;
-
-  let warning = '';
-  const levelLine = lines.find(l => l.startsWith('レベル:'));
-  if (levelLine) {
-    const savedLevel = levelLine.replace('レベル:', '').trim();
-    if (savedLevel !== state.level) {
-      warning = `セーブデータのレベル(${savedLevel})と選択レベル(${state.level})が異なります。選択レベルを使用します。`;
-    }
-  }
-
-  const wrongCount = {};
-  const studyCount = {};
-
-  // firstDelim+1 is the header line; data starts at firstDelim+2
-  for (let i = firstDelim + 2; i < secondDelim; i++) {
+  const wrongCount = {}, studyCount = {};
+  for (let i = first + 2; i < second; i++) {
     const parts = lines[i].split(',');
     if (parts.length < 3) continue;
     const word = parts[0].trim();
     const col1 = parts[1].trim();
-
     if (col1 === 'true' || col1 === 'false') {
-      // Backwards compat: old 4-col format (word, remembered, wrongCount, studyCount)
       wrongCount[word] = parseInt(parts[2]?.trim(), 10) || 0;
       studyCount[word] = parseInt(parts[3]?.trim(), 10) || 0;
     } else {
-      // New 3-col format (word, wrongCount, studyCount)
       wrongCount[word] = parseInt(col1, 10) || 0;
       studyCount[word] = parseInt(parts[2].trim(), 10) || 0;
     }
   }
+  return { wrongCount, studyCount };
+}
 
-  return { wrongCount, studyCount, warning };
+function initSaveSection() {
+  updateSaveStatus();
+
+  // 5秒長押しでデータ削除
+  let pressTimer = null, pressRaf = null, pressStart = null;
+
+  function startPress(e) {
+    if (e.type === 'touchstart') e.preventDefault();
+    pressStart = Date.now();
+    els.btnClearSave.classList.add('pressing');
+
+    (function tick() {
+      const pct = Math.min((Date.now() - pressStart) / 5000, 1) * 100;
+      const remaining = Math.ceil((5000 - (Date.now() - pressStart)) / 1000);
+      els.btnClearSave.textContent = `削除中... ${remaining}`;
+      els.btnClearSave.style.background =
+        `linear-gradient(to right, #e74c3c ${pct}%, #fff ${pct}%)`;
+      if (pct < 100) {
+        pressRaf = requestAnimationFrame(tick);
+      }
+    })();
+
+    pressTimer = setTimeout(() => {
+      clearLocalStorage();
+      updateSaveStatus();
+      cancelPress();
+    }, 5000);
+  }
+
+  function cancelPress() {
+    clearTimeout(pressTimer);
+    cancelAnimationFrame(pressRaf);
+    pressTimer = pressRaf = pressStart = null;
+    els.btnClearSave.classList.remove('pressing');
+    els.btnClearSave.style.background = '';
+    els.btnClearSave.textContent = 'データをリセット';
+  }
+
+  els.btnClearSave.addEventListener('mousedown', startPress);
+  els.btnClearSave.addEventListener('touchstart', startPress, { passive: false });
+  els.btnClearSave.addEventListener('contextmenu', e => e.preventDefault());
+  document.addEventListener('mouseup', cancelPress);
+  document.addEventListener('touchend', cancelPress);
+
+  // テキスト I/O トグル
+  els.btnToggleTextIo.addEventListener('click', () => {
+    const isHidden = els.textIoArea.hidden;
+    els.textIoArea.hidden = !isHidden;
+    els.btnToggleTextIo.textContent = isHidden ? 'テキスト ▴' : 'テキスト ▾';
+    els.importWarning.textContent = '';
+  });
+
+  // エクスポート（LocalStorage → クリップボード）
+  els.btnExportText.addEventListener('click', () => {
+    const saved = loadFromLocalStorage(state.level);
+    if (!saved) {
+      els.importWarning.textContent = 'このレベルのセーブデータがありません。';
+      return;
+    }
+    const text = generateSaveText(state.level, saved.wrongCount, saved.studyCount);
+    navigator.clipboard.writeText(text).then(() => {
+      const orig = els.btnExportText.textContent;
+      els.btnExportText.textContent = 'コピーしました！';
+      setTimeout(() => { els.btnExportText.textContent = orig; }, 2000);
+      els.importWarning.textContent = '';
+    }).catch(() => {
+      els.importWarning.textContent = 'クリップボードへのアクセスが拒否されました。';
+    });
+  });
+
+  // インポート（テキスト → LocalStorage）
+  els.btnImportText.addEventListener('click', () => {
+    const raw = els.importTextarea.value.trim();
+    if (!raw) { els.importWarning.textContent = 'テキストを貼り付けてください。'; return; }
+    const result = parseSaveData(raw);
+    if (!result) {
+      els.importWarning.textContent = '形式が正しくありません。';
+      return;
+    }
+    const data = { wrongCount: result.wrongCount, studyCount: result.studyCount, savedAt: formatDate(new Date()) };
+    localStorage.setItem(storageKey(), JSON.stringify(data));
+    updateSaveStatus();
+    els.importTextarea.value = '';
+    els.importWarning.textContent = '読み込みました。';
+    setTimeout(() => { els.importWarning.textContent = ''; }, 2000);
+  });
 }
 
 // ===========================
@@ -231,7 +361,7 @@ function parseSaveData(text) {
 // ===========================
 function buildDeck() {
   const words = wordData[state.level] || [];
-  state.deck = shuffle(words.filter(w => !isMastered(w.word)));
+  state.deck = shuffle(words.filter(w => !isMastered(w.word))).slice(0, state.deckSize);
 }
 
 // ===========================
@@ -516,6 +646,7 @@ function registerSwipe(result) {
   }
   state.studyCount[word.word] = (state.studyCount[word.word] || 0) + 1;
 
+  saveToLocalStorage();
   nextCard();
 }
 
@@ -532,9 +663,7 @@ function nextCard() {
   if (remaining.length === 0) {
     showResult('complete');
   } else {
-    buildDeck();
-    state.currentIndex = 0;
-    renderCard();
+    showResult('round_complete');
   }
 }
 
@@ -544,7 +673,9 @@ function nextCard() {
 function showResult(reason) {
   showScreen('screen-result');
 
-  els.resultTitle.textContent   = reason === 'complete' ? '完了！' : '中断';
+  resultReason = reason;
+  const titles = { complete: '完了！', round_complete: '区間終了！', interrupt: '中断' };
+  els.resultTitle.textContent   = titles[reason] ?? '中断';
   els.btnContinue.style.display = reason === 'complete' ? 'none' : 'block';
 
   const levelWords    = wordData[state.level] || [];
@@ -563,44 +694,14 @@ function showResult(reason) {
   els.statForgotten.textContent  = `未習得: ${unmastered}語`;
   els.statAccuracy.textContent   = `習得率: ${acc}%`;
 
-  els.saveTextarea.value = generateSaveText();
-}
-
-function generateSaveText() {
-  const words = wordData[state.level] || [];
-  const lines = [
-    'CEFR-J英単語帳 セーブデータ',
-    `レベル: ${state.level}`,
-    `日付: ${formatDate(new Date())}`,
-    '---',
-    '単語,間違えた回数,やった回数',
-    ...words.map(w => {
-      const wrong = state.wrongCount[w.word] || 0;
-      const study = state.studyCount[w.word] || 0;
-      return `${w.word},${wrong},${study}`;
-    }),
-    '---',
-  ];
-  return lines.join('\n');
-}
-
-function downloadSave() {
-  const text = els.saveTextarea.value;
-  const blob = new Blob([text], { type: 'text/plain;charset=utf-8' });
-  const url  = URL.createObjectURL(blob);
-  const a    = document.createElement('a');
-  a.href     = url;
-  a.download = `wordbook-${state.level}-${formatDate(new Date()).slice(0, 10)}.txt`;
-  document.body.appendChild(a);
-  a.click();
-  document.body.removeChild(a);
-  URL.revokeObjectURL(url);
+  saveToLocalStorage();
 }
 
 // ===========================
 // Actions
 // ===========================
 function restartApp() {
+  // clearLocalStorage();
   state = {
     level: 'A1',
     deck: [],
@@ -611,8 +712,6 @@ function restartApp() {
     studyCount: {},
     mastery: { mode: 'ratio', ratioThreshold: 80, countThreshold: 2 },
   };
-  els.saveInput.value = '';
-  els.saveWarning.textContent = '';
   els.levelBtns.forEach(b => b.classList.remove('selected'));
   els.levelBtns[0].classList.add('selected');
   els.modeBtns.forEach(b => b.classList.remove('selected'));
@@ -621,11 +720,17 @@ function restartApp() {
   els.masteryBtns[0].classList.add('selected');
   els.ratioThresholdInput.value = '80';
   els.countThresholdInput.value = '2';
+  els.deckSizeInput.value = '20';
   updateMasteryInputVisibility();
+  updateSaveStatus();
   showScreen('screen-welcome');
 }
 
 function continueStudy() {
+  if (resultReason === 'round_complete') {
+    buildDeck();
+    state.currentIndex = 0;
+  }
   showScreen('screen-study');
   renderCard();
 }
@@ -642,8 +747,15 @@ document.addEventListener('DOMContentLoaded', () => {
     masteryInputCount:   document.getElementById('mastery-input-count'),
     ratioThresholdInput: document.getElementById('ratio-threshold'),
     countThresholdInput: document.getElementById('count-threshold'),
-    saveInput:           document.getElementById('save-input'),
-    saveWarning:         document.getElementById('save-warning'),
+    deckSizeInput:       document.getElementById('deck-size-input'),
+    saveStatus:          document.getElementById('save-status'),
+    btnClearSave:        document.getElementById('btn-clear-save'),
+    btnToggleTextIo:     document.getElementById('btn-toggle-text-io'),
+    textIoArea:          document.getElementById('text-io-area'),
+    btnExportText:       document.getElementById('btn-export-text'),
+    importTextarea:      document.getElementById('import-textarea'),
+    importWarning:       document.getElementById('import-warning'),
+    btnImportText:       document.getElementById('btn-import-text'),
     welcomeFlipAnim:     document.getElementById('welcome-flip-anim'),
     welcomeSlideAnim:    document.getElementById('welcome-slide-anim'),
     btnStart:            document.getElementById('btn-start'),
@@ -670,13 +782,12 @@ document.addEventListener('DOMContentLoaded', () => {
     statRemembered:      document.getElementById('stat-remembered'),
     statForgotten:       document.getElementById('stat-forgotten'),
     statAccuracy:        document.getElementById('stat-accuracy'),
-    saveTextarea:        document.getElementById('save-textarea'),
-    btnSave:             document.getElementById('btn-save'),
     btnRestart:          document.getElementById('btn-restart'),
     btnContinue:         document.getElementById('btn-continue'),
   };
 
   initWelcomeScreen();
+  initSaveSection();
 
   els.btnSettings.addEventListener('click', () => {
     els.settingsModal.hidden = false;
@@ -697,7 +808,6 @@ document.addEventListener('DOMContentLoaded', () => {
   els.btnInterrupt.addEventListener('click', () => showResult('interrupt'));
   els.cardContainer.addEventListener('mousedown', onDragStart);
   els.cardContainer.addEventListener('touchstart', onDragStart, { passive: true });
-  els.btnSave.addEventListener('click', downloadSave);
   els.btnRestart.addEventListener('click', restartApp);
   els.btnContinue.addEventListener('click', continueStudy);
 

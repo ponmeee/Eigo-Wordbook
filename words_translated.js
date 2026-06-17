@@ -82,7 +82,11 @@ const wordData = {
     { word: "bear",            meaning: "〈C〉『クマ』；〈C〉乱暴者", pos: "noun" },
     { word: "beautiful",       meaning: "『美しい』,『きれいな』；《話》『みごとな』,すばらしい", pos: "adjective" },
     { word: "because",         meaning: "(なぜならば)『…だから』,『…ゆえに』；《否定文の主節とともに用い》…『であるからといって』", pos: "conjunction" },
+<<<<<<< HEAD
     { word: "become",          meaning: "《『become』+『名』(『形』,『過分』)〈補〉》(…と)『なる』；〈衣類などが〉〈人〉に『似合う』;〈身分など〉に『ふさわしい』", pos: "verb" },
+=======
+    { word: "become",          meaning: "《『become』+『名』(『形』,『過分』)〈補〉」(…と)『なる』；〈衣類などが〉〈人〉に『似合う』;〈身分など〉に『ふさわしい』", pos: "verb" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "bed",             meaning: "〈C〉〈U〉『ベッド』,『寝台』；〈U〉睡眠,宿泊", pos: "noun" },
     { word: "bedroom",         meaning: "『寝室』;(列車内の)寝室", pos: "noun" },
     { word: "bee",             meaning: "『はち』,(特に)みつばち(honeybee)；《米話》(趣味・仕事上の)集会,集い", pos: "noun" },
@@ -104,7 +108,11 @@ const wordData = {
     { word: "bicycle",         meaning: "(2輪の)『自転車』；自転車に乗る,自転車で行く", pos: "noun" },
     { word: "big",             meaning: "(大きさ・高さ・広さ・数量・容積などについて)『大きい』；成長した(grown-up),成熟した;年長の(older)", pos: "adjective" },
     { word: "bike",            meaning: "=bicycle", pos: "noun" },
+<<<<<<< HEAD
     { word: "bird",            meaning: "『鳥』；〈話〉《修飾語を伴なって(目立った特徴をもった)やつ,人》", pos: "noun" },
+=======
+    { word: "bird",            meaning: "『鳥』；〈話〉《修飾語を伴なって(目立った特徴をもった)やつ,人", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "birth",           meaning: "〈C〉〈U〉『誕生』,出生；〈U〉『生まれ』,家柄;家系(lineage)", pos: "noun" },
     { word: "birthday",        meaning: "『誕生日』", pos: "noun" },
     { word: "biscuit",         meaning: "〈C〉《米》『小型パン』(ふくらし粉かソーダを用いて焼いたもの;《英》scone)；〈C〉《英》『ビスケット』", pos: "noun" },
@@ -247,7 +255,11 @@ const wordData = {
     { word: "daddy",           meaning: "(小児語で)『おとうちゃん』", pos: "noun" },
     { word: "dance",           meaning: "(…に合わせて)『踊る』,舞う,ダンスをする《+『to』+『名』》；《副詞[句]を伴って》『こおどりする』,跳ね回る", pos: "noun" },
     { word: "dance",           meaning: "(…に合わせて)『踊る』,舞う,ダンスをする《+『to』+『名』》；《副詞[句]を伴って》『こおどりする』,跳ね回る", pos: "verb" },
+<<<<<<< HEAD
     { word: "dancing",         meaning: "ダンス (AI)", pos: "noun" },
+=======
+    { word: "dancing",         meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "dark",            meaning: "『暗い』,やみの；(毛髪・皮膚・目の)『浅黒い』,(色の)濃い", pos: "adjective" },
     { word: "date",            meaning: "〈C〉『日付』,年月日；〈U〉(歴史上の)『時代』,年代", pos: "noun" },
     { word: "daughter",        meaning: "『娘』；女の子孫", pos: "noun" },
@@ -271,7 +283,11 @@ const wordData = {
     { word: "do",              meaning: "《疑問文・否定文を作る》；《否定命令文を作る》", pos: "verb" },
     { word: "does",            meaning: "doの三人称・単数・直説法現在形", pos: "verb" },
     { word: "dog",             meaning: "犬；雄犬;イヌ科の動物(特にイタチ・オオカミ・カワウソ)の雄", pos: "noun" },
+<<<<<<< HEAD
     { word: "doing",           meaning: "している (AI)", pos: "verb" },
+=======
+    { word: "doing",           meaning: "TODO", pos: "verb" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "doll",            meaning: "『人形』；《話》美しいが愚かな女", pos: "noun" },
     { word: "dollar",          meaning: "『ドル』(米国の貨幣単位で100セント;記号は$)；ドル(カナダ・ニュージーランド・オーストラリアなどの貨幣単位)", pos: "noun" },
     { word: "door",            meaning: "(家・部屋・家具の)『扉』；『戸口』,出入り口(doorway)", pos: "noun" },
@@ -383,7 +399,11 @@ const wordData = {
     { word: "give",            meaning: "(無償で)〈物〉を『与える』,あげる,贈る,提供する；〈物〉を『渡す』,手渡す(hand over)", pos: "verb" },
     { word: "glad",            meaning: "《補語にのみ用いて》『うれしい』,楽しい,喜んで；《『be glad to』 do》《未来形で》『喜んで』(『進んで』)…『する』(willing)", pos: "adjective" },
     { word: "glass",           meaning: "〈U〉『ガラス』；〈C〉(ガラス製の)『コップ』,グラス", pos: "noun" },
+<<<<<<< HEAD
     { word: "glasses",         meaning: "メガネ (AI)", pos: "noun" },
+=======
+    { word: "glasses",         meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "go",              meaning: "《方向・場所を表す副詞[句]を伴って》『行く』,動く;(目的地に関係なく)進む,動く；(ある事をしに)『行く』", pos: "verb" },
     { word: "goal",            meaning: "『ゴール』,決勝点；(ゴールに球を入れて得た)得点", pos: "noun" },
     { word: "gold",            meaning: "『金』,黄金(おうごん)；《集合的に》『金貨』(gold coins)", pos: "adjective" },
@@ -726,7 +746,11 @@ const wordData = {
     { word: "reason",          meaning: "〈C〉〈U〉『理由』,わけ,根拠；〈U〉『理性』,判断力;道理", pos: "noun" },
     { word: "red",             meaning: "〈U〉〈C〉『赤,』『赤色;』赤い絵の具(染料)；〈U〉赤い服", pos: "adjective" },
     { word: "remember",        meaning: "…を『思い出す』；…を『覚えている』,記憶している", pos: "verb" },
+<<<<<<< HEAD
     { word: "repeat",          meaning: "〈自分がすでに一度言ったこと〉を『繰り返して言う』；〈他人の言ったこと〉をおうむ返しに言う;…を他の人に繰り返して言う", pos: "verb" },
+=======
+    { word: "repeat",          meaning: "〈自分がすでに一度言ったこと)を『繰り返して言う』；〈他人の言ったこと〉をおうむ返しに言う;…を他の人に繰り返して言う", pos: "verb" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "reporter",        meaning: "報告者,申告者；報道員,探訪記者", pos: "noun" },
     { word: "restaurant",      meaning: "『レストラン』料理店,(大ホテル・劇場などの)食堂", pos: "noun" },
     { word: "result",          meaning: "〈C〉〈U〉『結果』,結末;成果,効果；《複数形で》(試験・競技などの)『成績』", pos: "noun" },
@@ -763,7 +787,11 @@ const wordData = {
     { word: "say",             meaning: "《直接話法で》「…」と『言う』,述べる;(人に)「…」と言う《+『to』+『名』〈人〉》；(意見として)…を『言う』,述べる", pos: "verb" },
     { word: "school",          meaning: "〈C〉(施設としての)『学校』；〈C〉(大学の)『学部』", pos: "noun" },
     { word: "science",         meaning: "〈U〉『科学』;(特に)自然科学；〈C〉(個々の)学問", pos: "noun" },
+<<<<<<< HEAD
     { word: "scientist",       meaning: "『科学者』,自然科学者；Christian Science Churchの正式名", pos: "noun" },
+=======
+    { word: "scientist",       meaning: "Christian Science Churchの正式名；『科学者』,自然科学者", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "sea",             meaning: "《通例the~》《しばしば複数形で単数扱い》『海』,海洋；〈C〉《固有名詞につけるときはS-》(部分的に陸地に囲まれた)海,…海", pos: "noun" },
     { word: "seat",            meaning: "『腰掛け』；『座席』,席", pos: "noun" },
     { word: "second",          meaning: "《通例the~》『第2の』,2番目(2度目)の《略》『2nd,sec.』)；《A~+名で》『もう一つの』,別の", pos: "adjective" },
@@ -789,7 +817,11 @@ const wordData = {
     { word: "shoulder",        meaning: "『肩』;《複数形で》(両肩を含む)上背部；《複数形で》(責任・重荷を負う)『双肩』,責任を負う能力", pos: "noun" },
     { word: "show",            meaning: "〈物・姿・感情など〉を『見せる』,示す；…を『示して』(『説明して』)『教える』・…を『明らかにする』,証明する;〈計器などが〉…を示す・《副詞[句]を伴って》〈人〉を『案内する』,導く・…を陳列する;…を展示する;〈映画,劇など〉を上映(上演)する", pos: "verb" },
     { word: "shower",          meaning: "《しばしば複数形で》『にわか雨』,にわか雪(あられ) ・(涙・弾丸・祝福・批判などの)『雨』,(…の)洪水《+『of』+『名』》・《米》共同して金を集めてお祝いのプレゼントを贈ること,祝い品贈呈会(特に結婚や出産を控えた婦人を祝って贈物をするパーティー) ・(また『shower bath』) ・『シャワー』・…に『水を注ぐ』・…を『降り注ぐ』・《itを主語にして》にわか雨が降る・(…に)降り注ぐ《+『on』(『upon』)+『名』》；シャワーを浴びる", pos: "noun" },
+<<<<<<< HEAD
     { word: "shy",             meaning: "(人が)『恥ずかしがり屋の』,内気な;(態度などが)恥ずかしそうな,引っ込み思案の・(動物が)『おく病な』,びくびくする・《補語にのみ用いて》(…を)用心する,警戒する,ためらう,いやがる《+『of』+『名』(do『ing』)》・《補語にのみ用いて》《米語》(…が)足りない,欠けている(short)《+『of』+『名』》・(…に)〈馬が〉驚いて(おびえて)後ずさりする《+『at』+『名』》;(…から)しりごみする,(…に)おじける《+『away』『from』+『名』(do『ing』)》；…をす早く投げる", pos: "adjective" },
+=======
+    { word: "shy",             meaning: "(人が)『恥ずかしがり屋の』,内気な;(態度などが)恥ずかしそうな,引っ込み思案の・(動物が)『おく病な』,びくびくする・《補語にのみ用いて》(…を)用心する,警戒する,ためらう,いやがる《+『of』+『名』(do『ing』)》・《補語にのみ用いて》《米語》(…が)足りない,欠けている(short)《+『of』+『名』》・(…に)〈馬が〉驚いて(おびえて)後ずさりする《+『at』+『名』》;(…から)しりごみする,(…に)おじける《《+『away』『from』+『名』(do『ing』)》；…をす早く投げる", pos: "adjective" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "sick",            meaning: "(人が)『病気の』;(部屋などが)病人の[ための];(顔色などが)病気を示す(思わせる)；《名詞的に》《the ~;複数扱い》病人", pos: "adjective" },
     { word: "side",            meaning: "(物体)『面』；(物体の)『側面』,わき", pos: "noun" },
     { word: "sight",           meaning: "〈U〉『視力』,視覚(vision)・〈U〉《時にa ~》(…を)『見ること』《+『of』+『名』》・〈U〉見える範囲,視野,視界・〈C〉『景色』,『光景』,眺め・《the sights》『名所』・〈U〉見解・〈C〉《しばしば複数形で》(望遠鏡などの)照準器,照尺,照星・〈C〉《a ~》《話》ひどいもの・《a ~》多数(の…),多量(の…)《+『of』+『名』》;《副詞的に用いて》うんと,ずっと:a sight of money多額の金・…を見つける,認める・；(照準器で)…をねらう, に照準を合わせる", pos: "noun" },
@@ -1086,7 +1118,11 @@ const wordData = {
     { word: "annoy",           meaning: "《しばしば受動態で》〈物事が〉…を『困らせる』,悩ませる,いらいらさせる", pos: "verb" },
     { word: "annoying",        meaning: "迷惑な,うるさい", pos: "adjective" },
     { word: "anxious",         meaning: "(物事が)『気になる』,不安な；《話》《補語にのみ用いて》『切望して』,熱望して", pos: "adjective" },
+<<<<<<< HEAD
     { word: "anymore",         meaning: "もう（〜しない） (AI)", pos: "adverb" },
+=======
+    { word: "anymore",         meaning: "TODO", pos: "adverb" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "anyway",          meaning: "=anyhow", pos: "adverb" },
     { word: "anywhere",        meaning: "《疑問文・条件節で》『どこかへ』(『に』),《否定文で》『どこへも』(『にも』)；《肯定文で》『どこにでも』,どこへでも", pos: "adverb" },
     { word: "apart",           meaning: "(時間的・空間的に)『離れて』,隔って;(…から)離れて《+『from』+『名』》；区別して;(…と)別々に《+『from』+『名』》", pos: "adverb" },
@@ -1297,7 +1333,11 @@ const wordData = {
     { word: "continent",       meaning: "自制した,禁欲的な；〈C〉『大陸』", pos: "noun" },
     { word: "continue",        meaning: "〈物事〉を『続ける』,持続する;(中断後)…をまた始める,継続する；《しばしば受動態で》《副詞[句]を伴って》(ある位置・状態に)〈人〉をとどませる", pos: "verb" },
     { word: "contrast",        meaning: "(違いを示すために)(二つのもの)を『対照させる』,対比する;(…と)…を対照させる《+『名』+『with』+『名』》；(…と)『対照する』,対照的に引き立つ《+『with』+『名』》", pos: "noun" },
+<<<<<<< HEAD
     { word: "control",         meaning: "〈U〉(…に対する)『統制』,抑制,制御《+『over』(『of』+『名』)》；〈C〉《複数形で》(…を)統制する手段,統御法《+『on』(『over』)+『名』》", pos: "noun" },
+=======
+    { word: "control",         meaning: "〈U〉(…に対する)『統制』,抑制,制御《+『over』(『of』+『名』)；〈C〉《複数形で》(…を)統制する手段,統御法《+『on』(『over』)+『名』》", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "convenience",     meaning: "〈U〉『都合のよいこと』,便利,便宜・〈C〉『便利なもの』;好都合な事情;《複数形で》衣食住の便,便利な設備・《英》《文》=public convenience", pos: "noun" },
     { word: "convenient",      meaning: "(物事が)『便利な』,使いやすい；《補語にのみ用いて》(場所が)(…に)近い,近くて便利な《+『to』(『for』)+『名』》", pos: "adjective" },
     { word: "cooker",          meaning: "料理用電気(ガス)器具；《英》(焼いたり煮たりする)料理用果物", pos: "noun" },
@@ -1389,7 +1429,11 @@ const wordData = {
     { word: "double",          meaning: "(数量・強さ・重さ・価値などが)『2倍の』,倍の；『二重の』,二様の;複の,対の,2人用の", pos: "adjective" },
     { word: "doubt",           meaning: "『疑い』,疑惑;疑わしさ,疑問；を『疑う』,疑問に思う", pos: "noun" },
     { word: "down",            meaning: "(高い所から)『下へ』,降りて,地面へ；(地理・地図上)南へ,下町へ;(風・流れなどが)『下(しも)手へ』;《英》(都会・大学から)地方へ,離れて", pos: "preposition" },
+<<<<<<< HEAD
     { word: "download",        meaning: "ダウンロードする (AI)", pos: "verb" },
+=======
+    { word: "download",        meaning: "TODO", pos: "verb" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "downstairs",      meaning: "『階下へ』(『に』),下の階へ(で),(特に)1階へ(で)；『階下の』(にある),(特に)1階の(にある)", pos: "adverb" },
     { word: "downtown",        meaning: "(都市の中心の)商業地区へ(で),町の中心街へ(で)；商業地区の(にある),町の中心街の(にある)", pos: "adverb" },
     { word: "draw",            meaning: "…を『引く』,引っぱる；《副詞[句]を伴って》…を『引いて』(ある状態に)『する』", pos: "noun" },
@@ -1427,7 +1471,11 @@ const wordData = {
     { word: "elephant",        meaning: "『ゾウ』；(共和党の象徴としての)象", pos: "noun" },
     { word: "elevator",        meaning: "《米》『エレベーター』,昇降機(《英》lift)；(揚げ下ろしの設備のある)穀物倉庫", pos: "noun" },
     { word: "elsewhere",       meaning: "『どこかよそに』,ほかの所で(somewhere else)", pos: "adverb" },
+<<<<<<< HEAD
     { word: "email",           meaning: "電子メールを送る (AI)", pos: "verb" },
+=======
+    { word: "email",           meaning: "TODO", pos: "verb" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "embarrassing",    meaning: "(人を)まごつかせる,困惑させる,きまり悪がらせる", pos: "adjective" },
     { word: "emergency",       meaning: "『非常の場合』,緊急の場合", pos: "noun" },
     { word: "empty",           meaning: "『からの』,中に何もない(だれも居ない)；『空虚な』,なんの意味もない", pos: "adjective" },
@@ -1450,7 +1498,11 @@ const wordData = {
     { word: "especially",      meaning: "『特に』,特別に;きわだって", pos: "adverb" },
     { word: "essay",           meaning: "(ある論題・問題に関する)『小論』,評論;『随筆』,エッセイ《+『on』(『upon』)+『名』》；《文》試み[ること],企て(attempt)", pos: "noun" },
     { word: "establish",       meaning: "…を『設立する』,創設する；(ある場所・職業などに,…として)〈人・自分〉を落ち着かせる,安定させる《+『名』+『in』(『as』)+『名』》", pos: "verb" },
+<<<<<<< HEAD
     { word: "euro",            meaning: "ユーロ (AI)", pos: "noun" },
+=======
+    { word: "euro",            meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "even",            meaning: "『平らな』,平たんな；『同じ高さの』,同一平面の,平行の", pos: "adverb" },
     { word: "ever",            meaning: "《疑問文・否定文,また比較級・最上級の文で》『かつて』,今まで；《条件節,または未来時制で》いつか,いずれ", pos: "adverb" },
     { word: "evidence",        meaning: "『証拠』,証拠物件；印,徴候,形跡(indication)・(証拠をあげて)…を証明する・「in evidence」で「証拠(証人)として」", pos: "noun" },
@@ -1513,7 +1565,11 @@ const wordData = {
     { word: "folder",          meaning: "紙ばさみ；(印刷した1枚の紙を数ページに折り畳んだ)折り本;折り畳み広告,折り畳み時間表,折り畳み地図", pos: "noun" },
     { word: "follow",          meaning: "…の『後について行く』;…の後に続く(来る)；〈道など〉を『たどる』,に沿って行く", pos: "verb" },
     { word: "fool",            meaning: "〈C〉『ばか者』；〈C〉(昔,王侯貴族に仕えた)道化師(jester)", pos: "noun" },
+<<<<<<< HEAD
     { word: "footballer",      meaning: "フットボール選手 (AI)", pos: "noun" },
+=======
+    { word: "footballer",      meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "for",             meaning: "《時間・距離》『…の間』；《利益・貢献》『…のために』", pos: "conjunction" },
     { word: "forbid",          meaning: "〈人〉に〈物事〉を『禁じる』,禁止する", pos: "verb" },
     { word: "force",           meaning: "〈U〉(物理的な)『力』,勢い;体力；〈U〉『暴力』,腕ずく", pos: "noun" },
@@ -1574,8 +1630,13 @@ const wordData = {
     { word: "guard",           meaning: "〈C〉『見張り』,番人;歩哨(ほしょう),番兵;護衛兵；〈U〉(…を)見張ること,監視すること《+『over』+『名』》;(…を)警戒(用心)すること《+『against』+『名』》", pos: "noun" },
     { word: "guidebook",       meaning: "案内書,旅行案内", pos: "noun" },
     { word: "gun",             meaning: "『銃』,『砲』；(銃に似た)吹き付け(注入)器具", pos: "noun" },
+<<<<<<< HEAD
     { word: "half-price",      meaning: "半額の (AI)", pos: "adjective" },
     { word: "half-price",      meaning: "半額で (AI)", pos: "adverb" },
+=======
+    { word: "half-price",      meaning: "TODO", pos: "adjective" },
+    { word: "half-price",      meaning: "TODO", pos: "adverb" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "ham",             meaning: "〈U〉〈C〉(豚肉の)『ハム』；〈C〉(動物,特に豚の)もも", pos: "noun" },
     { word: "hand",            meaning: "『手』(手首から先の部分)；(時計・計器の)針", pos: "verb" },
     { word: "handbag",         meaning: "(婦人用)ハンドバッグ；小型スーツケース", pos: "noun" },
@@ -1591,7 +1652,11 @@ const wordData = {
     { word: "hate",            meaning: "…を『憎む』,『ひどくきらう』;《話》…をいやだと思う；憎しみ,憎悪(hatred)", pos: "verb" },
     { word: "head",            meaning: "(顔を含めた)『頭』,頭部,首;(髪の生えている部分の)頭；『頭脳』,頭の働き,知力,才能;理性", pos: "verb" },
     { word: "headphone",       meaning: "ヘッドフォン(電話・ラジオなどの耳に当てる受信器)", pos: "noun" },
+<<<<<<< HEAD
     { word: "headteacher",     meaning: "校長 (AI)", pos: "noun" },
+=======
+    { word: "headteacher",     meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "heat",            meaning: "〈U〉『熱さ』,『暑さ』,熱い状態；〈U〉熱度,温度", pos: "noun" },
     { word: "heating",         meaning: "加熱;暖房[装置]", pos: "noun" },
     { word: "heavily",         meaning: "『重く』,どさりと；重そうに,のろのろと;重苦しく", pos: "adverb" },
@@ -1731,7 +1796,11 @@ const wordData = {
     { word: "marry",           meaning: "…と『結婚する』,を夫(妻)にする;《しばしば比喩(ひゆ)的に》〈金・人の財産など〉と結婚する；〈牧師などが〉…を結婚させる", pos: "verb" },
     { word: "material",        meaning: "〈U〉〈C〉『材料』,『原料』;(物の)構成要素；〈U〉〈C〉『生地』,服地", pos: "noun" },
     { word: "matter",          meaning: "〈U〉『物質』,物体(個体・液体のいづれの状態も含む)；〈U〉《修飾語を伴って》…体,…質,…素", pos: "verb" },
+<<<<<<< HEAD
     { word: "max",             meaning: "最大値 (AI)", pos: "noun" },
+=======
+    { word: "max",             meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "mean",            meaning: "〈人が〉…を『意図する』,のつもりである;…を言おうとする;示そうとする；〈単語・句・文章などが〉…を『意味を持つ』,を『意味する』", pos: "adjective" },
     { word: "meaning",         meaning: "(…の)『目的』,意義《+『of』+『名』》；(語・文の)『意味』(sense)《+『of』+『名』》", pos: "noun" },
     { word: "medal",           meaning: "『メダル』,記念章;勲章", pos: "noun" },
@@ -1979,7 +2048,11 @@ const wordData = {
     { word: "reveal",          meaning: "〈秘密・事実など〉を『明らかにする』,あばく；〈隠されていた物〉を現す,見せる(show)", pos: "verb" },
     { word: "rhythm",          meaning: "〈U〉『律動,リズム』;韻律；〈C〉(特定の)リズム", pos: "noun" },
     { word: "right",           meaning: "《名詞の前にのみ用いて》『右の』,右側の；《しばしば『R-』》(政治上)『右派の』,保守的な", pos: "noun" },
+<<<<<<< HEAD
     { word: "right-hand",      meaning: "右側の (AI)", pos: "adjective" },
+=======
+    { word: "right-hand",      meaning: "TODO", pos: "adjective" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "ring",            meaning: "『指輪』；『輪』,環;輪形,円形", pos: "noun" },
     { word: "road",            meaning: "『道路』,『道』;街道；(都市・町の)…街,…通り(street);《the…Roadとして》…街道;通例Rdと訳し固有名詞に付けて", pos: "noun" },
     { word: "roast",           meaning: "(オーブンまたは直接火で)〈肉など〉を『焼く』,あぶる,蒸し焼きにする；…を『炒』(い)『る』,焙(ほう)じる", pos: "verb" },
@@ -2036,8 +2109,13 @@ const wordData = {
     { word: "seem",            meaning: "(進行形にできない)(…のように)『見える』,思われる", pos: "verb" },
     { word: "semester",        meaning: "(米国・ドイツなどの大学の二学期制の)一学期,前(後)期(通例15‐18週)", pos: "noun" },
     { word: "send",            meaning: "〈物〉を『送る』,届ける;〈人〉を『行かせる』,派遣する；(ある状態に)〈人〉を送りこむ,させる", pos: "verb" },
+<<<<<<< HEAD
     { word: "senior",          meaning: "年上の；先任の, 古参の, 先輩の, 上級の; 上層の, 高級の;《四年制大学の》 四年[最上]級の, 《高校の》 最高学年の; #中等教育の; 〈有価証券が〉優先権付きの, 上位の", pos: "adjective" },
     { word: "senior",          meaning: "年上の；先任の, 古参の, 先輩の, 上級の; 上層の, 高級の;《四年制大学の》 四年[最上]級の, 《高校の》 最高学年の; #中等教育の; 〈有価証券が〉優先権付きの, 上位の", pos: "noun" },
+=======
+    { word: "senior",          meaning: "年上の；先任の, 古参の, 先輩の, 上級の; 上層の, 高級の;四年制大学の》 四年[最上]級の, 《高校の》 最高学年の; #中等教育の; 〈有価証券が〉優先権付きの, 上位の", pos: "adjective" },
+    { word: "senior",          meaning: "年上の；先任の, 古参の, 先輩の, 上級の; 上層の, 高級の;四年制大学の》 四年[最上]級の, 《高校の》 最高学年の; #中等教育の; 〈有価証券が〉優先権付きの, 上位の", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "sense",           meaning: "〈C〉(五感による)『感覚』;(…の)感覚《+『of』+『名』》；〈U〉《しばしばa~》(…の)『感じ』,気持ち《+『of』+『名』》", pos: "noun" },
     { word: "separate",        meaning: "…を『分離する』,引き分ける;(…から)…を引き分ける《+『名』+『from』+『名』》；(…に)〈一つの物〉を『分割する』,分ける《+『名』+『into』+『名』》", pos: "adjective" },
     { word: "seriously",       meaning: "『真剣に』,まじめに,本気で；『重大に』,ひどく", pos: "adverb" },
@@ -2077,8 +2155,13 @@ const wordData = {
     { word: "sink",            meaning: "(水平面下に)〈船・太陽などが〉『沈む』・(…に)『下降する』,落ちる《+『into』(『to』)+『名』》・『量』(『勢い』,『程度など』)『が減る』,弱まる,下がる・〈健康・士気・名声・地位などが〉悪化する,衰える,下がる・(…の状態に)次第に落ち込む,陥る《+『in』(『into』)+『名』(do『ing』)》・(…に)深く入る,しみ込む《+『in』(『into』)+『名』》・〈船など〉を『沈める』・…の水平面の高さを下げる,を低くする・(…まで)…の『量(勢い,程度)を減らす』,を弱める《+『名』+『to』+『名』》・〈井戸・穴など〉を掘る・(…に)…を沈み込ませる《+『名』+『in』(『into』)+『名』》・(…に)〈資本・労力など〉を投ずる《+『名』+『in』(『into』)+『名』》；…を隠す;…を無視する・《話》《しばしば受動態で》…をだめにする,滅ぼす;失う・(バスケットボールで)〈球〉をバスケットに入れる・(ゴルフで)〈球〉をホールに入れる・(台所・洗濯場・洗面所などの)『流し』・《米》洗面器(washbasin, washbowl) ・下水溝,下水だめ", pos: "noun" },
     { word: "situation",       meaning: "(人の)『立場』,状態,境遇；(事の)『事態』,形勢,情況", pos: "noun" },
     { word: "skate",           meaning: "『スケートをする』,氷滑りをする；ガンギエイ", pos: "noun" },
+<<<<<<< HEAD
     { word: "skateboarding",   meaning: "スケートボード乗り (AI)", pos: "noun" },
     { word: "skating",         meaning: "スケート（運動） (AI)", pos: "noun" },
+=======
+    { word: "skateboarding",   meaning: "TODO", pos: "noun" },
+    { word: "skating",         meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "ski",             meaning: "『スキー』；『スキーで滑走する』", pos: "noun" },
     { word: "skiing",          meaning: "(スポーツとしての)『スキー』;スキー術", pos: "noun" },
     { word: "slave",           meaning: "『奴隷』(どれい)；(欲望・習慣・職業などの)『とりこ』,(…に)ふける人《+『of』(『to』)+『名』》,(他人のために)あくせく働く人", pos: "noun" },
@@ -2093,7 +2176,11 @@ const wordData = {
     { word: "smoothly",        meaning: "(またsmooth)滑らかに,円滑に;平隠に", pos: "adverb" },
     { word: "snack",           meaning: "(特に食事と食事の間にとる)『軽食』,スナック；軽い食事をとる;間食する", pos: "noun" },
     { word: "snow",            meaning: "〈U〉『雪』；〈C〉《単数形で》『降雪』;《複数形で》積雪", pos: "verb" },
+<<<<<<< HEAD
     { word: "snowboarding",    meaning: "スノーボーディング (AI)", pos: "noun" },
+=======
+    { word: "snowboarding",    meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "so",              meaning: "《様態の指示》『そういうふうに』,『そのように』・《補語に用いて》『そのようで』,そうで・《程度》『それほど』,そんなに・《強意として》《話》『非常に』,『とても』,たいへん・《前に述べたことの内容に対する同意を表して;「so+主語+[助]動詞」》『その通りで』,『本当に』,確かに,おっしゃるとおり・《肯定文を受けて;「so+[助]動詞+主語」の語順で》…『もまた』,『も同様に』・《as~, so…で》~と同じように…,(~のように)そのように・《目的を表して》…『するように』・《理由・結果を表して》『その結果』,それで・《文・節の頭に用いて》『それで』,だから・《驚き・賛成・嫌悪・疑いなどを表して》そうか,そうなんだ,どうかな,まさか・それでよし", pos: "adverb" },
     { word: "soap",            meaning: "『石けん』；…を石けんで洗う", pos: "noun" },
     { word: "society",         meaning: "〈U〉《通例冠詞をつけないで》(全体として見た人間の)『社会』,世間[の人々],すべての人々；〈C〉〈U〉(特定の利害・文化を共にする人間の)『社会』", pos: "noun" },
@@ -2291,7 +2378,11 @@ const wordData = {
     { word: "weak",            meaning: "(物が)『弱い』；(通常よりも)『衰えている』,力が弱い,勢いがない", pos: "adjective" },
     { word: "wealth",          meaning: "『富』,財産；《しばしば a wealth》『豊富』(な…),たくさん(の…)《+of+名》", pos: "noun" },
     { word: "web",             meaning: "(クモなどが紡ぎ出す)『巣』；(クモの巣のような)網状組織;(張りめぐらした)仕掛け", pos: "noun" },
+<<<<<<< HEAD
     { word: "website",         meaning: "ウェブサイト (AI)", pos: "noun" },
+=======
+    { word: "website",         meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "wedding",         meaning: "(特に,教会で誓いを済ませた後で宴会のある)結婚式,婚礼", pos: "noun" },
     { word: "weekday",         meaning: "〈C〉(日曜日,時に weekend 以外の)『平日』", pos: "noun" },
     { word: "weekly",          meaning: "『毎週の』,1週間(分)の;1週1度の・『毎週』;1週1回・『週刊雑誌(新聞)』", pos: "adjective" },
@@ -2501,13 +2592,22 @@ const wordData = {
     { word: "awareness",       meaning: "(…に)気づいていること《+『of』+『名』(do『ing,wh-節』)》,(…であることに)気づいていること《+『that節』》", pos: "noun" },
     { word: "awesome",         meaning: "畏敬の念を起こさせる;恐ろしい；畏敬の念に満ちた;うやうやしい", pos: "adjective" },
     { word: "awkward",         meaning: "(人・動作などが)『ぶかっこうな』,『ぎこちない』,無器用な(clumsy)；(物が)『扱いにくい』,使いにくい", pos: "adjective" },
+<<<<<<< HEAD
     { word: "babysit",         meaning: "子守りをする (AI)", pos: "verb" },
+=======
+    { word: "babysit",         meaning: "TODO", pos: "verb" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "babysitter",      meaning: "るす番の子守り(おもに女子中学・高校生のアルバイト)", pos: "noun" },
     { word: "back",            meaning: "〈C〉(人・動物の)『背』,『背中』,背部；《通例the~》(正面に対して)(…の)『後ろ』,『裏』,奥,後部《+『of』+『名』》", pos: "verb" },
     { word: "backache",        meaning: "背の痛み", pos: "noun" },
     { word: "backpack",        meaning: "背のう(リュックサック・ナップサックなど)；リュックサックを背おって行く", pos: "noun" },
+<<<<<<< HEAD
     { word: "backpacker",      meaning: "バックパッカー (AI)", pos: "noun" },
     { word: "backpacking",     meaning: "バックパッキング (AI)", pos: "noun" },
+=======
+    { word: "backpacker",      meaning: "TODO", pos: "noun" },
+    { word: "backpacking",     meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "bacon",           meaning: "ベーコン(『Francis』『~』;1561‐1626;英国の随筆家・哲学者・政治家)；『ベーコン』", pos: "noun" },
     { word: "baggage",         meaning: "〈U〉《米》《集合的に》(旅行用)『手荷物』(《英》luggage)；〈U〉軍用行李(こうり)", pos: "noun" },
     { word: "baker",           meaning: "『パン屋』,パン焼き職人", pos: "noun" },
@@ -2562,8 +2662,13 @@ const wordData = {
     { word: "blessing",        meaning: "神の祝福を求める祈り；(食前または食後の)祈り(grace)", pos: "noun" },
     { word: "blind",           meaning: "『目の見えない』,盲目の(sightless)；《補語にのみ用いて》(…を)見る目がない,気がついていない《+『to』+『名』》", pos: "adjective" },
     { word: "block",           meaning: "(木・石などの,通例平らな面のある)『かたまり』；《米》(四方を街路に囲まれた)『区画』,街区", pos: "verb" },
+<<<<<<< HEAD
     { word: "blog",            meaning: "ブログ (AI)", pos: "noun" },
     { word: "blogger",         meaning: "ブロガー (AI)", pos: "noun" },
+=======
+    { word: "blog",            meaning: "TODO", pos: "noun" },
+    { word: "blogger",         meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "blush",           meaning: "(当惑・恥ずかしさのために)『顔を赤らめる』,赤面する；〈C〉(当惑・恥ずかしさによる)『赤面』", pos: "noun" },
     { word: "board",           meaning: "〈C〉(ある程度の長さと幅をもった薄い)『板』；〈C〉ボール紙,台紙", pos: "verb" },
     { word: "boast",           meaning: "(…を)『自慢する』,鼻にかける《+『about』(『of』)+『名』(do『ing』)》；…を『自慢する』,鼻にかける", pos: "verb" },
@@ -2655,14 +2760,22 @@ const wordData = {
     { word: "carpet",          meaning: "(部屋いっぱいに敷く)『じゅうたん』,もうせん；《比喩(ひゆ)的に》『一面をおおうもの』,辺りいっぱいに広がるもの", pos: "noun" },
     { word: "carriage",        meaning: "〈C〉(特に自家用)『四輪馬車』；〈C〉《米》うば車(=baby carriage)", pos: "noun" },
     { word: "carton",          meaning: "カートン,段ボールの箱;カートン1杯(の…)《+『of』+『名』》", pos: "noun" },
+<<<<<<< HEAD
     { word: "cashpoint",       meaning: "現金自動支払い端末 (AI)", pos: "noun" },
+=======
+    { word: "cashpoint",       meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "casual",          meaning: "『むぞうさな』,さりげない(offhand)；『偶然の』,思いがけない", pos: "adjective" },
     { word: "category",        meaning: "(論理学・哲学で)範疇(はんちゅう)(ある体系の中でその内容特質に応じて分けた部門)", pos: "noun" },
     { word: "cattle",          meaning: "(家畜の)『牛』", pos: "noun" },
     { word: "caution",         meaning: "〈U〉『用心』,注意,慎重さ,用心深さ(prudence)；〈C〉『警告』(『注意』)『の言葉』(『合図』,『しるし』)", pos: "noun" },
     { word: "cautious",        meaning: "『用心深い』,慎重な", pos: "adjective" },
     { word: "cave",            meaning: "『ほら穴』,(特に)横穴；〈地盤などが〉陥没する", pos: "noun" },
+<<<<<<< HEAD
     { word: "CD-ROM",          meaning: "コンパクトディスク・ロム (AI)", pos: "noun" },
+=======
+    { word: "CD-ROM",          meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "celebrity",       meaning: "〈C〉有名人；〈U〉名声", pos: "noun" },
     { word: "cell",            meaning: "(刑務所の)『独房』;(修道院の)小さい独居室；(ミツバチの)みつ房,巣穴", pos: "noun" },
     { word: "central",         meaning: "『中心の』,中央の,中心からの；『主要な』,中心的な(main)", pos: "adjective" },
@@ -2783,7 +2896,11 @@ const wordData = {
     { word: "contrary",        meaning: "『反対の』,相いれない；逆の,逆方向の;意に反した", pos: "adjective" },
     { word: "contribute",      meaning: "(…に)〈金銭など〉を『寄付する』,〈時間・努力など〉をささげる《+『名』+『to』(『toward, for』)+『名』(do『ing』)》；(新聞・雑誌に)〈作品など〉を寄稿する《+『名』+『to』+『名』》", pos: "verb" },
     { word: "contribution",    meaning: "〈U〉(…を…に)『寄付』(『寄与』)『すること』《+『to』+『名』+『to』+『名』》；〈C〉(…に)寄付した物;寄与(貢献)したこと;(…への)寄稿記事《+『to』+『名』》", pos: "noun" },
+<<<<<<< HEAD
     { word: "control",         meaning: "〈U〉(…に対する)『統制』,抑制,制御《+『over』(『of』+『名』)》；〈C〉《複数形で》(…を)統制する手段,統御法《+『on』(『over』)+『名』》", pos: "verb" },
+=======
+    { word: "control",         meaning: "〈U〉(…に対する)『統制』,抑制,制御《+『over』(『of』+『名』)；〈C〉《複数形で》(…を)統制する手段,統御法《+『on』(『over』)+『名』》", pos: "verb" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "controversial",   meaning: "議論の,論争上の論争の余地のある；議論好きの", pos: "adjective" },
     { word: "convey",          meaning: "(…に)…を『運ぶ』,運搬する《+『名』+『to』+『名』》；〈思想・意味など〉を伝達する", pos: "verb" },
     { word: "convince",        meaning: "〈人〉を『納得させる』", pos: "verb" },
@@ -2798,7 +2915,11 @@ const wordData = {
     { word: "county",          meaning: "《英》『州』；《米》『郡』", pos: "noun" },
     { word: "courage",         meaning: "『勇気』,度胸", pos: "noun" },
     { word: "courageous",      meaning: "『勇気のある』,『勇敢な』", pos: "adjective" },
+<<<<<<< HEAD
     { word: "courgette",       meaning: "ズッキーニ (AI)", pos: "noun" },
+=======
+    { word: "courgette",       meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "craft",           meaning: "〈U〉『技能』,技巧；〈C〉手先の技術を要する仕事;工芸", pos: "noun" },
     { word: "crash",           meaning: "『ガラガラ』,『ドシン』(物が倒れたり砕けたりするときの音)；(飛行機の)『墜落』;(車の)『衝突』", pos: "noun" },
     { word: "crash",           meaning: "『ガラガラ』,『ドシン』(物が倒れたり砕けたりするときの音)；(飛行機の)『墜落』;(車の)『衝突』", pos: "verb" },
@@ -2841,7 +2962,11 @@ const wordData = {
     { word: "dare",            meaning: "『あえて…る』；《『dare to』 do》『思いきって…する』,…する勇気がある", pos: "verb" },
     { word: "darkness",        meaning: "『暗さ』,『やみ』；無知,無学", pos: "noun" },
     { word: "date",            meaning: "〈C〉『日付』,年月日；〈U〉(歴史上の)『時代』,年代", pos: "verb" },
+<<<<<<< HEAD
     { word: "dating",          meaning: "デート (AI)", pos: "noun" },
+=======
+    { word: "dating",          meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "daze",            meaning: "(打撃・衝撃などで)…をぼう然とさせる；ぼうっとした状態", pos: "noun" },
     { word: "dazzle",          meaning: "〈強烈な光が〉…を『目をくらませる』；〈美しさ・壮観な見ものが〉…を眩惑(げんわく)する", pos: "noun" },
     { word: "deadline",        meaning: "最終期限;(新聞・雑誌などの)原稿〆切(締切)時間・最終期限", pos: "noun" },
@@ -2888,7 +3013,11 @@ const wordData = {
     { word: "dependent",       meaning: "『頼っている』,依存している,従属している；扶養される人(家族)", pos: "adjective" },
     { word: "deposit",         meaning: "〈貴重品など〉を『預ける』,〈金〉を預金する；(注意深く,確実に)…を置く,おろす", pos: "noun" },
     { word: "depressed",       meaning: "元気のない,憂うつな；(力・価値などの)低下した,弱められた", pos: "adjective" },
+<<<<<<< HEAD
     { word: "depressing",      meaning: "落ち込むような (AI)", pos: "adjective" },
+=======
+    { word: "depressing",      meaning: "TODO", pos: "adjective" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "depression",      meaning: "〈C〉『くぼ地』,くぼみ；〈U〉〈C〉『意気消沈』,憂うつ;うつ病", pos: "noun" },
     { word: "deprive",         meaning: "(所有しているものを)〈人〉から『奪う』《+『名』〈人〉+『of』+『名』》", pos: "verb" },
     { word: "depth",           meaning: "〈U〉〈C〉《通例単数形で》『深さ』;奥行き；〈U〉(知識・知性などの)『深遠さ』,深さ", pos: "noun" },
@@ -2989,7 +3118,11 @@ const wordData = {
     { word: "earache",         meaning: "耳痛", pos: "noun" },
     { word: "earnest",         meaning: "『まじめな』,真剣な；重大な,厳粛な", pos: "adjective" },
     { word: "eastern",         meaning: "『東の』;東へ向かう;(風が)東からの；《しばしばEastern》『東洋の』(Oriental)", pos: "adjective" },
+<<<<<<< HEAD
     { word: "eco",             meaning: "エコ（環境） (AI)", pos: "noun" },
+=======
+    { word: "eco",             meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "ecological",      meaning: "生態学の", pos: "adjective" },
     { word: "ecology",         meaning: "生態学(生物と生活環境との関連を研究する学問)", pos: "noun" },
     { word: "economic",        meaning: "『経済の』；『経済学の』", pos: "adjective" },
@@ -3121,8 +3254,13 @@ const wordData = {
     { word: "fascinate",       meaning: "…を魅惑する,魅了する,うっとりさせる；(恐怖などで)…を動けなくする,すくませる", pos: "verb" },
     { word: "fashionable",     meaning: "『流行の』,はやりの；上流[社会]の,上流の(流行の先端を行く)人々が利用する", pos: "adjective" },
     { word: "fasten",          meaning: "(…に)…を固定する,つなぐ《+『名』+『to』(『on』,『upon』)+『名』》；…を『締める』", pos: "verb" },
+<<<<<<< HEAD
     { word: "fax",             meaning: "ファックス (AI)", pos: "noun" },
     { word: "fax",             meaning: "ファクスを送る (AI)", pos: "verb" },
+=======
+    { word: "fax",             meaning: "TODO", pos: "noun" },
+    { word: "fax",             meaning: "TODO", pos: "verb" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "feast",           meaning: "(宗教的な)『祝祭』,祭礼;祭日,祝日；祝宴,宴会(banquet);ごちそう", pos: "noun" },
     { word: "feed",            meaning: "〈人・動物〉に『食物を与える』,を養う;《英》(…で)〈人・動物〉を育てる,飼育する《+『名』+『on』+『名』》；《米》(人・動物に)〈食物〉を与える《+『名』+『to』+『名』》", pos: "verb" },
     { word: "fellow",          meaning: "《話》『男』,『やつ』；《話》(一般に)『人』,だれしも(anybody)", pos: "noun" },
@@ -3134,7 +3272,11 @@ const wordData = {
     { word: "fight",           meaning: "〈両者・数人が〉『戦う』,格闘する,殴り合い(取っ組み合い)のけんかをする;激しく口論する；…と『戦う』", pos: "verb" },
     { word: "filling",         meaning: "(歯の)詰め物,充填材；詰め物をした食物(パイ,サンドイッチなど)", pos: "noun" },
     { word: "film",            meaning: "〈C〉(…の)『薄皮』,薄膜,薄い層《+『of』+『名』》；〈U〉〈C〉(写真の)『フイルム』", pos: "verb" },
+<<<<<<< HEAD
     { word: "film-maker",      meaning: "映画監督 (AI)", pos: "noun" },
+=======
+    { word: "film-maker",      meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "filter",          meaning: "『ろ過器』,ろ過装置;ろ過用材料(布・紙・木炭・砂など)；(写真の)フィルター", pos: "noun" },
     { word: "finance",         meaning: "〈U〉『財政』,財務,財政学；《複数形で》『財源』,財力,収入,歳入;経済状態,金回り", pos: "verb" },
     { word: "financial",       meaning: "『財政上の』;財界の;金融上の", pos: "adjective" },
@@ -3146,7 +3288,11 @@ const wordData = {
     { word: "firm",            meaning: "(物が)『堅い』,堅固な,引き締まった；『しっかり固定した』,ぐらつかない", pos: "adjective" },
     { word: "firm",            meaning: "(物が)『堅い』,堅固な,引き締まった；『しっかり固定した』,ぐらつかない", pos: "noun" },
     { word: "firmly",          meaning: "しっかりと；確固として", pos: "adverb" },
+<<<<<<< HEAD
     { word: "first-floor",     meaning: "1階の (AI)", pos: "adjective" },
+=======
+    { word: "first-floor",     meaning: "TODO", pos: "adjective" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "fish",            meaning: "〈C〉『魚』;《集合的に》魚類；〈U〉魚肉,魚", pos: "verb" },
     { word: "fit",             meaning: "『適した』,適切な,ぴったりの；《補語にのみ用いて》よい調子で;健康で", pos: "verb" },
     { word: "fitness",         meaning: "(…を)適性,ふさわしさ《+『for』+『名』》；体調の良いこと", pos: "noun" },
@@ -3203,8 +3349,13 @@ const wordData = {
     { word: "frustration",     meaning: "〈U〉(努力・計画などの)失敗,ざ折,落胆,失意;〈C〉(具体的な事柄の)失敗,ざ折；〈U〉(心理学で)欲求不満,フラストレーション", pos: "noun" },
     { word: "fry",             meaning: "…を『油で揚げる』,油でいためる；揚げ物になる,揚がる", pos: "verb" },
     { word: "fuel",            meaning: "〈U〉『燃料』;〈C〉(特定の種類の)燃料；〈U〉(感情などを)たきつけるもの《+『to』(『for』)+『名』》", pos: "noun" },
+<<<<<<< HEAD
     { word: "full-time",       meaning: "フルタイムの (AI)", pos: "adjective" },
     { word: "full-time",       meaning: "フルタイムで (AI)", pos: "adverb" },
+=======
+    { word: "full-time",       meaning: "TODO", pos: "adjective" },
+    { word: "full-time",       meaning: "TODO", pos: "adverb" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "function",        meaning: "(人・物の果たすべき)『働き』,機能,役目;《しばしば複数形で》職務；(公式の)儀式,《話》大きな催し(集まり),式典", pos: "noun" },
     { word: "fund",            meaning: "(特定の目的のための)『資金』,基金《+『for』+『名』》；《a ~》(すぐに役立つ知識などの)『蓄え』,蓄積(stock)《+『of』+『名』》", pos: "noun" },
     { word: "fund",            meaning: "(特定の目的のための)『資金』,基金《+『for』+『名』》；《a ~》(すぐに役立つ知識などの)『蓄え』,蓄積(stock)《+『of』+『名』》", pos: "verb" },
@@ -3289,16 +3440,28 @@ const wordData = {
     { word: "guide",           meaning: "〈人〉を『案内する』；(…のことで)〈人〉に『助言する』,を指導する,導く《+『名』+『in』+『名』》", pos: "verb" },
     { word: "guilt",           meaning: "『有罪』;『罪』;犯罪[行為]；罪の意識,やましさ", pos: "noun" },
     { word: "guilty",          meaning: "『罪を犯した』；『有罪の宣告を受けた』", pos: "adjective" },
+<<<<<<< HEAD
     { word: "guitarist",       meaning: "ギタリスト (AI)", pos: "noun" },
+=======
+    { word: "guitarist",       meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "gym",             meaning: "〈C〉=gymnasium 1；〈U〉(学科目の)体操(gymnastics)", pos: "noun" },
     { word: "gymnastics",      meaning: "『体操』；体育学[科]", pos: "noun" },
     { word: "habitat",         meaning: "(動・植物の)産地,生息地", pos: "noun" },
     { word: "hairdresser",     meaning: "=beautician", pos: "noun" },
+<<<<<<< HEAD
     { word: "hairdryer",       meaning: "ヘアドライヤー (AI)", pos: "noun" },
     { word: "half",            meaning: "〈C〉〈U〉『半分』,2分の1;約半分；〈U〉《時刻を表す数詞と共に用いて》『半』,30分", pos: "adverb" },
     { word: "hammer",          meaning: "『金づち』,ハンマー；ハンマーに似た物,(銃の)撃鉄,(ピアノの弦を打つフェルトの)つち,(競売人の)木づち,(ベル・ゴングなどの)打ち子", pos: "noun" },
     { word: "handball",        meaning: "〈U〉ハンドボール；〈C〉ハンドボール用のボール", pos: "noun" },
     { word: "hand-held",       meaning: "手持ちの (AI)", pos: "adjective" },
+=======
+    { word: "hairdryer",       meaning: "TODO", pos: "noun" },
+    { word: "half",            meaning: "〈C〉〈U〉『半分』,2分の1;約半分；〈U〉《時刻を表す数詞と共に用いて》『半』,30分", pos: "adverb" },
+    { word: "hammer",          meaning: "『金づち』,ハンマー；ハンマーに似た物,(銃の)撃鉄,(ピアノの弦を打つフェルトの)つち,(競売人の)木づち,(ベル・ゴングなどの)打ち子", pos: "noun" },
+    { word: "handball",        meaning: "〈U〉ハンドボール；〈C〉ハンドボール用のボール", pos: "noun" },
+    { word: "hand-held",       meaning: "TODO", pos: "adjective" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "handkerchief",    meaning: "ハンカチ；《古》ネッカチーフ", pos: "noun" },
     { word: "handle",          meaning: "『取って』,柄,ハンドル；手がかり,きっかけ", pos: "verb" },
     { word: "handshake",       meaning: "握手", pos: "noun" },
@@ -3307,7 +3470,11 @@ const wordData = {
     { word: "hang",            meaning: "《通例副詞[句]を伴って》(…に)…を『掛ける』,下げる,つるす；(ちょうつがいなどで)〈ドアなど〉を取り付ける《+『名』+『on』+『名』》", pos: "verb" },
     { word: "hanging",         meaning: "〈U〉〈C〉絞首刑；《複数形で》カーテン,幕;壁紙", pos: "adjective" },
     { word: "hardship",        meaning: "〈U〉『辛苦』,苦難,難儀；〈C〉難事", pos: "noun" },
+<<<<<<< HEAD
     { word: "hard-working",    meaning: "勤勉な (AI)", pos: "adjective" },
+=======
+    { word: "hard-working",    meaning: "TODO", pos: "adjective" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "harness",         meaning: "『馬具』,引き具；〈馬〉に馬具を着ける;〈馬など〉を車に着ける;〈人〉を仕事に就かせる", pos: "noun" },
     { word: "hasty",           meaning: "『急ぎの』,急な,せわしい；『早まった』,せっかちな", pos: "adjective" },
     { word: "hatch",           meaning: "〈ひな・卵〉を『かえす』,ふ化する；〈陰謀・計画など〉を企てる,たくらむ", pos: "noun" },
@@ -3318,7 +3485,11 @@ const wordData = {
     { word: "hazard",          meaning: "危険,冒険;(…にとっての)危険物《+『to』+『名』》；(ゴルフや障害レースの)障害物", pos: "noun" },
     { word: "headline",        meaning: "(新聞などの)見出し,表題；《複数形で》(ニュース放送の)おもな項目", pos: "noun" },
     { word: "heal",            meaning: "〈傷など〉を直す；〈悩み・不和など〉をいやす,治める", pos: "verb" },
+<<<<<<< HEAD
     { word: "healing",         meaning: "癒しの (AI)", pos: "adjective" },
+=======
+    { word: "healing",         meaning: "TODO", pos: "adjective" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "hearing",         meaning: "〈U〉『聴力』,聴覚,〈U〉〈C〉(…を)『聞くこと』,(…の)聞き取り《+『of』+『名』》・〈C〉聞いてもらう機会,聞いてやること・聴取・聴聞会〈C〉(法廷などでの)尋問,審問,;(刑罰の減免を求める)釈明,意見陳述；〈U〉聞こえる距離(範囲)", pos: "noun" },
     { word: "hearted",         meaning: "「…の心を持った」「心が…の」の意を表す", pos: "adjective" },
     { word: "hearty",          meaning: "『心のこもった』,親切な,温かい；元気な,達者な", pos: "adjective" },
@@ -3447,7 +3618,11 @@ const wordData = {
     { word: "interrupt",       meaning: "(行動や話の途中で)〈人〉を『さえぎる』,妨げる；〈行為・話など〉を『中断する』", pos: "verb" },
     { word: "interval",        meaning: "(事と事の)間の時間,『合い間』;(物と物の)間の空間,間隔；《英》=intermission", pos: "noun" },
     { word: "interview",       meaning: "(就職のためなどの)面接,面会；(取材のための)(…との)『会見』,インタビュー《+『with』+『名』》", pos: "verb" },
+<<<<<<< HEAD
     { word: "interviewee",     meaning: "面接を受ける人 (AI)", pos: "noun" },
+=======
+    { word: "interviewee",     meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "introduction",    meaning: "〈U〉〈C〉(…に人を)『紹介すること』《+『of』+『名』〈人〉+『to』+『名』》；〈U〉(…に物・事を)紹介すること,取り入れること《+『of』+『名』+『into』(『to, among』)+『名』》", pos: "noun" },
     { word: "invasion",        meaning: "(敵軍の)侵入,侵略《+『of』+『名』》；(人・物の)殺到;(災害などの)襲来《+『of』+『名』》", pos: "noun" },
     { word: "invest",          meaning: "(…に)〈金など〉を『投資する』《+『名』+『in』+『名』》；(…に)〈時間・努力など〉をつぎ込む《+『名』+『in』+『名』(do『ing』)》", pos: "verb" },
@@ -3560,7 +3735,11 @@ const wordData = {
     { word: "lodge",           meaning: "(特に狩猟・登山などで用いる)『小屋』,『ロッジ』；(公園・大きな建物などの入口にある守衛所),門衛所", pos: "noun" },
     { word: "log",             meaning: "『丸太』,丸木；(また『logbook』)航海(航空)日誌", pos: "noun" },
     { word: "logic",           meaning: "『論理学』；『論理』,論法", pos: "noun" },
+<<<<<<< HEAD
     { word: "logo",            meaning: "ロゴ (AI)", pos: "noun" },
+=======
+    { word: "logo",            meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "lorry",           meaning: "貨物自動車,(特に大型の)トラック(《米》truck)", pos: "noun" },
     { word: "loss",            meaning: "〈U〉(…を)『失うこと』,紛失《+『of』+『名』》；〈C〉(…の)『損害』,損失;損失額《+『of』+『名』》", pos: "noun" },
     { word: "lottery",         meaning: "富くじ,福引き,宝くじ・運,巡り合わせ", pos: "noun" },
@@ -3645,7 +3824,11 @@ const wordData = {
     { word: "misunderstanding", meaning: "(…を)誤解すること《+『of』+『名』》", pos: "noun" },
     { word: "model",           meaning: "(通常縮小した)(…の)『模型』,ひな型《+『of』+『名』》；《単数形で》(…の)『模範』,手本《+『of』+(『for』)+『名』》", pos: "adjective" },
     { word: "model",           meaning: "(通常縮小した)(…の)『模型』,ひな型《+『of』+『名』》；《単数形で》(…の)『模範』,手本《+『of』+(『for』)+『名』》", pos: "verb" },
+<<<<<<< HEAD
     { word: "modem",           meaning: "モデム (AI)", pos: "noun" },
+=======
+    { word: "modem",           meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "moderate",        meaning: "『適度の』,度を越さない；(量・大きさ・質などが)『中くらいの』,並の", pos: "adjective" },
     { word: "modify",          meaning: "…を『修正する』,変更する；…を加減する,緩和する", pos: "verb" },
     { word: "moisture",        meaning: "『湿りけ』,湿気；(空気中,または物の表面の)蒸気,水分", pos: "noun" },
@@ -3730,7 +3913,11 @@ const wordData = {
     { word: "northwestern",    meaning: "北西の;北西へ向かう；北西からの", pos: "adjective" },
     { word: "notice",          meaning: "〈U〉『人目を引くこと』,注意,注目,関心；〈U〉『通告,通知』,警告;(契約解除の正式な)通知,予告", pos: "verb" },
     { word: "noticeable",      meaning: "人目を引く,目立つ,明らかな；注目に値する", pos: "adjective" },
+<<<<<<< HEAD
     { word: "noticeboard",     meaning: "掲示板 (AI)", pos: "noun" },
+=======
+    { word: "noticeboard",     meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "notion",          meaning: "〈C〉『心に思うこと』,考え,意見；〈C〉『意図』,望み,思いつき", pos: "noun" },
     { word: "notorious",       meaning: "名高い,(特に)悪名高い,札付きの", pos: "adjective" },
     { word: "novelist",        meaning: "小説家", pos: "noun" },
@@ -4026,7 +4213,11 @@ const wordData = {
     { word: "recover",         meaning: "…を再びおおう;…を張り替える；〈失ったもの〉を『取り戻す』,『回復する』", pos: "verb" },
     { word: "recovery",        meaning: "〈U〉(…を)『取り戻すこと』《+『of』+『名』》；〈C〉《単数形で》(…からの…の)『回復』《+『of』+『名』+『from』+『名』》", pos: "noun" },
     { word: "recycled",        meaning: "〈廃物など〉を再利用する", pos: "adjective" },
+<<<<<<< HEAD
     { word: "recycling",       meaning: "リサイクル (AI)", pos: "noun" },
+=======
+    { word: "recycling",       meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "reduce",          meaning: "(あるところまで)〈数量など〉を『減らす』,小さくする;〈程度・地位など〉を『下げる』《+『名』+『to』+『名』》；《しばしば受動態で》(ある状態・形に)…を『する,』変える,至らせる《+『名』+『to』+『名』(do『ing』)》", pos: "verb" },
     { word: "reduction",       meaning: "〈U〉〈C〉(…を)『減らすこと』,減少,縮小,格下げ,(…の)割り引き《+『in』+『名』》；〈C〉減少(縮小)した量;割引額", pos: "noun" },
     { word: "reef",            meaning: "[暗]礁,岩礁,砂州(さす)；縮帆(しゅくはん)部(巻き上げて風を受ける面積を少なくした帆の部分)", pos: "noun" },
@@ -4105,8 +4296,13 @@ const wordData = {
     { word: "retain",          meaning: "…を『持ち続ける』,保持する；…を記憶にとどめる,覚えている", pos: "verb" },
     { word: "retell",          meaning: "…を再び語る;…を言い替える", pos: "verb" },
     { word: "retrospect",      meaning: "回顧,回想", pos: "noun" },
+<<<<<<< HEAD
     { word: "reunification",   meaning: "再統合 (AI)", pos: "noun" },
     { word: "reunify",         meaning: "再統一する (AI)", pos: "verb" },
+=======
+    { word: "reunification",   meaning: "TODO", pos: "noun" },
+    { word: "reunify",         meaning: "TODO", pos: "verb" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "revise",          meaning: "〈本など〉を『改訂する』,修正する；〈考えなど〉を『改める』,変える,〈法律など〉を改正する", pos: "verb" },
     { word: "revision",        meaning: "〈C〉(…の)改正(改訂)校閲《+『of』+『名』》；〈C〉改訂版", pos: "noun" },
     { word: "reward",          meaning: "〈U〉〈C〉(…に対する)『報酬』,お礼,ほうび《+『for』+『名』(do『ing』)》；〈C〉(…に対する)『報奨金』,礼金《+『for』(『of』)+『名』》", pos: "noun" },
@@ -4181,7 +4377,11 @@ const wordData = {
     { word: "select",          meaning: "(最高・最適のものとして)…を『選ぶ』,選抜する,選出する；(人が)『えり抜きの』,精選された", pos: "adjective" },
     { word: "selection",       meaning: "〈U〉《時にA~》『選ぶこと』,選抜,選出;(…から)選び出すこと《+『from』(『out of, among』)+『名』》；〈C〉(…から)『選び抜かれた人』(『物』);(…の)抜粋,選集《+『from』(『of』)+『名』》", pos: "noun" },
     { word: "selfish",         meaning: "(人・言動などが)『利己的な』,自分本位の", pos: "adjective" },
+<<<<<<< HEAD
     { word: "self-service",    meaning: "セルフサービスの (AI)", pos: "adjective" },
+=======
+    { word: "self-service",    meaning: "TODO", pos: "adjective" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "sensation",       meaning: "〈U〉〈C〉(五感による)『感覚』,知覚；〈C〉(…の)感じ,気持ち", pos: "noun" },
     { word: "separation",      meaning: "〈C〉〈U〉『分離』,分割,別離・〈C〉(…の)分離(分割)した箇所《+『of』+『名』》；〈C〉〈U〉(合意・判決に基づく)夫婦の別居", pos: "noun" },
     { word: "sequence",        meaning: "〈U〉〈C〉(時間の上の,また因果関係のつながりによる)『連続』,続き；〈C〉《a~》(…の)一連のもの《+『of』+『名』》", pos: "noun" },
@@ -4262,7 +4462,11 @@ const wordData = {
     { word: "smile",           meaning: "『ほほえむ』,にっこりする・〈好運・神などが〉(…に)好意を示す《+『on』(『upon』)+『名』》・《a+形容詞+smileを目的語にして》…な笑い方をする・…をほほえんで示す・〈人〉にほほえみかけて(…)させる(させない)《+『名』〈人〉+『into』(『out of』)+『名』(do『ing』)》・『ほほえみ』,微笑", pos: "verb" },
     { word: "smoker",          meaning: "喫煙家；(また『smoking car』)喫煙車", pos: "noun" },
     { word: "sneeze",          meaning: "くしゃみ；くしゃみをする", pos: "noun" },
+<<<<<<< HEAD
     { word: "snowboard",       meaning: "スノーボード (AI)", pos: "noun" },
+=======
+    { word: "snowboard",       meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "snowstorm",       meaning: "吹雪", pos: "noun" },
     { word: "socially",        meaning: "社会的に,社会によって；社交上;社交的に", pos: "adverb" },
     { word: "soil",            meaning: "〈U〉(植物の成長に適する)『土』,土壌(どじょう)；〈U〉(特殊な)土", pos: "verb" },
@@ -4335,7 +4539,11 @@ const wordData = {
     { word: "strengthen",      meaning: "…を『強くする』；『強くなる』,力がつく", pos: "verb" },
     { word: "stress",          meaning: "〈U〉〈C〉(精神的・感情的な)『緊張』,ストレス；〈U〉(…に対する)『強調』,力説《+on+名》", pos: "noun" },
     { word: "stressed",        meaning: "〈U〉〈C〉(精神的・感情的な)『緊張』,ストレス；〈U〉(…に対する)『強調』,力説《+on+名》", pos: "adjective" },
+<<<<<<< HEAD
     { word: "stressful",       meaning: "ストレスのかかる (AI)", pos: "adjective" },
+=======
+    { word: "stressful",       meaning: "TODO", pos: "adjective" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "stretch",         meaning: "〈手足・翼など〉を『いっぱいに伸ばす(広げる)』《+out+名,+名+out》；〈手など〉を差し出す《+out+名,+名+out》", pos: "verb" },
     { word: "stricken",        meaning: "strikeの過去分詞；(悲しみ・病気・不幸などに)襲われた,打ちひしがれた", pos: "adjective" },
     { word: "strike",          meaning: "〈人〉を『なぐる』;〈物〉を『たたく』,打つ；〈打撃・攻撃〉を加える;…を打撃を加える", pos: "verb" },
@@ -4437,7 +4645,11 @@ const wordData = {
     { word: "terminal",        meaning: "『終りの』,末端の；毎期の,定期の;学期末の", pos: "noun" },
     { word: "terribly",        meaning: "『恐ろしく』,ものすごく；(比較変化なし)《話》『ひどく』,非常に(very)", pos: "adverb" },
     { word: "terrific",        meaning: "(大きさ・程度が)ものすごい；恐ろしい", pos: "adjective" },
+<<<<<<< HEAD
     { word: "terrified",       meaning: "恐がっている (AI)", pos: "adjective" },
+=======
+    { word: "terrified",       meaning: "TODO", pos: "adjective" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "terror",          meaning: "〈U〉〈C〉(身に迫る)『恐怖』；〈C〉『恐ろしい人(物・事)』", pos: "noun" },
     { word: "terrorism",       meaning: "(政治的な)行為,テロ;恐怖政治", pos: "noun" },
     { word: "terrorist",       meaning: "テロリスト,暴力主義者,恐怖政治家；暴力政治の;暴力主義者の", pos: "noun" },
@@ -4468,7 +4680,11 @@ const wordData = {
     { word: "tin",             meaning: "〈U〉錫(金属元素;化学記号はSn)；〈U〉ブリキ(tin plate)", pos: "noun" },
     { word: "tiny",            meaning: "『とても小さい』,ちっぽけな", pos: "adjective" },
     { word: "tire",            meaning: "〈人など〉を『疲れさせる』,疲労させる；〈人など〉を『飽きさせる』,うんざりさせる", pos: "verb" },
+<<<<<<< HEAD
     { word: "tiring",          meaning: "つまらない、退屈な (AI)", pos: "adjective" },
+=======
+    { word: "tiring",          meaning: "TODO", pos: "adjective" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "tissue",          meaning: "〈U〉〈C〉(生物体の)『組織』；〈U〉〈C〉『薄織物』", pos: "noun" },
     { word: "tobacco",         meaning: "〈C〉『タバコの木』；〈U〉〈C〉『タバコの葉』", pos: "noun" },
     { word: "tongue",          meaning: "〈C〉『舌』；〈C〉〈U〉(食用の牛などの)舌,タン", pos: "noun" },
@@ -4564,7 +4780,11 @@ const wordData = {
     { word: "unwell",          meaning: "(特に短い時間)体の具合が悪い,気分がすぐれない；月経中である", pos: "adjective" },
     { word: "update",          meaning: "…を最新のものにする；最新情報", pos: "verb" },
     { word: "uplifted",        meaning: "…をあげる,持ち上げる；〈精神〉を高揚する,〈意気〉を盛んにする", pos: "adjective" },
+<<<<<<< HEAD
     { word: "upload",          meaning: "アップロードする (AI)", pos: "verb" },
+=======
+    { word: "upload",          meaning: "TODO", pos: "verb" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "upper",           meaning: "(場所・位置が)『上のほうの』,上部の；『上級の』,上位の", pos: "adjective" },
     { word: "upstairs",        meaning: "階上へ(で),2階へ(で)；階上の,2階の", pos: "adjective" },
     { word: "upstairs",        meaning: "階上へ(で),2階へ(で)；階上の,2階の", pos: "noun" },
@@ -4607,7 +4827,11 @@ const wordData = {
     { word: "vivid",           meaning: "(色・光が)『あざやかな』,目のさめるような,強烈な；『鮮明な』,明りょうな", pos: "adjective" },
     { word: "vividly",         meaning: "あざやかに;はっきりと;生き生きと", pos: "adverb" },
     { word: "volcano",         meaning: "『火山』", pos: "noun" },
+<<<<<<< HEAD
     { word: "volume",          meaning: "〈C〉(特に分厚い)『本』,書物；〈C〉(シリーズものの)『巻』,冊(《略》《単数形で》vol.,《複数形で》vols.)", pos: "noun" },
+=======
+    { word: "volume",          meaning: "〈C〉(特に分厚い)『本』,書物；〈C〉(シリーズものの)『巻』,冊(《略》(単数形で)vol.,(複数形で)vols.)", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "volunteer",       meaning: "(…の)『志願者』,有志《+for+名(doing)》；『志願兵』,義勇兵", pos: "verb" },
     { word: "vote",            meaning: "〈C〉『票』；〈C〉『投票』;(投票・挙手・起立などの)意志表示", pos: "verb" },
     { word: "vowel",           meaning: "母音；《話》母音字", pos: "noun" },
@@ -4634,12 +4858,21 @@ const wordData = {
     { word: "wax",             meaning: "『ろう』(ミツバチが巣を作るために用いる beeswax,その他の動物性,植物性・鉱物性ろうの総称)；耳あか(earwax)", pos: "verb" },
     { word: "weakness",        meaning: "〈U〉(体・心・性格が)『弱いこと』《+of+名》；〈C〉『弱点』,短所", pos: "noun" },
     { word: "weapon",          meaning: "『武器』,兵器；『攻撃(防御)手段』", pos: "noun" },
+<<<<<<< HEAD
     { word: "webcam",          meaning: "Webカメラ (AI)", pos: "noun" },
     { word: "weird",           meaning: "起自然的な,不思議な,気味の悪い；(話が)変な,妙な", pos: "adjective" },
     { word: "welcome",         meaning: "(…へ)『ようこそ』;いらっしゃい《+to+名》；〈人〉を出迎える,〈人〉に出迎えのあいさつをする", pos: "adjective" },
     { word: "well-dressed",    meaning: "きちんとした服装をしている (AI)", pos: "adjective" },
     { word: "westward",        meaning: "西に向かう,西方への；西へ", pos: "adverb" },
     { word: "wetland",         meaning: "湿地 (AI)", pos: "noun" },
+=======
+    { word: "webcam",          meaning: "TODO", pos: "noun" },
+    { word: "weird",           meaning: "起自然的な,不思議な,気味の悪い；(話が)変な,妙な", pos: "adjective" },
+    { word: "welcome",         meaning: "(…へ)『ようこそ』;いらっしゃい《+to+名》；〈人〉を出迎える,〈人〉に出迎えのあいさつをする", pos: "adjective" },
+    { word: "well-dressed",    meaning: "TODO", pos: "adjective" },
+    { word: "westward",        meaning: "西に向かう,西方への；西へ", pos: "adverb" },
+    { word: "wetland",         meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "whale",           meaning: "鯨: 捕鯨に従事する 〔話〕 非常に大きい[すごい]もの (a ～ at [for, on] …の得意[熱心]な人)；(棒・むち・手などで)…を打つ,打ちのめす ひどく打つ", pos: "noun" },
     { word: "whenever",        meaning: "《時の副詞節を導いて》『…するときはいつでも;』…[する]たびに；《譲歩の副詞節を導いて》『いち…でも』", pos: "adverb" },
     { word: "whenever",        meaning: "《時の副詞節を導いて》『…するときはいつでも;』…[する]たびに；《譲歩の副詞節を導いて》『いち…でも』", pos: "conjunction" },
@@ -4654,7 +4887,11 @@ const wordData = {
     { word: "wildly",          meaning: "『乱暴に』,荒々しく；むやみに", pos: "adverb" },
     { word: "willingness",     meaning: "喜んですること;(…喜んで)(…する)気持ち《+to do》", pos: "noun" },
     { word: "windscreen",      meaning: "windshield 1", pos: "noun" },
+<<<<<<< HEAD
     { word: "windsurfing",     meaning: "ウィンドサーフィン (AI)", pos: "noun" },
+=======
+    { word: "windsurfing",     meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "wing",            meaning: "(鳥の)『翼』,(昆虫の)羽；(飛行機・風車などの)『翼』,羽", pos: "noun" },
     { word: "wire",            meaning: "〈U〉〈C〉『針金』,金属線；〈C〉『電線』,ケーブル;金網", pos: "noun" },
     { word: "wither",          meaning: "〈植物が〉『しぼむ』,しおれる,枯れる《+away(up)》；〈人間が〉『やせ衰える』", pos: "verb" },
@@ -4663,7 +4900,11 @@ const wordData = {
     { word: "wonder",          meaning: "〈C〉『驚くべきもの(こと)』,驚異[の的]；〈U〉『驚異[の念]』,驚嘆,驚き", pos: "noun" },
     { word: "working",         meaning: "(機械・器具などが)『動く』,使える；(特に生活のために)『働く』,[肉体]労働に従事する", pos: "adjective" },
     { word: "workout",         meaning: "運動,練習,トレーニング", pos: "noun" },
+<<<<<<< HEAD
     { word: "workplace",       meaning: "職場 (AI)", pos: "noun" },
+=======
+    { word: "workplace",       meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "workshop",        meaning: "仕事場,工作場；《米》(セミナー形式の)研究会,討論会", pos: "noun" },
     { word: "worn",            meaning: "wearの過去分詞；『すり切れた』,ほころびた", pos: "adjective" },
     { word: "worst",           meaning: "『最も悪い』,いちばんひどい,最悪の；(badly, illの最上級)『最も悪く』,いちばんひどく", pos: "noun" },
@@ -4765,11 +5006,16 @@ const wordData = {
     { word: "anchor",          meaning: "『いかり』(錨)；(いかりのような)固定装置", pos: "noun" },
     { word: "anchorage",       meaning: "アンカレッジ(米国アラスカ州南部の都市;海港と空港がある)；〈C〉停泊地,投びょう地", pos: "noun" },
     { word: "anchorman",       meaning: "(テレビ・ラジオで)多元ニュース解説者；頼みになる人,大黒柱", pos: "noun" },
+<<<<<<< HEAD
     { word: "anchorperson",    meaning: "ナレーター (AI)", pos: "noun" },
+=======
+    { word: "anchorperson",    meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "anguish",         meaning: "(…に対する)(心身の)『激しい苦しみ』,苦悶(くもん)《+『over』+『名』》；…に苦悶させる", pos: "noun" },
     { word: "animate",         meaning: "…に生命を吹き込む,生命を与える；…を活気づける,生き生きさせる", pos: "verb" },
     { word: "anonymous",       meaning: "作者不明の；名を伏せた,匿名の", pos: "adjective" },
     { word: "antiaircraft",    meaning: "対空の,防空の", pos: "adjective" },
+<<<<<<< HEAD
     { word: "antibacterial",   meaning: "抗菌の (AI)", pos: "adjective" },
     { word: "anticancer",      meaning: "抗癌剤 (AI)", pos: "noun" },
     { word: "anticipate",      meaning: "…を『予想する』,予期する；〈事〉に『前もって(先に)対処する』", pos: "verb" },
@@ -4778,6 +5024,16 @@ const wordData = {
     { word: "antique",         meaning: "(物・形が)古風な,旧式の,時代遅れの(old-fashioned)；古い時代の,古来の", pos: "adjective" },
     { word: "antistatic",      meaning: "静電気を防止する (AI)", pos: "adjective" },
     { word: "antivirus",       meaning: "ウイルス対策ソフト (AI)", pos: "noun" },
+=======
+    { word: "antibacterial",   meaning: "TODO", pos: "adjective" },
+    { word: "anticancer",      meaning: "TODO", pos: "noun" },
+    { word: "anticipate",      meaning: "…を『予想する』,予期する；〈事〉に『前もって(先に)対処する』", pos: "verb" },
+    { word: "anticipation",    meaning: "(…の)予想,期待《+『of』+『名』》,(…という)予想《+『that節』》", pos: "noun" },
+    { word: "antipollution",   meaning: "TODO", pos: "noun" },
+    { word: "antique",         meaning: "(物・形が)古風な,旧式の,時代遅れの(old-fashioned)；古い時代の,古来の", pos: "adjective" },
+    { word: "antistatic",      meaning: "TODO", pos: "adjective" },
+    { word: "antivirus",       meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "apostrophe",      meaning: "アポストロフィー('印)", pos: "noun" },
     { word: "appeal",          meaning: "『訴える』,呼びかける；(上級裁判機関に)『控訴する』,上告する《+『to』+『名』》", pos: "verb" },
     { word: "applicant",       meaning: "(…に対する)志願者,応募者《+『for』+『名』》", pos: "noun" },
@@ -4883,7 +5139,11 @@ const wordData = {
     { word: "bikini",          meaning: "ビキニ(婦人用セパレート型の水着)", pos: "noun" },
     { word: "billion",         meaning: "『10億』(thousand million)；《英》『兆』(《米》trillion)", pos: "noun" },
     { word: "bind",            meaning: "(ひもで)…を『しばる』,を束ねる《+『up』+『名』,+『名』+『up』》；(…で)…を『巻く』《+『名』+『with』+『名』》;〈包帯など〉を巻きつける《+『up』+『名』,+『名』+『up』》", pos: "verb" },
+<<<<<<< HEAD
     { word: "bio",             meaning: "生物 (AI)", pos: "noun" },
+=======
+    { word: "bio",             meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "biological",      meaning: "生物学の,生物学的", pos: "adjective" },
     { word: "biotechnology",   meaning: "《米》生物工学〈C〉", pos: "noun" },
     { word: "birdcage",        meaning: "鳥かご", pos: "noun" },
@@ -4913,7 +5173,11 @@ const wordData = {
     { word: "bolt",            meaning: "『ボルト』(木・鉄板を締め合わせる締めくぎ)；(戸締まりの)『かんぬき』,差し錠", pos: "verb" },
     { word: "bombard",         meaning: "…を砲撃する,爆撃する；(質問などで)〈人〉を攻めたてる《+『名』+『with』+『名』》", pos: "noun" },
     { word: "bomber",          meaning: "爆撃機；爆撃手", pos: "noun" },
+<<<<<<< HEAD
     { word: "bombing",         meaning: "爆撃 (AI)", pos: "noun" },
+=======
+    { word: "bombing",         meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "bony",            meaning: "骨の,骨のような；骨の多い", pos: "adjective" },
     { word: "bookish",         meaning: "本好きの,勉強好きの；《軽べつした》机上の,実際的でない", pos: "adjective" },
     { word: "booklet",         meaning: "小冊子,パンフレット", pos: "noun" },
@@ -4951,11 +5215,19 @@ const wordData = {
     { word: "brochure",        meaning: "小冊子,パンフレット(pamphlet)", pos: "noun" },
     { word: "brother-in-law",  meaning: "義理の兄(弟)", pos: "noun" },
     { word: "browse",          meaning: "《副詞[句]を伴って》漫然とながめる,ざっと目を通す；〈牛・シカなどが〉若葉(新芽)を食べる,草を食べる", pos: "verb" },
+<<<<<<< HEAD
     { word: "browser",         meaning: "ブラウザ (AI)", pos: "noun" },
     { word: "bruise",          meaning: "『打撲傷』,打ち身；(果物・野菜の)傷", pos: "noun" },
     { word: "bud",             meaning: "〈C〉『芽;つぼみ』；〈C〉(下等動物の)芽状突起", pos: "noun" },
     { word: "budget",          meaning: "(…の)『予算』,予算案《+『for』+『名』》;《形容詞的に》『budget book』;{名}〈C〉予算書『budget plan』{名}〈C〉《米》予算案；(ある期間の,ある事業の)予算を組む《+『for』+『名』》", pos: "adjective" },
     { word: "bulimia",         meaning: "暴食症 (AI)", pos: "noun" },
+=======
+    { word: "browser",         meaning: "TODO", pos: "noun" },
+    { word: "bruise",          meaning: "『打撲傷』,打ち身；(果物・野菜の)傷", pos: "noun" },
+    { word: "bud",             meaning: "〈C〉『芽;つぼみ』；〈C〉(下等動物の)芽状突起", pos: "noun" },
+    { word: "budget",          meaning: "(…の)『予算』,予算案《+『for』+『名』》;《形容詞的に》『budget book』;{名}〈C〉予算書『budget plan』{名}〈C〉《米》予算案；(ある期間の,ある事業の)予算を組む《+『for』+『名』》", pos: "adjective" },
+    { word: "bulimia",         meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "bully",           meaning: "弱い者いじめ,がき大将；〈弱い者〉をいじめる,おどかす", pos: "verb" },
     { word: "bum",             meaning: "なまけ者;浮浪者；ぶらつく,のらくらする《+『around』+『名』》", pos: "noun" },
     { word: "bumper",          meaning: "バンパー(衝撃を弱めるため列車・自動車の前後部につける)；非常に大きな", pos: "noun" },
@@ -4987,7 +5259,11 @@ const wordData = {
     { word: "cardboard",       meaning: "厚紙,ボール紙", pos: "noun" },
     { word: "cardigan",        meaning: "カーディガン", pos: "noun" },
     { word: "carefree",        meaning: "心配のない,のんきな", pos: "adjective" },
+<<<<<<< HEAD
     { word: "caring",          meaning: "思いやりのある (AI)", pos: "adjective" },
+=======
+    { word: "caring",          meaning: "TODO", pos: "adjective" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "carnival",        meaning: "〈U〉『謝肉祭』,カーニバル(四旬節(Lent)の直前の3日間ないし1週間の祝祭;カトリック教国では四旬節中は肉食を断つので最後に肉を食べる日となる)；〈C〉浮かれ騒ぎ,お祭り騒ぎ;(特定の)お祭り", pos: "noun" },
     { word: "carpool",         meaning: "車の所有者数人が交替でお互いを乗せて行く協定", pos: "noun" },
     { word: "carve",           meaning: "…を『刻んで作る』,彫る,彫刻する；(食べやすいように)〈肉〉を切り分ける", pos: "verb" },
@@ -4999,7 +5275,11 @@ const wordData = {
     { word: "catastrophe",     meaning: "(突然の)大変動,大災害；悲劇的結末,破局", pos: "noun" },
     { word: "catastrophic",    meaning: "悲劇的な,大異変の,破滅的な", pos: "adjective" },
     { word: "catchy",          meaning: "調子がおもしろくて覚えやすい；引っ掛かりやすい(tricky)", pos: "adjective" },
+<<<<<<< HEAD
     { word: "catering",        meaning: "飲食サービス (AI)", pos: "noun" },
+=======
+    { word: "catering",        meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "cathedral",       meaning: "(bishopが統轄する)『大寺院』,大聖堂,大伽藍(がらん)；(一般の)大教会", pos: "noun" },
     { word: "cause",           meaning: "〈U〉『原因』,起因;〈C〉原因となる人(物事)；〈U〉『正当な理由』,根拠,動機", pos: "noun" },
     { word: "cease",           meaning: "『やむ』,終わる；…を『やめる』,中止する", pos: "verb" },
@@ -5036,7 +5316,11 @@ const wordData = {
     { word: "circuit",         meaning: "『回ること』;一周,一巡；(牧師・裁判官・外交員などの定期的な)巡回", pos: "noun" },
     { word: "circuitry",       meaning: "電気回路；電気回路構成物(真空管など)", pos: "noun" },
     { word: "circumstance",    meaning: "〈C〉《複数形で》(人や行動に影響を及ぼす)『状況』,『環境』,周囲の事情;条件；〈C〉(特定の)事情,(事の)次第,でき事", pos: "noun" },
+<<<<<<< HEAD
     { word: "citywide",        meaning: "都市全体にわたる (AI)", pos: "adjective" },
+=======
+    { word: "citywide",        meaning: "TODO", pos: "adjective" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "clam",            meaning: "ハマグリ；ハマグリを取る", pos: "noun" },
     { word: "clap",            meaning: "(短く鋭い)ピシャリ(パチン,バタン,ガタン)という音；《単数形で》平手打ち", pos: "verb" },
     { word: "clarify",         meaning: "…を明らかにする,理解しやすくする；〈液体・空気など〉を澄ませる,浄化する", pos: "verb" },
@@ -5051,7 +5335,11 @@ const wordData = {
     { word: "clothing",        meaning: "『衣類』,衣料品", pos: "noun" },
     { word: "clumsy",          meaning: "(人・動作などが)『無器用な』,ぎごちない；(道具などが)ぶかっこうで扱いにくい;(説明などが)へたな,気のきかない", pos: "adjective" },
     { word: "coach",           meaning: "(箱形・屋根付き)『大型四輪馬車』;(鉄道以前の)駅馬車；(sleeping car, parlor carと区別して)普通客車", pos: "verb" },
+<<<<<<< HEAD
     { word: "coaching",        meaning: "指導、コーチング (AI)", pos: "noun" },
+=======
+    { word: "coaching",        meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "coalition",       meaning: "(政党などの,特に一時的な)(…間の)連立,提携《+『between』+『名』》；一体化,合体,融合", pos: "noun" },
     { word: "coarse",          meaning: "(品物が)『粗末な』,下等な；(表面が)『粗い』,ざらざらした", pos: "adjective" },
     { word: "coastline",       meaning: "海岸線", pos: "noun" },
@@ -5116,7 +5404,11 @@ const wordData = {
     { word: "conductor",       meaning: "(集団などの)『指導者』,案内者;(事業などの)管理者,経営者；(オーケストラ・コーラスなどの)『指揮者』", pos: "noun" },
     { word: "cone",            meaning: "円すい,円すい形；円すい形のもの", pos: "noun" },
     { word: "conference",      meaning: "〈C〉『会議』,協議会；〈U〉〈C〉(…との)相談,協議《+『with』+『名』》", pos: "noun" },
+<<<<<<< HEAD
     { word: "conferencing",    meaning: "会議、コンファレンス (AI)", pos: "noun" },
+=======
+    { word: "conferencing",    meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "confess",         meaning: "〈罪・秘密など〉を『白状する』,打ち明ける；〈過失など〉を『認める』", pos: "verb" },
     { word: "confession",      meaning: "(罪などの)『自白』,自認《+『of』+『名』》；〈C〉《文》(信仰の)告白《+『of』+『名』》", pos: "noun" },
     { word: "confidently",     meaning: "自信をもって;大胆に", pos: "adverb" },
@@ -5161,7 +5453,11 @@ const wordData = {
     { word: "cope",            meaning: "対抗する;(難局に)対処する,打ち勝つ《+『with』+『名』》；コープ(高位の聖職者が儀式の際に着用するマント)", pos: "verb" },
     { word: "copper",          meaning: "〈U〉『銅』(化学記号は『Cu』)；〈C〉《英話》銅貨", pos: "noun" },
     { word: "coral",           meaning: "〈U〉サンゴ；〈C〉サンゴ細工", pos: "noun" },
+<<<<<<< HEAD
     { word: "core",            meaning: "Congress of Racial Equality《米》人種平等会議；〈C〉(果物の)『しん』", pos: "noun" },
+=======
+    { word: "core",            meaning: "Congress of Racial Equality(米国)人種平等会議；〈C〉(果物の)『しん』", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "cornerstone",     meaning: "(建物の起工年月日を刻んだ)すみ石,定礎石；不可欠のもの;基礎,土台", pos: "noun" },
     { word: "cornet",          meaning: "コルネット(管楽器の一種)；《英》(アイスクリームの)コーン", pos: "noun" },
     { word: "corona",          meaning: "コロナ(皆既日食のときに見える光冠)；(太陽・月などの)かさ", pos: "noun" },
@@ -5183,7 +5479,11 @@ const wordData = {
     { word: "cough",           meaning: "〈C〉『せき』,せき払；《a ~》よくせきの出る病気", pos: "noun" },
     { word: "counter",         meaning: "(商店・銀行などの)『売り台』,勘定台,カウンター；(食堂などに)『カウンター』", pos: "noun" },
     { word: "countryman",      meaning: "《one's ~》同国人；いなか者", pos: "noun" },
+<<<<<<< HEAD
     { word: "countrywide",     meaning: "全国的な (AI)", pos: "adjective" },
+=======
+    { word: "countrywide",     meaning: "TODO", pos: "adjective" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "courtesy",        meaning: "〈U〉『礼儀』,丁重,丁寧さ；〈C〉丁重な行い(言葉),親切な行い(言葉)", pos: "noun" },
     { word: "coward",          meaning: "『おくびょう者;』ひきょう者", pos: "noun" },
     { word: "cowardly",        meaning: "おくびょうな;ひきょうな", pos: "adjective" },
@@ -5216,12 +5516,21 @@ const wordData = {
     { word: "culturally",      meaning: "『文化的な』;教養の,文化の；『栽培上の』;培養の", pos: "adverb" },
     { word: "cure",            meaning: "〈病気・病人〉を『治療する』,なおす；〈悪癖・弊害など〉を『なおす』,取り除く", pos: "verb" },
     { word: "curl",            meaning: "〈C〉『巻き毛』カール;《複数形で》巻き毛の髪；〈C〉うず巻き[状のもの],うねり", pos: "noun" },
+<<<<<<< HEAD
     { word: "cursor",          meaning: "カーソル (AI)", pos: "noun" },
     { word: "cyberaddict",     meaning: "ネット依存症の人 (AI)", pos: "noun" },
     { word: "cybercrime",      meaning: "サイバー犯罪 (AI)", pos: "noun" },
     { word: "cyberpet",        meaning: "サイバーペット (AI)", pos: "noun" },
     { word: "cyberschool",     meaning: "サイバースクール (AI)", pos: "noun" },
     { word: "cyberspace",      meaning: "サイバースペース (AI)", pos: "noun" },
+=======
+    { word: "cursor",          meaning: "TODO", pos: "noun" },
+    { word: "cyberaddict",     meaning: "TODO", pos: "noun" },
+    { word: "cybercrime",      meaning: "TODO", pos: "noun" },
+    { word: "cyberpet",        meaning: "TODO", pos: "noun" },
+    { word: "cyberschool",     meaning: "TODO", pos: "noun" },
+    { word: "cyberspace",      meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "cyclist",         meaning: "自転車(三輪車,オートバイ)に乗る人", pos: "noun" },
     { word: "daft",            meaning: "バカな, 間抜けな, 馬鹿げた(主にイギリス英語で使われる皮肉っぽいニュアンス)", pos: "adjective" },
     { word: "damn",            meaning: "…を『けなす』,酷評する；〈神が〉〈人〉を地獄に落とす,永遠に罰する", pos: "adjective" },
@@ -5232,7 +5541,11 @@ const wordData = {
     { word: "dash",            meaning: "《副詞[句]を伴って》『突進する』；(…に)『衝突する』,激しくぶつかる《+『against』(『into, onto』)+『名』》", pos: "noun" },
     { word: "dash",            meaning: "《副詞[句]を伴って》『突進する』；(…に)『衝突する』,激しくぶつかる《+『against』(『into, onto』)+『名』》", pos: "verb" },
     { word: "data",            meaning: "『資料』,事実;情報", pos: "noun" },
+<<<<<<< HEAD
     { word: "database",        meaning: "データベース (AI)", pos: "noun" },
+=======
+    { word: "database",        meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "dated",           meaning: "時代遅れの(out-of-date)；日付のある", pos: "adjective" },
     { word: "daughter-in-law", meaning: "むすこの妻,嫁", pos: "noun" },
     { word: "dawn",            meaning: "〈U〉〈C〉『夜明け』,暁(daybreak)；《the ~》(物事の)『始まり』,端緒《+『of』+『名』》", pos: "noun" },
@@ -5283,7 +5596,11 @@ const wordData = {
     { word: "designer",        meaning: "『設計者』,デザイナー", pos: "adjective" },
     { word: "desirable",       meaning: "『望ましい』,好ましい；(特に)性的欲望を起こさせるような,魅力たっぷりの", pos: "adjective" },
     { word: "desire",          meaning: "…を『切望する』,要求する,希望する；…に性的欲望を感じる", pos: "verb" },
+<<<<<<< HEAD
     { word: "desktop",         meaning: "デスクトップ (AI)", pos: "noun" },
+=======
+    { word: "desktop",         meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "desolation",      meaning: "〈U〉荒廃させること,荒廃している状態;破壊,破滅；〈U〉悲しみ,わびしさ;孤独,心細さ", pos: "noun" },
     { word: "desperately",     meaning: "『自暴自棄の』,『やけくその』；《補語にのみ用いて》切望している", pos: "adverb" },
     { word: "desperation",     meaning: "絶望状態；自暴自棄,やけくそ,死にもの狂い", pos: "noun" },
@@ -5338,7 +5655,11 @@ const wordData = {
     { word: "disregard",       meaning: "…を『無視する』,軽視する,なおざりにする；(…に対する)『無関心』,無視《+『of』(『for』)+『名』》", pos: "noun" },
     { word: "disrupt",         meaning: "…を混乱させる；(一時的に)…を中断させる", pos: "verb" },
     { word: "dissatisfaction", meaning: "(…に対する)不満,不平《+『at』(『with』)+『名』》;(…という)不平《+『that節』》", pos: "noun" },
+<<<<<<< HEAD
     { word: "dissatisfied",    meaning: "不満な (AI)", pos: "adjective" },
+=======
+    { word: "dissatisfied",    meaning: "TODO", pos: "adjective" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "dissident",       meaning: "違った意見の;(…と)意見が違う《+『from』+『名』》；意見が違う人,反対者", pos: "noun" },
     { word: "distinguished",   meaning: "『目立った』,顕著な;抜群の;優秀な", pos: "adjective" },
     { word: "distortion",      meaning: "〈U〉(話・真実・事実などを)ゆがめること,曲げて伝えること；〈U〉(形の)ゆがみ,ねじれ;〈C〉ゆがんだ(ねじれた)もの", pos: "noun" },
@@ -5372,8 +5693,13 @@ const wordData = {
     { word: "dove",            meaning: "『ハト』(pigeonのうち比較的小さいもの;平和の象徴とされる)；《おもに米》(平和的な態度をとる)ハト派の人(政治家)", pos: "noun" },
     { word: "down",            meaning: "(高い所から)『下へ』,降りて,地面へ；(地理・地図上)南へ,下町へ;(風・流れなどが)『下(しも)手へ』;《英》(都会・大学から)地方へ,離れて", pos: "adjective" },
     { word: "downfall",        meaning: "(富・名声・地位などの)急落,失墜；破滅(没落)の原因", pos: "noun" },
+<<<<<<< HEAD
     { word: "download",        meaning: "ダウンロード (AI)", pos: "noun" },
     { word: "downsize",        meaning: "縮小する (AI)", pos: "verb" },
+=======
+    { word: "download",        meaning: "TODO", pos: "noun" },
+    { word: "downsize",        meaning: "TODO", pos: "verb" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "dowry",           meaning: "(花嫁の)持参金", pos: "noun" },
     { word: "drain",           meaning: "(液体を)…から『排出する』《+『名』+『of』+『名』》;(…から)〈液体〉を『排出する』《+『名』+『from』+『名』》；…を消耗させる,枯渇させる;(…を)〈人〉から消耗させる《+『名』+『of』+『名』》", pos: "noun" },
     { word: "drain",           meaning: "(液体を)…から『排出する』《+『名』+『of』+『名』》;(…から)〈液体〉を『排出する』《+『名』+『from』+『名』》；…を消耗させる,枯渇させる;(…を)〈人〉から消耗させる《+『名』+『of』+『名』》", pos: "verb" },
@@ -5479,7 +5805,11 @@ const wordData = {
     { word: "exaggerate",      meaning: "…を『誇張する』,大げさに言う(考える)；誇張する,大げさに言う", pos: "noun" },
     { word: "exaggeration",    meaning: "〈U〉誇張,過大視；〈C〉誇張した表現,大げさな言い方", pos: "noun" },
     { word: "exalt",           meaning: "(高い地位に)〈人〉を『昇進させる』,上げる《+『名』〈人〉+『to』+『名』》；〈人など〉をほめる,賞賛する", pos: "verb" },
+<<<<<<< HEAD
     { word: "examinee",        meaning: "受験者 (AI)", pos: "noun" },
+=======
+    { word: "examinee",        meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "exceed",          meaning: "〈…の限度・範囲など〉を『越える』,超過する；(…の点で)…に『まさる』,をしのぐ《+『名』+『in』+『名』(do『ing』)》", pos: "verb" },
     { word: "excel",           meaning: "(…の点で)…に『まさる』,を『しのぐ』《+『名』+『in』(『at』)+『名』(do『ing』)》,(…として)…にまさる《+『名』+『as』+『名』》；(…に)『ひいでる』,ぬきんでる《+『in』(『at』)+『名』(do『ing』)》,(…として)まさる《+『as』+『名』》", pos: "verb" },
     { word: "exception",       meaning: "〈U〉(…を)『除外すること』(…の)除外《+『of』+『名』》；〈C〉(…に対する)『例外』《+『to』+『名』》", pos: "noun" },
@@ -5496,7 +5826,11 @@ const wordData = {
     { word: "executive",       meaning: "『実行の』,執行力のある；『行政上の』,行政的な", pos: "adjective" },
     { word: "executive",       meaning: "『実行の』,執行力のある；『行政上の』,行政的な", pos: "noun" },
     { word: "exhaust",         meaning: "《しばしば受動態で》(…で)〈人〉を『疲れ果てさせる』,消耗させる《+『名』〈人〉+『by』(『from, with』)+『名』(do『ing』)》；《しばしば受動態で》〈蓄え・体力など〉を『使い果たす』", pos: "noun" },
+<<<<<<< HEAD
     { word: "exhausting",      meaning: "疲れさせる、消耗させる (AI)", pos: "adjective" },
+=======
+    { word: "exhausting",      meaning: "TODO", pos: "adjective" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "exhaustion",      meaning: "(資源・精力などを)使い果たすこと,(…の)枯渇《+『of』+『名』》；極度の疲労", pos: "noun" },
     { word: "exhibit",         meaning: "〈感情・性質など〉を『表す』,『示す』；…を『出品する』,陳列する", pos: "verb" },
     { word: "exile",           meaning: "〈U〉(政治的な)『国外追放』;亡命；〈U〉国外に追放されていること,流刑", pos: "noun" },
@@ -5522,7 +5856,11 @@ const wordData = {
     { word: "external",        meaning: "『外側の』,外部の；(作用・動作などが)『外側からの』,外部からの", pos: "adjective" },
     { word: "extract",         meaning: "(…から)〈物〉を『引き抜く』,抜き取る《+『名』+『from』+『名』》；(…から)〈金・情報・約束など〉を『引き出す』《+『名』+『from』+『名』》", pos: "noun" },
     { word: "extract",         meaning: "(…から)〈物〉を『引き抜く』,抜き取る《+『名』+『from』+『名』》；(…から)〈金・情報・約束など〉を『引き出す』《+『名』+『from』+『名』》", pos: "verb" },
+<<<<<<< HEAD
     { word: "extraordinarily", meaning: "非常に (AI)", pos: "adverb" },
+=======
+    { word: "extraordinarily", meaning: "TODO", pos: "adverb" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "exultant",        meaning: "(…に)大喜びの;勝ち誇った", pos: "adjective" },
     { word: "eyebrow",         meaning: "眉弓(びきゅう)(目の上の弓状突起部)；『まゆ』,まゆ毛", pos: "noun" },
     { word: "eyelash",         meaning: "《通例複数形で》まつ毛；まつ毛の1本", pos: "noun" },
@@ -5530,7 +5868,11 @@ const wordData = {
     { word: "fabric",          meaning: "〈C〉〈U〉『織物』,編物；〈U〉織り方;織地", pos: "noun" },
     { word: "fabulous",        meaning: "伝説上の,架空の；信じられないような,驚くべき", pos: "adjective" },
     { word: "facilitate",      meaning: "…を容易にする,楽にする,助ける,促進する", pos: "verb" },
+<<<<<<< HEAD
     { word: "facilities",      meaning: "施設 (AI)", pos: "noun" },
+=======
+    { word: "facilities",      meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "factor",          meaning: "(…の)『要因』,(…を生み出す)要素《+『in』+『名』(do『ing』)》；因数,約数", pos: "noun" },
     { word: "faculty",         meaning: "〈C〉(…の)『才能』,能力《+『for』(『of』)+『名』(do『ing』)》；〈C〉(身体器官の)『機能』(function);(精神的)能力・〈C〉(大学の)『学部』", pos: "noun" },
     { word: "faint",           meaning: "(音・色・考えなどが)『かすかな』,ぼんやりした；(努力・行動などが)『弱々しい』,熱のない;気の弱い,勇気のない", pos: "verb" },
@@ -5568,7 +5910,11 @@ const wordData = {
     { word: "finely",          meaning: "りっぱに,みごとに；繊細に,微妙に(delicately)", pos: "adverb" },
     { word: "fingernail",      meaning: "指のつめ", pos: "noun" },
     { word: "fire",            meaning: "『火』,炎；〈C〉『燃えているもの』,炉火,たき火", pos: "verb" },
+<<<<<<< HEAD
     { word: "firearm",         meaning: "銃 (AI)", pos: "noun" },
+=======
+    { word: "firearm",         meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "fireplace",       meaning: "(壁に取付けた)『暖炉』", pos: "noun" },
     { word: "firmness",        meaning: "堅固;安定;断固", pos: "noun" },
     { word: "firstly",         meaning: "(事柄を列挙して)第一に,まず第一に", pos: "adverb" },
@@ -5588,7 +5934,11 @@ const wordData = {
     { word: "flesh",           meaning: "(人間・動物の)『肉』；(魚,時には鳥を除く)食肉(meat)", pos: "noun" },
     { word: "flexibility",     meaning: "柔軟性,しなやかさ;適応性,融通性", pos: "noun" },
     { word: "flexible",        meaning: "曲げられる;『曲げやすい』;しなやかな；(人・計画などが)柔軟な,融通のきく", pos: "adjective" },
+<<<<<<< HEAD
     { word: "flexibly",        meaning: "柔軟に (AI)", pos: "adverb" },
+=======
+    { word: "flexibly",        meaning: "TODO", pos: "adverb" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "flip",            meaning: "…をはじく,ぽんとほうり上げる,はじき上げる；…をくるっとひっくり返す《+『over』+『名,』+『名』+『over』》", pos: "verb" },
     { word: "fluency",         meaning: "(弁舌などの)流ちょう,なだらかさ", pos: "noun" },
     { word: "fluid",           meaning: "『流体』,流動体；『流動性の』,流動する", pos: "adjective" },
@@ -5625,7 +5975,11 @@ const wordData = {
     { word: "frugal",          meaning: "倹約な,つましい；金を掛けない,質素な", pos: "adjective" },
     { word: "fume",            meaning: "(悪臭を放つ)煙,ガス,蒸気；〈煙・ガス蒸気が〉出る,煙る", pos: "noun" },
     { word: "functional",      meaning: "『機能上の』；(余分なものが無く)機能的な,実用的な", pos: "adjective" },
+<<<<<<< HEAD
     { word: "functionality",   meaning: "機能性 (AI)", pos: "noun" },
+=======
+    { word: "functionality",   meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "fundamental",     meaning: "『基本的な』,基礎の；《補語にのみ用いて》(…に)絶対に必要な《『to』+『名』》", pos: "adjective" },
     { word: "funk",            meaning: "《a ~》《話》おじけ；おくびょう者", pos: "noun" },
     { word: "funky",           meaning: "(ジャズ音楽が初期の)素朴さのある；《俗》上等の", pos: "adjective" },
@@ -5653,12 +6007,20 @@ const wordData = {
     { word: "getaway",         meaning: "逃亡,逃走(escape)；(競走・車などの)スタート", pos: "noun" },
     { word: "ghetto",          meaning: "ユダヤ人街(昔ヨーロッパでユダヤ人が強制的に居住させられた)；《米》スラム街,貧民街(黒人・プエルトリコ人などの少数民族が居住する)", pos: "noun" },
     { word: "giveaway",        meaning: "《a ~》(秘密などを)うっかり漏らすこと,口をすべらすこと；《米》(買い気をそそるための)景品,(売りあげを増すための)おつとめ品,サービス品", pos: "noun" },
+<<<<<<< HEAD
     { word: "glacis",          meaning: "斜面（特に要塞の前にある急な斜面） (AI)", pos: "noun" },
+=======
+    { word: "glacis",          meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "glare",           meaning: "〈太陽などが〉『ぎらぎら光る』,まぶしく輝く；(…を)『にらみつける』《+『at(on, upon)』+『名』》", pos: "noun" },
     { word: "gleam",           meaning: "(…の)『きらめき』,輝き;(…の)『薄明かり』,微光《+『of』+『名』》；(希望・機知・感情などの)『ひらめき』,かすかな表れ《+『of』+『名』》", pos: "noun" },
     { word: "glee",            meaning: "〈U〉歓喜,喜び(joy)；〈U〉グリー合唱曲(無伴奏の3部または4部の多声歌曲)", pos: "noun" },
     { word: "globally",        meaning: "球の,球形の；地球の,全世界の", pos: "adverb" },
+<<<<<<< HEAD
     { word: "glocal",          meaning: "グローカル (AI)", pos: "adjective" },
+=======
+    { word: "glocal",          meaning: "TODO", pos: "adjective" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "gloomy",          meaning: "『暗い』,薄暗い；気をめいらせる,陰気な", pos: "adjective" },
     { word: "glorify",         meaning: "〈神〉を『ほめたたえる』,あがめる；…に栄光を与える", pos: "verb" },
     { word: "glow",            meaning: "(炎を上げずに)『赤々と燃える』；光を放つ,輝く", pos: "noun" },
@@ -5688,9 +6050,15 @@ const wordData = {
     { word: "grip",            meaning: "《単数形で》(…を)『しっかり握る』(『つかむ』)『こと』《+『on』+『名』》；(特にスポーツ用具などの)握り方;握力", pos: "noun" },
     { word: "grip",            meaning: "《単数形で》(…を)『しっかり握る』(『つかむ』)『こと』《+『on』+『名』》；(特にスポーツ用具などの)握り方;握力", pos: "verb" },
     { word: "gross",           meaning: "『全体の,総計の』(entire)；(人が)太りすぎた,でぶの", pos: "adjective" },
+<<<<<<< HEAD
     { word: "growing",         meaning: "成長中の (AI)", pos: "adjective" },
     { word: "grown-up",        meaning: "大人の (AI)", pos: "adjective" },
     { word: "grown-up",        meaning: "大人 (AI)", pos: "noun" },
+=======
+    { word: "growing",         meaning: "TODO", pos: "adjective" },
+    { word: "grown-up",        meaning: "TODO", pos: "adjective" },
+    { word: "grown-up",        meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "guarantee",       meaning: "(またguaranty)(商品に対する品質・修理・期間などの)『保証』;『保証書』；保証を受ける人,被保証人", pos: "verb" },
     { word: "guard",           meaning: "〈C〉『見張り』,番人;歩哨(ほしょう),番兵;護衛兵；〈U〉(…を)見張ること,監視すること《+『over』+『名』》;(…を)警戒(用心)すること《+『against』+『名』》", pos: "verb" },
     { word: "guerrilla",       meaning: "ゲリラ兵,遊撃兵；ゲリラの", pos: "noun" },
@@ -5700,7 +6068,11 @@ const wordData = {
     { word: "gunshot",         meaning: "〈C〉射撃,砲撃；〈U〉着弾距離,射程", pos: "noun" },
     { word: "guts",            meaning: "腸;(楽器の弦の材料となる)腸；《複数形で》内臓,腹わた(bowels)", pos: "noun" },
     { word: "gymnastic",       meaning: "『体操の』,体育の", pos: "adjective" },
+<<<<<<< HEAD
     { word: "habitant",        meaning: "住民 (AI)", pos: "noun" },
+=======
+    { word: "habitant",        meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "hail",            meaning: "〈U〉『あられ』,ひょう；《a~》(…の)雨あられ,あらし《+『of』+『名』》", pos: "verb" },
     { word: "hairy",           meaning: "毛深い,毛だらけの・粗い,ざらざらした・《俗》 ぞっとするほど危険な; 困難な,難しい", pos: "adjective" },
     { word: "hammer",          meaning: "『金づち』,ハンマー；ハンマーに似た物,(銃の)撃鉄,(ピアノの弦を打つフェルトの)つち,(競売人の)木づち,(ベル・ゴングなどの)打ち子", pos: "verb" },
@@ -5861,7 +6233,11 @@ const wordData = {
     { word: "innate",          meaning: "生まれつきの,生得の(inborn)；本質的な", pos: "adjective" },
     { word: "innocently",      meaning: "無邪気に;罪なく", pos: "adverb" },
     { word: "innovation",      meaning: "〈U〉革新,刷新；〈C〉新機軸,新制度,改革の行為", pos: "noun" },
+<<<<<<< HEAD
     { word: "innovative",      meaning: "革新的な (AI)", pos: "adjective" },
+=======
+    { word: "innovative",      meaning: "TODO", pos: "adjective" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "input",           meaning: "投入,投入量；(機械・電気)などの入力", pos: "noun" },
     { word: "inseparable",     meaning: "分けられない,分離できない", pos: "adjective" },
     { word: "inside",          meaning: "《the~》(物事の)『内部,内側』;内面；《しばしば複数形で》《話》おなか,腹", pos: "adjective" },
@@ -5880,7 +6256,11 @@ const wordData = {
     { word: "intellectual",    meaning: "『知的な』,知力のいる；知性的な,そう明な,理性的な", pos: "adjective" },
     { word: "intellectual",    meaning: "『知的な』,知力のいる；知性的な,そう明な,理性的な", pos: "noun" },
     { word: "intent",          meaning: "(特に法律用語で)『意図』,目的；(目・心など)『一心に向けた』,熱心な", pos: "adjective" },
+<<<<<<< HEAD
     { word: "interactive",     meaning: "相互作用的な (AI)", pos: "adjective" },
+=======
+    { word: "interactive",     meaning: "TODO", pos: "adjective" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "interfere",       meaning: "(…に)『干渉する』,口出しをする(meddle)《+『in』(『with』)+『名』)『wh-節』(『句』,do『ing』)》；(仕事・状況などの)『妨げとなる』,邪魔になる《+『with』+『名』(do『ing』》", pos: "verb" },
     { word: "interior",        meaning: "〈U〉(物の)『内部』,内側；〈C〉(海岸や国境から遠い)『浅地』,内陸部", pos: "noun" },
     { word: "interpersonal",   meaning: "人と人との間の,人間関係の", pos: "adjective" },
@@ -5923,17 +6303,29 @@ const wordData = {
     { word: "jog",             meaning: "…を軽く揺り動かす;…をちょっと押す(突く)；〈記憶など〉を呼び起こす,刺激する", pos: "noun" },
     { word: "joint",           meaning: "『関節』；『継ぎ目』,接合箇所,合わせ目", pos: "noun" },
     { word: "journalism",      meaning: "『ジャーナリズム』(新聞雑誌・テレビなど報道業;その世界)；《集合的に》新聞雑誌", pos: "noun" },
+<<<<<<< HEAD
     { word: "judo",            meaning: "柔道 (AI)", pos: "noun" },
+=======
+    { word: "judo",            meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "jump",            meaning: "《副詞[句]を伴って》(地面などから)『跳ぶ』,跳躍する；急に(さっと)立ち上がる", pos: "noun" },
     { word: "juror",           meaning: "陪審員", pos: "noun" },
     { word: "jury",            meaning: "《集合的に》『陪審』[『員団』](普通民間人12人から成り,裁判において被告の有罪無罪を評決し裁判所に答申する)；《集合的に》(コンテストなどの)審査員", pos: "noun" },
     { word: "justify",         meaning: "〈人の行為・話など〉を『正当化する』,弁明する", pos: "verb" },
     { word: "kangaroo",        meaning: "カンガルー", pos: "noun" },
+<<<<<<< HEAD
     { word: "karaoke",         meaning: "カラオケ (AI)", pos: "noun" },
     { word: "keen",            meaning: "(刃物などが)『鋭い』；(寒さなどが)『厳しい』;(痛みなどが)『激しい』;(音などが)耳をつんざく;(言葉などが)人の心を刺す", pos: "adjective" },
     { word: "keeper",          meaning: "《しばしば複合語を作って》『守る人』,管理人,番人;店主,経営者", pos: "noun" },
     { word: "kerosene",        meaning: "灯油(《英》paraffin) [oil]", pos: "noun" },
     { word: "keystroke",       meaning: "キーストローク (AI)", pos: "noun" },
+=======
+    { word: "karaoke",         meaning: "TODO", pos: "noun" },
+    { word: "keen",            meaning: "(刃物などが)『鋭い』；(寒さなどが)『厳しい』;(痛みなどが)『激しい』;(音などが)耳をつんざく;(言葉などが)人の心を刺す", pos: "adjective" },
+    { word: "keeper",          meaning: "《しばしば複合語を作って》『守る人』,管理人,番人;店主,経営者", pos: "noun" },
+    { word: "kerosene",        meaning: "灯油(《英》paraffin) [oil]", pos: "noun" },
+    { word: "keystroke",       meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "kneel",           meaning: "(…に)『ひざまずく』,ひざをつく《+『down on』+『名』》", pos: "verb" },
     { word: "knot",            meaning: "『結び目』,結び；(リボンなどで作った)飾り結び", pos: "noun" },
     { word: "knowingly",       meaning: "知りながら,わざと；知ったかぶりをして,巧者らしく", pos: "adverb" },
@@ -5946,11 +6338,19 @@ const wordData = {
     { word: "landlady",        meaning: "女性の家主；(旅館・下宿などの)『女主人』,おかみ", pos: "noun" },
     { word: "landslide",       meaning: "〈C〉地すべり,山くずれ；〈U〉地すべりした土砂", pos: "noun" },
     { word: "lap",             meaning: "『ひざ』(座ったときの大腿部の上からひざがしらまでの部分)；(スカートなどの)ひざの部分", pos: "noun" },
+<<<<<<< HEAD
     { word: "laptop",          meaning: "ノート型パソコン (AI)", pos: "noun" },
     { word: "lark",            meaning: "『ヒバリ』；《話》戯れ,ふざけ;愉快で楽しいこと", pos: "noun" },
     { word: "laser",           meaning: "レーザー(強力な可視光線を発生させる;医療,通信,軍事用)", pos: "noun" },
     { word: "lastly",          meaning: "最後に,結局", pos: "adverb" },
     { word: "last-minute",     meaning: "直前での (AI)", pos: "adjective" },
+=======
+    { word: "laptop",          meaning: "TODO", pos: "noun" },
+    { word: "lark",            meaning: "『ヒバリ』；《話》戯れ,ふざけ;愉快で楽しいこと", pos: "noun" },
+    { word: "laser",           meaning: "レーザー(強力な可視光線を発生させる;医療,通信,軍事用)", pos: "noun" },
+    { word: "lastly",          meaning: "最後に,結局", pos: "adverb" },
+    { word: "last-minute",     meaning: "TODO", pos: "adjective" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "later",           meaning: "《補語にのみ用いて》(人などが)(…するのが)『もっと遅い』《+『in』+『名』(do『ing』)》；(時刻・時期が)『もっと遅い』,もっと後の", pos: "adjective" },
     { word: "latter",          meaning: "《the, thisまたはtheseと共に名詞の前にのみ用いて》(ある期間のうち)『後半の』,後のほうの；《the~》(前述した二者のうちの)『後者の』", pos: "adjective" },
     { word: "laundry",         meaning: "《集合的に》『洗濯』[『物』]；〈C〉『クリーニング屋』", pos: "noun" },
@@ -6035,7 +6435,11 @@ const wordData = {
     { word: "manufacture",     meaning: "〈U〉(工場における大規模の)『製造』,製作;製造工業;(一般に)作ること,製造；〈C〉《しばしば複数形で》『製品』", pos: "noun" },
     { word: "manufacture",     meaning: "〈U〉(工場における大規模の)『製造』,製作;製造工業;(一般に)作ること,製造；〈C〉《しばしば複数形で》『製品』", pos: "verb" },
     { word: "manufacturer",    meaning: "(大規模な)『製造業者』,工場主;製作者", pos: "noun" },
+<<<<<<< HEAD
     { word: "manufacturing",   meaning: "製造 (AI)", pos: "noun" },
+=======
+    { word: "manufacturing",   meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "marathon",        meaning: "(また『marathon race』)《しばしばM-》マラソン競走(標準距離は42.195km)；(一般に)長距離競争;耐久競争", pos: "noun" },
     { word: "margin",          meaning: "『へり』,『縁』,端(edge)；(ページの)『余白』,欄外", pos: "noun" },
     { word: "marketing",       meaning: "市場での売買[取引き]；マーケディング(宣伝・販売・技術などを研究する経営学の分野)", pos: "noun" },
@@ -6067,9 +6471,15 @@ const wordData = {
     { word: "messenger",       meaning: "『使いの者』,走り使い;(電報・郵便物・小包の)配達人;(公文書の)送達吏", pos: "noun" },
     { word: "metaphor",        meaning: "隠喩,暗喩(like, asなどを用いない比喩)", pos: "noun" },
     { word: "metric",          meaning: "メートル法の", pos: "adjective" },
+<<<<<<< HEAD
     { word: "micro",           meaning: "マイクロ (AI)", pos: "noun" },
     { word: "microbe",         meaning: "微生物,(特に)細菌", pos: "noun" },
     { word: "microcomputer",   meaning: "マイクロコンピュータ (AI)", pos: "noun" },
+=======
+    { word: "micro",           meaning: "TODO", pos: "noun" },
+    { word: "microbe",         meaning: "微生物,(特に)細菌", pos: "noun" },
+    { word: "microcomputer",   meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "microorganism",   meaning: "微生物", pos: "noun" },
     { word: "microphone",      meaning: "『マイクロフォン』,拡声器", pos: "noun" },
     { word: "microscope",      meaning: "『顕微鏡』", pos: "noun" },
@@ -6137,7 +6547,11 @@ const wordData = {
     { word: "mutter",          meaning: "(余り口を開けずに)『つぶやく』《+『away』》；(…に対して…について)ぶつぶつ言う,不平を言う《+『at』(『against』)+『名』+『about』+『名』》", pos: "verb" },
     { word: "mutton",          meaning: "『羊の肉』", pos: "noun" },
     { word: "mystify",         meaning: "…を惑わせる,煙に巻く；…を神秘化する,なぞめかす", pos: "verb" },
+<<<<<<< HEAD
     { word: "nano",            meaning: "ナノ (AI)", pos: "noun" },
+=======
+    { word: "nano",            meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "narcissistic",    meaning: "自己陶酔の,自己に酔った", pos: "adjective" },
     { word: "narrator",        meaning: "『語り手』,ナレーター", pos: "noun" },
     { word: "narrowly",        meaning: "狭く,細く;限定して；かろうじて,危うく,やっと", pos: "adverb" },
@@ -6174,8 +6588,13 @@ const wordData = {
     { word: "nomad",           meaning: "《しばしば複数形で》遊牧民；放浪者", pos: "noun" },
     { word: "nomination",      meaning: "指名[権],任命[権];(…を…に)指名(任命)すること《+『of』+『名』+『to』+(『as, for』)+『名』》", pos: "noun" },
     { word: "nominee",         meaning: "(…の候補として)指名された人《+『for』+『名』》；(…に)任命された人《+『to』+『名』》", pos: "noun" },
+<<<<<<< HEAD
     { word: "nonprofessional", meaning: "専門的でない (AI)", pos: "adjective" },
     { word: "non-smoking",     meaning: "禁煙の (AI)", pos: "adjective" },
+=======
+    { word: "nonprofessional", meaning: "TODO", pos: "adjective" },
+    { word: "non-smoking",     meaning: "TODO", pos: "adjective" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "northward",       meaning: "北へ(に)；北の;北へ向かう", pos: "adverb" },
     { word: "nostril",         meaning: "鼻孔", pos: "noun" },
     { word: "nought",          meaning: "=naught", pos: "noun" },
@@ -6254,7 +6673,11 @@ const wordData = {
     { word: "overall",         meaning: "全部の,全般的な,全面的な；(物の)端から端までの", pos: "adjective" },
     { word: "overall",         meaning: "全部の,全般的な,全面的な；(物の)端から端までの", pos: "adverb" },
     { word: "overboard",       meaning: "船外に", pos: "adverb" },
+<<<<<<< HEAD
     { word: "overbook",        meaning: "予約を過剰に受け入れる (AI)", pos: "verb" },
+=======
+    { word: "overbook",        meaning: "TODO", pos: "verb" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "overcoat",        meaning: "『外とう』,オーバーコート", pos: "noun" },
     { word: "overestimate",    meaning: "…を過大評価する,買いかぶる；〈C〉過大評価,買いかぶり", pos: "verb" },
     { word: "overhear",        meaning: "…をふと耳にする,小耳にはさむ", pos: "verb" },
@@ -6285,12 +6708,20 @@ const wordData = {
     { word: "panel",           meaning: "『はめ板』,鏡板,仕切り板,『パネル』(壁・天井・ドアなどを装飾する板)；(板・プラスチックなどの薄い)1枚板,合板", pos: "noun" },
     { word: "panic",           meaning: "〈C〉〈U〉『あわてふためき,恐慌』,ろうばい；〈C〉経済恐慌,パニック", pos: "verb" },
     { word: "papaya",          meaning: "パパイヤ;その実(熱帯アメリカ産;実は大きく黄色)", pos: "noun" },
+<<<<<<< HEAD
     { word: "paperless",       meaning: "無紙の (AI)", pos: "adjective" },
+=======
+    { word: "paperless",       meaning: "TODO", pos: "adjective" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "paperwork",       meaning: "書類仕事,文書仕事", pos: "noun" },
     { word: "parade",          meaning: "〈C〉〈U〉『行進』,『行列』;示威行進,団体行進；〈C〉(多くの人・車などの)長い列,行列《+『of』+『名』》", pos: "noun" },
     { word: "paradox",         meaning: "『逆説』(矛盾するようにみえても実際は真理を含んでいる説)；矛盾;へ理屈", pos: "noun" },
     { word: "paralysis",       meaning: "(体の)麻痺(まひ),中風；(…の)停滞《+『of』+『名』》", pos: "noun" },
+<<<<<<< HEAD
     { word: "paramedic",       meaning: "救急医療の (AI)", pos: "adjective" },
+=======
+    { word: "paramedic",       meaning: "TODO", pos: "adjective" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "paratrooper",     meaning: "落下傘降下兵", pos: "noun" },
     { word: "parliament",      meaning: "『議会』,『国会』；《通例P-》《英》議会", pos: "noun" },
     { word: "part",            meaning: "〈C〉(全体を構成する)『部分』；〈U〉《しばしばa~》(…の)『一部』,『一部分』《+『of』+『名』》", pos: "verb" },
@@ -6342,7 +6773,11 @@ const wordData = {
     { word: "permeate",        meaning: "…にしみ通る, 浸透する；〈煙などが〉…に広がる,いっぱいになる;〈思想などが〉…に広がる,普及する", pos: "verb" },
     { word: "perseverance",    meaning: "『がん張ること』,がん張り,ねばり", pos: "noun" },
     { word: "persist",         meaning: "(困難・障害に屈せず)『あくまでも続ける』(『やり抜く』),がん張る,固執する；『存続する』,生き残る", pos: "verb" },
+<<<<<<< HEAD
     { word: "persistence",     meaning: "(…を)あくまでもやり抜くこと,(…における)ねばり強さ,がん張り;執ようさ《『+in+名(doing』)》；(…が)永く続くこと,(…の)持続《+『of』+『名』》", pos: "noun" },
+=======
+    { word: "persistence",     meaning: "(…を)あくまでもやり抜くこと,(…における)ねばり強さ,がん張り;執ようさ《『+in+名(doing』)》；(…が)永く続くこと,(…の)持続《+『of』+『名』", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "persistent",      meaning: "(反対・困難にもくじけず)『あくまでもやり抜く』,ねばり強い,執ような；いつまでも続く,持続する(lasting)", pos: "adjective" },
     { word: "personification", meaning: "〈U〉〈C〉擬人化；〈C〉《the personification》(…が)擬人化されたもの,(…の)典型,権化(ごんげ),化身(けしん)《+『of』+『名』》", pos: "noun" },
     { word: "personify",       meaning: "(…として)…を擬人化する《+『名』+『as』+『名』》；(人などが)…を具現する,の典型(権化,化身)である", pos: "verb" },
@@ -6352,7 +6787,11 @@ const wordData = {
     { word: "persuasion",      meaning: "〈U〉『説得』;説得力；〈U〉〈C〉『確信』,信念", pos: "noun" },
     { word: "pessimist",       meaning: "悲観論者,厭世家;悲観的な人", pos: "noun" },
     { word: "pessimistic",     meaning: "悲観的な,厭世的な", pos: "adjective" },
+<<<<<<< HEAD
     { word: "petrified",       meaning: "凍りつくほど驚いた、びっくりした (AI)", pos: "adjective" },
+=======
+    { word: "petrified",       meaning: "TODO", pos: "adjective" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "petty",           meaning: "『取るに足らない』,重要できない；『下級の』", pos: "adjective" },
     { word: "pH",              meaning: "ペーハー(水素イオン濃度指数)", pos: "noun" },
     { word: "pharmacist",      meaning: "薬剤師;製薬者(また《英》chemist)", pos: "noun" },
@@ -6374,7 +6813,11 @@ const wordData = {
     { word: "pitch",           meaning: "ピッチ(石油・コールタールなどで蒸留後に残る黒いかす)；松やに,樹脂", pos: "noun" },
     { word: "pitch",           meaning: "ピッチ(石油・コールタールなどで蒸留後に残る黒いかす)；松やに,樹脂", pos: "verb" },
     { word: "plague",          meaning: "(死亡率の高い)『疾病』,流行病,悪疫;《the ~》(特に)ペスト；(広い地域に及ぶ)(…の)災い,災難,(いやなものが)はびこること《+『of』+『名』》", pos: "noun" },
+<<<<<<< HEAD
     { word: "planning",        meaning: "計画、企画 (AI)", pos: "noun" },
+=======
+    { word: "planning",        meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "playmate",        meaning: "遊び友達", pos: "noun" },
     { word: "playwright",      meaning: "劇作家,脚本家(dramatist)", pos: "noun" },
     { word: "plead",           meaning: "嘆願する,懇願する；(訴訟で)(…を)弁護する《+『for』+『名』》;(…に)抗弁する,申し開きをする《+『against』+『名』》", pos: "verb" },
@@ -6420,14 +6863,24 @@ const wordData = {
     { word: "predicate",       meaning: "(文法で)述部,述語；述部の,述語の", pos: "verb" },
     { word: "predicative",     meaning: "(文法で)叙述的な；(文法で)述語", pos: "adjective" },
     { word: "predictable",     meaning: "(現象などが)予報(予言)し得る；(悪い意味で)予想どおりの", pos: "adjective" },
+<<<<<<< HEAD
     { word: "predictive",      meaning: "予測可能な (AI)", pos: "adjective" },
     { word: "predictor",       meaning: "予測者 (AI)", pos: "noun" },
+=======
+    { word: "predictive",      meaning: "TODO", pos: "adjective" },
+    { word: "predictor",       meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "prefect",         meaning: "(古代ローマの)長官,総督;(警察・軍・省庁の)長官,総監；《英》(public schoolで)風紀の監督をする上級生", pos: "noun" },
     { word: "preferable",      meaning: "いっそう望ましい,むしろ好ましい;(…より)望ましい《+『to』+『名』(do『ing』)》", pos: "adjective" },
     { word: "preferably",      meaning: "好んで,むしろ", pos: "adverb" },
     { word: "prehistoric",     meaning: "有史以前の,先史の；大昔の,旧式な", pos: "adjective" },
+<<<<<<< HEAD
     { word: "prehuman",        meaning: "人間以前の存在 (AI)", pos: "noun" },
     { word: "preindustrial",   meaning: "産業革命以前の (AI)", pos: "adjective" },
+=======
+    { word: "prehuman",        meaning: "TODO", pos: "noun" },
+    { word: "preindustrial",   meaning: "TODO", pos: "adjective" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "prejudge",        meaning: "…を先入観をもって判断する", pos: "verb" },
     { word: "preliminary",     meaning: "『準備する』,『予備の』;前置きの；《通例複数形で》準備の処置,予備行動,下準備", pos: "adjective" },
     { word: "preoccupy",       meaning: "《しばしば受動態で》〈人・人の心〉をいっぱいにする", pos: "verb" },
@@ -6463,7 +6916,11 @@ const wordData = {
     { word: "profit",          meaning: "〈U〉〈C〉『利益』,もうけ,収益；〈U〉得(益)になること", pos: "noun" },
     { word: "profitable",      meaning: "『利益の上がる』；有益な", pos: "adjective" },
     { word: "programmer",      meaning: "プログラム(番組)を作る人;(コンピューターの)プログラマー", pos: "noun" },
+<<<<<<< HEAD
     { word: "programming",     meaning: "プログラミング (AI)", pos: "noun" },
+=======
+    { word: "programming",     meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "progress",        meaning: "(…に向かう)『前進』《+『toward』+『名』》；(目標・完成・解決へ向かう)『進歩』,進展《+『toward』+『名』》;(…における)進歩《+『in』(『with』)+『名』(do『ing』)》", pos: "verb" },
     { word: "prohibit",        meaning: "(法律あるいは権威をもって)…を『禁止する』,禁ずる(forbid)；〈物事が〉…を『妨げる』", pos: "verb" },
     { word: "project",         meaning: "…を『計画する』,企画する；(ねらって)…を『投げる』;…を発射する", pos: "noun" },
@@ -6596,13 +7053,21 @@ const wordData = {
     { word: "relieve",         meaning: "〈物事が〉〈苦痛・悩みなど〉を『和らげる』,『軽減する』；〈物事が〉〈人〉の苦痛(悩み)を軽くする,をほっとさせる,安心させる", pos: "verb" },
     { word: "relieved",        meaning: "(…して)ほっとする,安心する", pos: "adjective" },
     { word: "reluctant",       meaning: "(人が)『気が進まない』,(行為などが)いやいやながらの", pos: "adjective" },
+<<<<<<< HEAD
     { word: "remaining",       meaning: "残りの (AI)", pos: "adjective" },
+=======
+    { word: "remaining",       meaning: "TODO", pos: "adjective" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "remains",         meaning: "残り,残り物；遺物,遺跡", pos: "noun" },
     { word: "remark",          meaning: "〈C〉(…についての)『簡単な発言』(『感想』),所感《+『on』(『about』)+『名』》；〈U〉《文》注目,観察", pos: "noun" },
     { word: "remarkably",      meaning: "著しく,目立って", pos: "adverb" },
     { word: "reminder",        meaning: "思い出させる人(もの);(思い出させるための)助言;催促状", pos: "noun" },
     { word: "rental",          meaning: "〈C〉賃貸料,地代,家賃；〈U〉(…を)借りる(貸す)こと,(…の)家賃,賃借《+『of』+『名』》", pos: "noun" },
+<<<<<<< HEAD
     { word: "repaint",         meaning: "塗り替え (AI)", pos: "noun" },
+=======
+    { word: "repaint",         meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "repertoire",      meaning: "上演目録,演奏曲目,レパートリー", pos: "noun" },
     { word: "repetition",      meaning: "(…を)『繰り返すこと,反復すること』;(…の)暗唱《+『of』+『名』》；(…の)写し,複写,模写(copy),模倣《+『of』+『名』》", pos: "noun" },
     { word: "replacement",     meaning: "置き換わること,取り替えること,元へ戻すこと;返済・置き換わる物(人),代理;補充員;補充物", pos: "noun" },
@@ -6691,7 +7156,11 @@ const wordData = {
     { word: "salesperson",     meaning: "販売員", pos: "noun" },
     { word: "saleswoman",      meaning: "(通例腕ききの)女子店員；セールスウーマン,婦人外交販売員", pos: "noun" },
     { word: "salon",           meaning: "(上流家庭の)客間,大広間；(昔のフランスで,上流貴婦人の開いた)招待会;社交界", pos: "noun" },
+<<<<<<< HEAD
     { word: "salsa",           meaning: "サルサ（ペルーの伝統的なスパイスソース） (AI)", pos: "noun" },
+=======
+    { word: "salsa",           meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "salty",           meaning: "塩のきいた,塩辛い；《話》海の,船乗りの;海上生活の", pos: "adjective" },
     { word: "sandstone",       meaning: "砂岩", pos: "noun" },
     { word: "sanitary",        meaning: "[公衆]『衛生の』,衛生上の；『衛生的な』,清潔な(clean)", pos: "adjective" },
@@ -6734,7 +7203,11 @@ const wordData = {
     { word: "selfless",        meaning: "私心(私欲)のない", pos: "adjective" },
     { word: "seller",          meaning: "売る人,売り手；《good,bad,poorなどの形容詞と共に》売れるもの", pos: "noun" },
     { word: "semicolon",       meaning: "セミコロン(;)", pos: "noun" },
+<<<<<<< HEAD
     { word: "semi-final",      meaning: "準決勝 (AI)", pos: "noun" },
+=======
+    { word: "semi-final",      meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "seminar",         meaning: "(指導教授のもとで行う大学の)研究(演習)グループ,研究会,演習,セミナー,ゼミナール", pos: "noun" },
     { word: "senator",         meaning: "(古代ローマの)元老院議員；(米国・カナダ・フランスなどの)『上院議員』", pos: "noun" },
     { word: "sense",           meaning: "〈C〉(五感による)『感覚』;(…の)感覚《+『of』+『名』》；〈U〉《しばしばa~》(…の)『感じ』,気持ち《+『of』+『名』》", pos: "verb" },
@@ -6771,7 +7244,11 @@ const wordData = {
     { word: "shoplifting",     meaning: "万引き[すること]", pos: "noun" },
     { word: "shortness",       meaning: "短いこと;無愛想;不足", pos: "noun" },
     { word: "short-term",      meaning: "短期間の,短期満期の", pos: "adjective" },
+<<<<<<< HEAD
     { word: "showbiz",         meaning: "芸能界 (AI)", pos: "noun" },
+=======
+    { word: "showbiz",         meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "showcase",        meaning: "(店や博物館の)陳列ケース,陳列だな", pos: "noun" },
     { word: "shower",          meaning: "《しばしば複数形で》『にわか雨』,にわか雪(あられ) ・(涙・弾丸・祝福・批判などの)『雨』,(…の)洪水《+『of』+『名』》・《米》共同して金を集めてお祝いのプレゼントを贈ること,祝い品贈呈会(特に結婚や出産を控えた婦人を祝って贈物をするパーティー) ・(また『shower bath』) ・『シャワー』・…に『水を注ぐ』・…を『降り注ぐ』・《itを主語にして》にわか雨が降る・(…に)降り注ぐ《+『on』(『upon』)+『名』》；シャワーを浴びる", pos: "verb" },
     { word: "shrink",          meaning: "〈布などが〉『縮む』；『しりごみする』,ひるむ,避ける", pos: "noun" },
@@ -6788,7 +7265,11 @@ const wordData = {
     { word: "sincerity",       meaning: "『誠実』,偽りのないこと,正直", pos: "noun" },
     { word: "sister-in-law",   meaning: "義理の姉(妹),兄(弟)の妻", pos: "noun" },
     { word: "skateboard",      meaning: "スケートボード(路上などで遊ぶ車輪付きの長方形の板)；スケートボードですべる", pos: "noun" },
+<<<<<<< HEAD
     { word: "skateboarder",    meaning: "スケートボード乗り (AI)", pos: "noun" },
+=======
+    { word: "skateboarder",    meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "sketch",          meaning: "(…の)『スケッチ』,素描,写生画《+『of』+『名』》；(…の)『草案』,下書き;(事実などの)概略,大要《+『of』+『名』》", pos: "verb" },
     { word: "skilled",         meaning: "(人が)熟練した,特殊技術を持った；(仕事が)熟練を要する,特殊技術を要する", pos: "adjective" },
     { word: "skim",            meaning: "〈液体〉から『上澄みを取る』,浮遊物をすくい取る；(液体から)〈浮遊物〉を『すくい取る』,〈上澄み〉を取る《+『名』+『from』(『off』)+『名』》", pos: "verb" },
@@ -6847,16 +7328,26 @@ const wordData = {
     { word: "span",            meaning: "『スパン』,親指と小指を広げた長さ(約9インチ=23センチ)；(ものが及ぶ限りの)長さ,伸び,範囲", pos: "verb" },
     { word: "spare",           meaning: "…を『容赦する』,の命を助ける；《『spare』+『名』〈人〉+『名』〈苦労〉》〈苦痛・苦労など〉を〈人〉にさせない", pos: "adjective" },
     { word: "spare",           meaning: "…を『容赦する』,の命を助ける；《『spare』+『名』〈人〉+『名』〈苦労〉》〈苦痛・苦労など〉を〈人〉にさせない", pos: "verb" },
+<<<<<<< HEAD
     { word: "sparerib",        meaning: "スペアリブ (AI)", pos: "noun" },
     { word: "spark",           meaning: "〈C〉『火花』,火の粉;(電気の)スパーク;(一般に)閃光(せんこう),(宝石などの)きらめき；〈C〉(人などの)活気,生気;(才気などの)ひらめき《+『of』+『名』》", pos: "noun" },
     { word: "sparkling",       meaning: "きらきらしている、輝いている (AI)", pos: "adjective" },
+=======
+    { word: "sparerib",        meaning: "TODO", pos: "noun" },
+    { word: "spark",           meaning: "〈C〉『火花』,火の粉;(電気の)スパーク;(一般に)閃光(せんこう),(宝石などの)きらめき；〈C〉(人などの)活気,生気;(才気などの)ひらめき《+『of』+『名』》", pos: "noun" },
+    { word: "sparkling",       meaning: "TODO", pos: "adjective" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "sparrow",         meaning: "『すずめ』", pos: "noun" },
     { word: "specialty",       meaning: "専門,専攻；特色,特性", pos: "noun" },
     { word: "species",         meaning: "〈C〉(生物分類上の)『種』(しゅ),種族(「属」(genus)の下の単位)；〈C〉(…の)種類《+『of』+『名』》", pos: "noun" },
     { word: "specifically",    meaning: "明確に(clearly)；特に,とりわけ", pos: "adverb" },
     { word: "specify",         meaning: "〈物事〉を明確に述べる；(明細書の中などで)…を指定する,の名をあげる", pos: "verb" },
     { word: "spectacle",       meaning: "(特に印象的な)『光景』,ながめ,ありさま；〈C〉(特に大規模な)見せ物,スメクタクル", pos: "noun" },
+<<<<<<< HEAD
     { word: "speeder",         meaning: "スピード違反をした車 (AI)", pos: "noun" },
+=======
+    { word: "speeder",         meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "spellbound",      meaning: "呪文で縛られた;魅せられた", pos: "adjective" },
     { word: "spin",            meaning: "(羊毛などから)〈糸など〉を『紡ぐ』《+『名』+『out of』+『名』〈羊毛〉》,(糸などに)〈羊毛など〉を紡ぐ《+『名』〈羊毛〉+『into』+『名』》；〈クモ・カイコなどが〉〈糸〉を『吐く』;〈巣・繭〉をかける", pos: "verb" },
     { word: "spite",           meaning: "悪意,意地悪；《a ~》(…への)恨み《+『against』(『at』)+『名』》", pos: "noun" },
@@ -6870,7 +7361,11 @@ const wordData = {
     { word: "spray",           meaning: "(花・葉・実をつけた)小枝;小枝形の装飾;小枝模様；〈U〉(水や他の液体の)『しぶき』,水煙", pos: "noun" },
     { word: "spray",           meaning: "(花・葉・実をつけた)小枝;小枝形の装飾;小枝模様；〈U〉(水や他の液体の)『しぶき』,水煙", pos: "verb" },
     { word: "spread",          meaning: "〈たたんだ物など〉を『広げる』,伸ばす《+『out』+『名,』+『名』+『out』》；(…に)…を『薄く塗る;』(…に)…をかける,かぶせる《+『名』+『on(over)』+『名』》", pos: "verb" },
+<<<<<<< HEAD
     { word: "spreadsheet",     meaning: "表計算ソフト (AI)", pos: "noun" },
+=======
+    { word: "spreadsheet",     meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "sprint",          meaning: "短距離競走；(ゴール前などの)全力疾走", pos: "noun" },
     { word: "spur",            meaning: "『拍車』；(…に対する)『刺激』,激励《+『to』(『for』)+『名』》", pos: "noun" },
     { word: "squad",           meaning: "(軍隊の)分隊；(一般に少人数の)班,団,組;(運動競技などの)チーム", pos: "noun" },
@@ -6893,11 +7388,19 @@ const wordData = {
     { word: "startle",         meaning: "…を『飛び上がらせる』,ぎょっとさせる；(…に)ぎょっとする,はっとする《+『at』+『名』》", pos: "verb" },
     { word: "starvation",      meaning: "餓死;飢餓,窮乏", pos: "noun" },
     { word: "starve",          meaning: "『餓死する』；(…を)切望する,(…に)飢える《+『for』+『名』》", pos: "verb" },
+<<<<<<< HEAD
     { word: "starving",        meaning: "飢えている (AI)", pos: "adjective" },
     { word: "state",           meaning: "〈C〉(人・物事の)『状態』,ありさま,様子；〈C〉《a ~》《話》極度の緊張状態,異常な精神状態", pos: "adjective" },
     { word: "state",           meaning: "〈C〉(人・物事の)『状態』,ありさま,様子；〈C〉《a ~》《話》極度の緊張状態,異常な精神状態", pos: "verb" },
     { word: "statesman",       meaning: "(特に有能で公正な)『政治家』", pos: "noun" },
     { word: "statewide",       meaning: "全国的に (AI)", pos: "adverb" },
+=======
+    { word: "starving",        meaning: "TODO", pos: "adjective" },
+    { word: "state",           meaning: "〈C〉(人・物事の)『状態』,ありさま,様子；〈C〉《a ~》《話》極度の緊張状態,異常な精神状態", pos: "adjective" },
+    { word: "state",           meaning: "〈C〉(人・物事の)『状態』,ありさま,様子；〈C〉《a ~》《話》極度の緊張状態,異常な精神状態", pos: "verb" },
+    { word: "statesman",       meaning: "(特に有能で公正な)『政治家』", pos: "noun" },
+    { word: "statewide",       meaning: "TODO", pos: "adverb" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "statistics",      meaning: "《複数扱い》『統計』,統計資料,統計表；《単数扱い》『統計学』", pos: "noun" },
     { word: "steely",          meaning: "鋼鉄の;(色・堅さ・強さなどが)鋼鉄のような；がん固な;冷酷な", pos: "adjective" },
     { word: "steer",           meaning: "〈船・車・飛行機など〉の『かじをとる』,を操縦する;《しばしば比喩(ひゆ)的に》〈人〉を操る；〈進路・道〉を操縦して進む", pos: "verb" },
@@ -7134,7 +7637,11 @@ const wordData = {
     { word: "ultimate",        meaning: "『最後の』,最後の,究極の；『最大限の』,極限の", pos: "adjective" },
     { word: "ultimately",      meaning: "最後に,ついに", pos: "adverb" },
     { word: "unacceptable",    meaning: "受け入れられる,認められる;人に喜ばれる", pos: "adjective" },
+<<<<<<< HEAD
     { word: "unashamedly",     meaning: "恥じらわず、堂々と (AI)", pos: "adverb" },
+=======
+    { word: "unashamedly",     meaning: "TODO", pos: "adverb" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "unattractive",    meaning: "『魅力のある』,興味をそそる；引力のある", pos: "adjective" },
     { word: "unavailable",     meaning: "『利用できる』,『役に立つ』；(品物・情報などが)『手にはいる』", pos: "adjective" },
     { word: "unaware",         meaning: "気づかない,知らない", pos: "adjective" },
@@ -7160,7 +7667,11 @@ const wordData = {
     { word: "underwater",      meaning: "水面下の,水中の；水面下に(を),水中で(を)", pos: "adverb" },
     { word: "underwear",       meaning: "下着,肌着", pos: "noun" },
     { word: "undoubtedly",     meaning: "疑いなく,確かに", pos: "adverb" },
+<<<<<<< HEAD
     { word: "undreamed",       meaning: "思いもよらなかった (AI)", pos: "adjective" },
+=======
+    { word: "undreamed",       meaning: "TODO", pos: "adjective" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "undressed",       meaning: "着物を脱いだ,裸[同然]の", pos: "adjective" },
     { word: "unease",          meaning: "不安,懸念", pos: "noun" },
     { word: "uneasily",        meaning: "不安のうちに,心配して;窮屈そうに", pos: "adverb" },
@@ -7173,7 +7684,11 @@ const wordData = {
     { word: "unhappiness",     meaning: "不幸,不運", pos: "noun" },
     { word: "unhelpful",       meaning: "『助けになる』,役に立つ", pos: "adjective" },
     { word: "unimaginable",    meaning: "想像できない,思いもつかない", pos: "adjective" },
+<<<<<<< HEAD
     { word: "unimaginably",    meaning: "想像を絶するほど (AI)", pos: "adverb" },
+=======
+    { word: "unimaginably",    meaning: "TODO", pos: "adverb" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "united",          meaning: "一致協力した,協調の；共同した,提携した,団結した", pos: "adjective" },
     { word: "universal",       meaning: "『すべての人々の』,万人共通の;全世界の；普遍的な,一般的な,全般的な", pos: "adjective" },
     { word: "unjustly",        meaning: "不正に;不公平に", pos: "adverb" },
@@ -7194,16 +7709,28 @@ const wordData = {
     { word: "unsafe",          meaning: "危険な(dangerous)", pos: "adjective" },
     { word: "unsatisfactory",  meaning: "(物事が)不満足な,不十分な", pos: "adjective" },
     { word: "unselfish",       meaning: "利己的でない,私心のない,寛大な", pos: "adjective" },
+<<<<<<< HEAD
     { word: "unstoppable",     meaning: "止められない (AI)", pos: "adjective" },
+=======
+    { word: "unstoppable",     meaning: "TODO", pos: "adjective" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "unsuccessful",    meaning: "不成功の,失敗の;(…に)失敗する《+in+名(doing)》", pos: "adjective" },
     { word: "unsuitable",      meaning: "不適当な,ふさわしくない;(…に)不適な《+for(to)+名》", pos: "adjective" },
     { word: "unsure",          meaning: "不安定な,不確実な", pos: "adjective" },
     { word: "untalented",      meaning: "才能のある(gifted)", pos: "adjective" },
+<<<<<<< HEAD
     { word: "unthinkably",     meaning: "考えられないほど (AI)", pos: "adverb" },
     { word: "untie",           meaning: "〈結び目・包みなど〉を解く,ほどく；(…から)…のひもを解いて放す;(…から)…を放す,自由にする《+名+from+名》", pos: "verb" },
     { word: "unto",            meaning: "…に,の方へ,まで(to)", pos: "preposition" },
     { word: "untreated",       meaning: "治療されていない (AI)", pos: "adjective" },
     { word: "untrimmed",       meaning: "手入れされていない、整えられていない (AI)", pos: "adjective" },
+=======
+    { word: "unthinkably",     meaning: "TODO", pos: "adverb" },
+    { word: "untie",           meaning: "〈結び目・包みなど〉を解く,ほどく；(…から)…のひもを解いて放す;(…から)…を放す,自由にする《+名+from+名》", pos: "verb" },
+    { word: "unto",            meaning: "…に,の方へ,まで(to)", pos: "preposition" },
+    { word: "untreated",       meaning: "TODO", pos: "adjective" },
+    { word: "untrimmed",       meaning: "TODO", pos: "adjective" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "unusualness",     meaning: "『普通でない』,異常な;まれな,珍しい(rare)；独特の,特有の", pos: "noun" },
     { word: "unwilling",       meaning: "気が進まない,いやいやながらの,不本意の", pos: "adjective" },
     { word: "unwise",          meaning: "分別のない,思慮が足りない,ばかな", pos: "adjective" },
@@ -7286,8 +7813,13 @@ const wordData = {
     { word: "welcome",         meaning: "(…へ)『ようこそ』;いらっしゃい《+to+名》；〈人〉を出迎える,〈人〉に出迎えのあいさつをする", pos: "noun" },
     { word: "welfare",         meaning: "『幸福』,繁栄；『福祉』[事業],厚生[事業]", pos: "noun" },
     { word: "well-balanced",   meaning: "よく釣り合いのとれた；分別のある,常識のある", pos: "adjective" },
+<<<<<<< HEAD
     { word: "well-built",      meaning: "しっかりした作りの (AI)", pos: "adjective" },
     { word: "well-paid",       meaning: "高給の (AI)", pos: "adjective" },
+=======
+    { word: "well-built",      meaning: "TODO", pos: "adjective" },
+    { word: "well-paid",       meaning: "TODO", pos: "adjective" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "western",         meaning: "『西の』;西へ向かう;(風などが)西からの；《しばしば Western》『西洋の』", pos: "adjective" },
     { word: "wheat",           meaning: "小麦", pos: "noun" },
     { word: "whereas",         meaning: "《対立・対照などの副詞節を導く》…『であるのに反して』,なのに対して；《文》《理由の副詞節を導く》…なるがゆえに", pos: "conjunction" },
@@ -7322,7 +7854,11 @@ const wordData = {
     { word: "workman",         meaning: "《形容詞を伴って》仕事の…な人", pos: "noun" },
     { word: "worktable",       meaning: "仕事台", pos: "noun" },
     { word: "worldly",         meaning: "《名詞の前にのみ用いて》『この世の』,現世の；名誉や利益のみを追う,俗世間的な", pos: "adjective" },
+<<<<<<< HEAD
     { word: "worldview",       meaning: "世界観 (AI)", pos: "noun" },
+=======
+    { word: "worldview",       meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "worldwide",       meaning: "全世界に知れ渡った,世界的な；全世界に,世界的に", pos: "adjective" },
     { word: "worm",            meaning: "〈C〉(細長く柔らかい)『虫』(毛虫・うじ虫・ミミズ・回虫など)；〈C〉(形・動きが)ミミズなどに似たもの,(いも虫状の)ねじのらせん", pos: "noun" },
     { word: "worrying",        meaning: "悩みの種となる,やっかいな", pos: "adjective" },
@@ -7438,7 +7974,11 @@ const wordData = {
     { word: "sacrifice",       meaning: "〈U〉〈C〉(神に…の)『いけにえをささげること』;〈C〉(神への…の)『いけにえ』《+『of』+『名』+『to』+『名』》；〈C〉〈U〉(人・国家・目的などのために…を)『犠牲にすること』《+『of』+『名』+『for』(『to』)+『名』》,(…のための)犠牲的行為;〈C〉(…のために)犠牲にされるもの《+『for』(『to』)+『名』》", pos: "verb" },
     { word: "cleanly",         meaning: "きれい好きな;清潔な；『きれいに』,清潔に", pos: "adverb" },
     { word: "endorsement",     meaning: "裏書き；是認,承認,保証", pos: "noun" },
+<<<<<<< HEAD
     { word: "stretching",      meaning: "ストレッチング (AI)", pos: "noun" },
+=======
+    { word: "stretching",      meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "continuity",      meaning: "〈U〉連続,断続,一貫性；〈U〉(映画・ラジオ・テレビの)コンテ,撮影(録音)用台本;〈C〉コンテに書かれた個々の指示", pos: "noun" },
     { word: "shambles",        meaning: "流血の場面,殺りくの場；大混乱の場所(状況)", pos: "noun" },
     { word: "claustrophobic",  meaning: "密室(閉鎖)恐怖症の", pos: "adjective" },
@@ -7459,7 +7999,11 @@ const wordData = {
     { word: "coverage",        meaning: "(テレビ・ラジオ・新聞などの)報道;報道範囲；《a~》おおう範囲;保険の補償範囲,補償金額", pos: "noun" },
     { word: "unplug",          meaning: "〈電気器具〉のプラグを抜く；…の栓(せん)を抜く", pos: "verb" },
     { word: "gadget",          meaning: "(機械の)ちょっとした仕掛け,(道具の)部品,付属品・(家庭用などの)気のきいた小物・ちょっとした機械装置", pos: "noun" },
+<<<<<<< HEAD
     { word: "rediscover",      meaning: "再発見する (AI)", pos: "verb" },
+=======
+    { word: "rediscover",      meaning: "TODO", pos: "verb" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "subtly",          meaning: "微妙に,微細に；鋭敏に", pos: "adverb" },
     { word: "brainwash",       meaning: "(…するよう)…を洗脳する《+『名』+『into』+『名』(doing)》", pos: "verb" },
     { word: "brainwashing",    meaning: "洗脳(拷問・麻薬・心理的圧力などによって思想を改めさせること)", pos: "noun" },
@@ -7503,7 +8047,11 @@ const wordData = {
     { word: "speculative",     meaning: "(人・心などが)推測にふける,思索的な；《名詞の前にのみ用いて》(考え・結論などが)理論にもとづく,観念的な", pos: "adjective" },
     { word: "peacock",         meaning: "『雄クジャク』；(一般に)『クジャク』", pos: "noun" },
     { word: "disdain",         meaning: "…を『軽べつする』,侮る(scorn),恥とする(受動態にできない)；(…への)『軽べつ』,侮べつ《+『of』+『名』》", pos: "noun" },
+<<<<<<< HEAD
     { word: "reenact",         meaning: "再演する (AI)", pos: "verb" },
+=======
+    { word: "reenact",         meaning: "TODO", pos: "verb" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "torment",         meaning: "〈痛み・悩みなどが〉(精神的・肉体的に)〈人〉を『苦しめる』；(…で)…を悩ませる,困らせる《+名+with+名》,(…して)…を困らせる《+名+by doing》", pos: "verb" },
     { word: "torment",         meaning: "〈痛み・悩みなどが〉(精神的・肉体的に)〈人〉を『苦しめる』；(…で)…を悩ませる,困らせる《+名+with+名》,(…して)…を困らせる《+名+by doing》", pos: "noun" },
     { word: "extravagance",    meaning: "〈U〉(金銭の)浪費,乱費；〈U〉(行為・意思などの)常軌を逸していること,行過ぎ,過度", pos: "noun" },
@@ -7519,7 +8067,11 @@ const wordData = {
     { word: "collaborate",     meaning: "(…と…について)共同して働く,共同研究する《+『with』+『名』+『in(on)』+『名』(do『ing』)》；(占領軍・敵などに)協力する,内通する《+『with』+『名』》", pos: "verb" },
     { word: "collaborator",    meaning: "(特に芸術・学問での)協力者;合作者,共同研究者；(敵国・占領軍などへの)内通者", pos: "noun" },
     { word: "collaboration",   meaning: "(…との)共同,協力;共作,合作,共著《+『with』+『名』》", pos: "noun" },
+<<<<<<< HEAD
     { word: "collaborative",   meaning: "協力的な (AI)", pos: "adjective" },
+=======
+    { word: "collaborative",   meaning: "TODO", pos: "adjective" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "showy",           meaning: "人目を引く,はなやかな；これ見よがしな;飾り立てた", pos: "adjective" },
     { word: "wrangle",         meaning: "口論,言い争い；(人と…について)口論する,言い争う《+with+『名』〈人〉+about(over)+『名』》", pos: "verb" },
     { word: "premise",         meaning: "〈C〉(推理を行う上で結論の根拠となる)『前提』;(…という)根拠《+『that節』》；《the premises》前述の事項,前述の物件", pos: "noun" },
@@ -7528,7 +8080,11 @@ const wordData = {
     { word: "fanciful",        meaning: "空想上の,架空の,実在しない；(デザインなどが)奇抜な,風変わりな", pos: "adjective" },
     { word: "poise",           meaning: "…をつりあいをとって置く,…の平衡を保つ；《まれ》(すぐに使えるように)…を構える", pos: "noun" },
     { word: "customary",       meaning: "習慣的の,通例の,しきたりの", pos: "adjective" },
+<<<<<<< HEAD
     { word: "insightful",      meaning: "洞察力のある (AI)", pos: "adjective" },
+=======
+    { word: "insightful",      meaning: "TODO", pos: "adjective" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "notable",         meaning: "『注目に値する』,目立った；〈C〉著名人,名士", pos: "adjective" },
     { word: "vicious",         meaning: "『悪意のある』,意地悪な,残忍な；(馬が)御しにくい;(他の動物が)どうもうな", pos: "adjective" },
     { word: "viciously",       meaning: "『悪意のある』,意地悪な,残忍な；(馬が)御しにくい;(他の動物が)どうもうな", pos: "adverb" },
@@ -7551,7 +8107,11 @@ const wordData = {
     { word: "resonate",        meaning: "〈音が〉反響する,鳴り響く；〈部屋などが〉共鳴する", pos: "verb" },
     { word: "sequel",          meaning: "(小説・映画などの)続き,続編；結果", pos: "noun" },
     { word: "irony",           meaning: "〈U〉『皮肉』,『風刺』;反語[法]；〈C〉(運命の)皮肉,(具体的な事例としての)皮肉な成り行き", pos: "noun" },
+<<<<<<< HEAD
     { word: "acidic",          meaning: "酸性の (AI)", pos: "adjective" },
+=======
+    { word: "acidic",          meaning: "TODO", pos: "adjective" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "align",           meaning: "…を一列に並べる,整列させる；(…と)…を提携させる,連合させる《+『名』+『with』+『名』》", pos: "verb" },
     { word: "alignment",       meaning: "整列；提携,連合", pos: "noun" },
     { word: "manipulation",    meaning: "(…の)巧妙な扱い,操作《+『of』+『名』》；(自分の利益のための)ごまかし,小細工", pos: "noun" },
@@ -7560,6 +8120,7 @@ const wordData = {
     { word: "alienate",        meaning: "(…から)…を遠ざける,仲たがいさせる《+『名』+『from』+『名』》", pos: "verb" },
     { word: "persuasively",    meaning: "説得できる,説得力のある", pos: "adverb" },
     { word: "confinement",     meaning: "〈U〉(…への)制限;(…への)閉じ込め,監禁;病臥(びょうが)《+『to』+『名』》；(また『lying-in』)〈C〉〈U〉お産のために床につくこと", pos: "noun" },
+<<<<<<< HEAD
     { word: "minutiae",        meaning: "細部、細かい点 (AI)", pos: "noun" },
     { word: "peasant",         meaning: "(ヨーロッパなどの小さい農地を所有して耕作する)『農夫』;借地農民,小作農；《軽蔑して》小百姓;無学者", pos: "noun" },
     { word: "inexplicable",    meaning: "説明できない,不可解な", pos: "adjective" },
@@ -7568,6 +8129,16 @@ const wordData = {
     { word: "harass",          meaning: "〈人〉を悩ませる,苦しめる,困らせる(worry)；〈敵〉をしつように攻撃する", pos: "verb" },
     { word: "harassment",      meaning: "悩ませること;悩むこと;悩み[の種]", pos: "noun" },
     { word: "believably",      meaning: "信じられるように (AI)", pos: "adverb" },
+=======
+    { word: "minutiae",        meaning: "TODO", pos: "noun" },
+    { word: "peasant",         meaning: "(ヨーロッパなどの小さい農地を所有して耕作する)『農夫』;借地農民,小作農；《軽蔑して》小百姓;無学者", pos: "noun" },
+    { word: "inexplicable",    meaning: "説明できない,不可解な", pos: "adjective" },
+    { word: "inexplicably",    meaning: "TODO", pos: "adverb" },
+    { word: "pigeon",          meaning: "(野生のまたは飼育されている)『ハト』；《俗》だまされやすい人,のろま,かも", pos: "noun" },
+    { word: "harass",          meaning: "〈人〉を悩ませる,苦しめる,困らせる(worry)；〈敵〉をしつように攻撃する", pos: "verb" },
+    { word: "harassment",      meaning: "悩ませること;悩むこと;悩み[の種]", pos: "noun" },
+    { word: "believably",      meaning: "TODO", pos: "adverb" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "readable",        meaning: "読みやすい,読んでおもしろい；(筆跡などが)判読できる", pos: "adjective" },
     { word: "cleverness",      meaning: "『利口な』,頭のよい,才気のある,気のきいた；『器用な』,じょうずな(skillful)", pos: "noun" },
     { word: "persecute",       meaning: "(特に宗教上・政治上の理由で)〈人〉を『迫害する』《+『名』+『for』+『名』(do『ing』)》；(…で)〈人〉をうるさく悩ます《+『名』+『with』+『名』》", pos: "verb" },
@@ -7594,6 +8165,7 @@ const wordData = {
     { word: "rarity",          meaning: "〈U〉珍しさ,珍奇；〈C〉珍しい人(もの),珍品・(骨董品などの)掘り出し物", pos: "noun" },
     { word: "evoke",           meaning: "(…から)〈霊魂など〉を呼び出す《+『名』+『from』+『名』》；〈記憶・感情など〉を呼び起こす", pos: "verb" },
     { word: "repel",           meaning: "…を撃退する,押し返す；〈人〉に不快感を与える,をいやがらせる", pos: "verb" },
+<<<<<<< HEAD
     { word: "repellant",       meaning: "嫌悪物 (AI)", pos: "noun" },
     { word: "repellant",       meaning: "嫌悪させる (AI)", pos: "adjective" },
     { word: "aqua",            meaning: "水;溶液；《複合語を作って》「水の…」「水に関する…」の意を表す", pos: "adjective" },
@@ -7601,6 +8173,15 @@ const wordData = {
     { word: "insightfully",    meaning: "洞察的に (AI)", pos: "adverb" },
     { word: "flashback",       meaning: "(映画・小説・劇などの)フラッシュバック(物語の進行途中に過去の回想(事件など)を捜入する手法)", pos: "noun" },
     { word: "self-worth",      meaning: "自己価値 (AI)", pos: "noun" },
+=======
+    { word: "repellant",       meaning: "TODO", pos: "noun" },
+    { word: "repellant",       meaning: "TODO", pos: "adjective" },
+    { word: "aqua",            meaning: "水;溶液；《複合語を作って》「水の…」「水に関する…」の意を表す", pos: "adjective" },
+    { word: "aquarium",        meaning: "水族館；(魚・水生植物の飼育観察用)水そう,ガラスばち", pos: "noun" },
+    { word: "insightfully",    meaning: "TODO", pos: "adverb" },
+    { word: "flashback",       meaning: "(映画・小説・劇などの)フラッシュバック(物語の進行途中に過去の回想(事件など)を捜入する手法)", pos: "noun" },
+    { word: "self-worth",      meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "agonize",         meaning: "苦しみもだえる,苦悶(くもん)する；必死に努力する", pos: "verb" },
     { word: "cite",            meaning: "(作家・作品から)〈文章・句〉を『引用する』(quote)《+『名』+『from』+『名』》；…を召喚する,呼び出す(summon)", pos: "verb" },
     { word: "citation",        meaning: "〈U〉(事実などの)引用,挙例《+『of』+『名』》;〈C〉引用文；〈C〉(…の)召喚状", pos: "noun" },
@@ -7685,7 +8266,11 @@ const wordData = {
     { word: "shed",            meaning: "〈血・液など〉を『流す』,こぼす；〈葉・毛・外皮など〉を『自然に落とす』;〈衣服〉を脱ぐ", pos: "verb" },
     { word: "exodus",          meaning: "《時にan exodus》(多数の人々が)国を出て行くこと；《the E-》(モーセ(Moses)に率いられたイスラエル民族の)エジプト脱出", pos: "noun" },
     { word: "immortalize",     meaning: "〈詩・詩人などが〉〈人・その勇気など〉を不滅にする,永久に伝える", pos: "verb" },
+<<<<<<< HEAD
     { word: "genome",          meaning: "ゲノム (AI)", pos: "noun" },
+=======
+    { word: "genome",          meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "fraction",        meaning: "『破片』,断片;(…の)一部,わずか《+『of』+『名』》；『分数』", pos: "noun" },
     { word: "faction",         meaning: "〈C〉派閥,徒党；〈U〉派閥争い,内紛", pos: "noun" },
     { word: "physique",        meaning: "(特に男性の)体格,体つき,体形", pos: "noun" },
@@ -7728,7 +8313,11 @@ const wordData = {
     { word: "goose",           meaning: "〈C〉『ガチョウ』;ガチョウの雌；〈U〉ガチョウの肉", pos: "noun" },
     { word: "innovate",        meaning: "〈新しいもの〉を取り入れる；(…を)革新する,刷新する《+『in』(『on』)+『名』》", pos: "verb" },
     { word: "innovation",      meaning: "〈U〉革新,刷新；〈C〉新機軸,新制度,改革の行為", pos: "noun" },
+<<<<<<< HEAD
     { word: "innovative",      meaning: "革新的な (AI)", pos: "adjective" },
+=======
+    { word: "innovative",      meaning: "TODO", pos: "adjective" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "connoisseur",     meaning: "(美術品などの)鑑定家,目利き", pos: "noun" },
     { word: "abstraction",     meaning: "〈U〉抽象[作用]；〈C〉抽象的概念", pos: "noun" },
     { word: "tantrum",         meaning: "かんしゃく,むかっ腹", pos: "noun" },
@@ -7778,7 +8367,11 @@ const wordData = {
     { word: "immensely",       meaning: "広大に,ばく大に；《話》非常に,とても(greatly)", pos: "adverb" },
     { word: "advisory",        meaning: "勧告の,忠告の;諮問の", pos: "adjective" },
     { word: "trying",          meaning: "try の現在分詞；『つらい』,苦しい;腹だたしい,しゃくにさわる", pos: "adjective" },
+<<<<<<< HEAD
     { word: "adrenaline",      meaning: "アドレナリン(副腎髄質ホルモン)；《A-》アドレナリン剤", pos: "noun" },
+=======
+    { word: "adrenaline",      meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "tinker",          meaning: "〈C〉(回って歩く)鋳掛け屋；〈C〉よろず修理屋", pos: "verb" },
     { word: "tinker",          meaning: "〈C〉(回って歩く)鋳掛け屋；〈C〉よろず修理屋", pos: "noun" },
     { word: "lavatory",        meaning: "(学校・ホテルなどの共同の)洗面所,化粧室;便所,トイレ；《おもに》便器", pos: "noun" },
@@ -7800,13 +8393,22 @@ const wordData = {
     { word: "commission",      meaning: "〈U〉〈C〉(任務・職権などの)『委任』,委託;委任状；〈U〉(委任された)『権限』,職権", pos: "verb" },
     { word: "commission",      meaning: "〈U〉〈C〉(任務・職権などの)『委任』,委託;委任状；〈U〉(委任された)『権限』,職権", pos: "noun" },
     { word: "liaison",         meaning: "〈U〉連絡；〈C〉リエゾン(フランス語などで語尾の子音を次の音頭の母音に連絡して発音すること)", pos: "noun" },
+<<<<<<< HEAD
     { word: "stressfully",     meaning: "ストレスを感じながら、きつい様子で (AI)", pos: "adverb" },
+=======
+    { word: "stressfully",     meaning: "TODO", pos: "adverb" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "loom",            meaning: "(織物を織る)機(はた),織機；ぼうっと現れる,ぼんやりと大きく見えてくる《+『up』》", pos: "verb" },
     { word: "notwithstanding", meaning: "…にもかかわらず；《文》それにもかかわらず(nevertheless)", pos: "preposition" },
     { word: "structurally",    meaning: "構造[上]の,構成[上]の,組織[上]の；建築[用]の", pos: "adverb" },
     { word: "structural",      meaning: "構造[上]の,構成[上]の,組織[上]の；建築[用]の", pos: "adjective" },
+<<<<<<< HEAD
     { word: "chauffer",        meaning: "暖房 (AI)", pos: "noun" },
     { word: "chauffer",        meaning: "暖める (AI)", pos: "verb" },
+=======
+    { word: "chauffer",        meaning: "TODO", pos: "noun" },
+    { word: "chauffer",        meaning: "TODO", pos: "verb" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "sedentary",       meaning: "(人などが)体を動かすことが少ない,いつも座っている;(仕事が)体を動かさなくてもよい；(鳥などが)定住性の,移住しない", pos: "adjective" },
     { word: "rapport",         meaning: "(人との)親密な関係,相互の信頼関係《+『with』(『between』)+『名』》", pos: "noun" },
     { word: "landscape",       meaning: "〈C〉(土地の)『風景』,ながめ,けしき；〈C〉風景画(写真);〈U〉風景画法", pos: "verb" },
@@ -7826,7 +8428,11 @@ const wordData = {
     { word: "chilly",          meaning: "『冷え冷えする』,うすら寒い；冷淡な,よそよそしい", pos: "adjective" },
     { word: "frost",           meaning: "〈U〉〈C〉『霜』;霜が降りること；〈U〉例の降りる寒さ;《英》氷点以下の温度", pos: "verb" },
     { word: "frosty",          meaning: "霜の降りる;凍るような；霜で覆われた", pos: "adjective" },
+<<<<<<< HEAD
     { word: "frostily",        meaning: "ひんやりと、冷たく。 (AI)", pos: "adverb" },
+=======
+    { word: "frostily",        meaning: "TODO", pos: "adverb" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "man",             meaning: "マン島(『the Isle of~』;アイルランド海にある,イングランド北西の英国の島)；〈C〉(成人の)『男』,男子;(男の)おとな", pos: "verb" },
     { word: "unmanned",        meaning: "(船・宇宙船など)乗組員がいない,無人の", pos: "adjective" },
     { word: "impersonal",      meaning: "特定の人に関係のない,一般的な；個人的な感情に支配されない", pos: "adjective" },
@@ -7859,7 +8465,11 @@ const wordData = {
     { word: "flick",           meaning: "軽い一打ち;(指先での)一はじき;(手首などの)す早い一振り；ピシッ(パチッ)という音", pos: "verb" },
     { word: "flicker",         meaning: "〈火・炎・光が〉『ゆらめく』,ちらちらする,明滅する；〈木の葉・影などが〉ゆらゆら動く,ひらひらする", pos: "noun" },
     { word: "unenviable",      meaning: "あまりうらやましくない,あまり欲しくない", pos: "adjective" },
+<<<<<<< HEAD
     { word: "unenviably",      meaning: "羨ましくないほどに (AI)", pos: "adverb" },
+=======
+    { word: "unenviably",      meaning: "TODO", pos: "adverb" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "voice",           meaning: "〈U〉(人間の)『声』；〈U〉声を出す力,物を言う力", pos: "verb" },
     { word: "tread",           meaning: "…を『踏んで通る』,踏みしめて歩く；《副詞[句]を伴って》…を『踏みつける』,踏んで…にする", pos: "noun" },
     { word: "allege",          meaning: "(十分な証拠なしに,また理由・弁解として)…を主張する,申し立てる", pos: "verb" },
@@ -7871,7 +8481,11 @@ const wordData = {
     { word: "inclusive",       meaning: "『全部を含んだ』,包括的な；《数詞などの後に用いて》(勘定などに)含めて,入れて(《略》『incl.』)", pos: "adjective" },
     { word: "inclusively",     meaning: "『全部を含んだ』,包括的な；《数詞などの後に用いて》(勘定などに)含めて,入れて(《略》『incl.』)", pos: "adverb" },
     { word: "unconvincing",    meaning: "(人を)納得させる,説得力のある", pos: "adjective" },
+<<<<<<< HEAD
     { word: "unconvincingly",  meaning: "説得力なく (AI)", pos: "adverb" },
+=======
+    { word: "unconvincingly",  meaning: "TODO", pos: "adverb" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "recharge",        meaning: "〈バッテリー〉に再充電する", pos: "verb" },
     { word: "facilitation",    meaning: "(…を)容易にすること,促進させること《+『of』+『名』》", pos: "noun" },
     { word: "condition",       meaning: "〈U〉(事物の)『状態』;(人の)健康状態；〈C〉《通例複数形で》(周囲の)『状況』,事情,形勢", pos: "verb" },
@@ -7886,7 +8500,11 @@ const wordData = {
     { word: "facial",          meaning: "顔の;顔用の；(マッサージや化粧品による)顔の手入れ", pos: "noun" },
     { word: "bouquet",         meaning: "〈C〉『花束』；〈C〉〈U〉(ぶどう酒などの特殊な)かおり,芳香", pos: "noun" },
     { word: "refurbish",       meaning: "〈古びた物〉をぴかぴかにみがき直す", pos: "verb" },
+<<<<<<< HEAD
     { word: "refurbishment",   meaning: "改装、リニューアル (AI)", pos: "noun" },
+=======
+    { word: "refurbishment",   meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "grounds",         meaning: "〈U〉《the~》『地面』,地表；〈U〉『土』,土壌;『土地』", pos: "noun" },
     { word: "ground",          meaning: "〈U〉《the~》『地面』,地表；〈U〉『土』,土壌;『土地』", pos: "verb" },
     { word: "lethargy",        meaning: "昏睡[状態];無気力,無感動,不活発", pos: "noun" },
@@ -7895,7 +8513,11 @@ const wordData = {
     { word: "stately",         meaning: "『威厳のある』,荘厳な,堂々とした,品位ある", pos: "adjective" },
     { word: "conserve",        meaning: "(損傷・腐敗などしないように)…を保存する,保護する；《文》〈果物〉を砂糖煮にする,ジャムにする", pos: "verb" },
     { word: "conservatory",    meaning: "(小規模の)温室；音楽(演劇)学校", pos: "noun" },
+<<<<<<< HEAD
     { word: "disquieting",     meaning: "不安を催させる (AI)", pos: "adjective" },
+=======
+    { word: "disquieting",     meaning: "TODO", pos: "adjective" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "fiercely",        meaning: "凶暴に;猛烈に", pos: "adverb" },
     { word: "grapefruit",      meaning: "グレープフルーツ", pos: "noun" },
     { word: "exotic",          meaning: "外来の,外国産の；異国ふうの;風変わりな", pos: "adjective" },
@@ -7988,11 +8610,19 @@ const wordData = {
     { word: "slack",           meaning: "(綱などが)『緩んだ』,たるんだ；(規則などが)緩い,甘い,どっかりしていない", pos: "noun" },
     { word: "slack",           meaning: "(綱などが)『緩んだ』,たるんだ；(規則などが)緩い,甘い,どっかりしていない", pos: "adjective" },
     { word: "slackly",         meaning: "(綱などが)『緩んだ』,たるんだ；(規則などが)緩い,甘い,どっかりしていない", pos: "adverb" },
+<<<<<<< HEAD
     { word: "unwavering",      meaning: "揺るがない (AI)", pos: "adjective" },
     { word: "unwaveringly",    meaning: "揺れ動いて,震えながら,ためらって", pos: "adverb" },
     { word: "removed",         meaning: "(…から)隔った,離れた,遠い(distant)《+『from』+『名』》；関係が離れた;血縁が遠い", pos: "adjective" },
     { word: "buffoon",         meaning: "道化(どうけ)師,道化役(clown)；おどける,おどけ者", pos: "noun" },
     { word: "beguiling",       meaning: "魅力的な (AI)", pos: "adjective" },
+=======
+    { word: "unwavering",      meaning: "TODO", pos: "adjective" },
+    { word: "unwaveringly",    meaning: "揺れ動いて,震えながら,ためらって", pos: "adverb" },
+    { word: "removed",         meaning: "(…から)隔った,離れた,遠い(distant)《+『from』+『名』》；関係が離れた;血縁が遠い", pos: "adjective" },
+    { word: "buffoon",         meaning: "道化(どうけ)師,道化役(clown)；おどける,おどけ者", pos: "noun" },
+    { word: "beguiling",       meaning: "TODO", pos: "adjective" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "beguilingly",     meaning: "〈人〉をだます,たぶらかす(deceive)；(…で)〈時〉を楽しく過ごす,〈暇・たいくつなど〉を紛らす《+『名』+『with』+『名』》", pos: "adverb" },
     { word: "blithely",        meaning: "(気性が)軽快な,快活な;(行動や言葉が)楽しそうな,のんきな", pos: "adverb" },
     { word: "stray",           meaning: "(…から)『それて道に迷う』,さまよい出る,はぐれる《+『from』+『名』》；〈考え・話題などが〉(…から)わきへそれる《+『from』+『名』》", pos: "verb" },
@@ -8079,15 +8709,26 @@ const wordData = {
     { word: "reap",            meaning: "〈穀類〉を『刈る』；〈作物〉を『刈り入れる』,収穫する", pos: "verb" },
     { word: "paternal",        meaning: "父の;父らしい;父親から受けた；父方の", pos: "adjective" },
     { word: "maternal",        meaning: "母らしい;母の；母方の", pos: "adjective" },
+<<<<<<< HEAD
     { word: "maternalistic",   meaning: "母性を重んじる、母性愛的な (AI)", pos: "adjective" },
+=======
+    { word: "maternalistic",   meaning: "TODO", pos: "adjective" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "paternalistic",   meaning: "温情主義の,家族主義的な", pos: "adjective" },
     { word: "provisions",      meaning: "〈U〉(…の)『供給』,『支給』《+『of』+『名』》；〈U〉(…に備える)『用意』,準備《+『for』(『against』)+『名』》", pos: "noun" },
     { word: "injustice",       meaning: "〈U〉不正；不公平", pos: "noun" },
     { word: "impoverished",    meaning: "…を貧しくする；〈土地など〉をやせさせる;〈人・健康など〉を衰えさせる", pos: "adjective" },
+<<<<<<< HEAD
     { word: "unsustainable",   meaning: "持続できない (AI)", pos: "adjective" },
     { word: "unsustainably",   meaning: "持続不可能なほど (AI)", pos: "adverb" },
     { word: "sustainable",     meaning: "…を『持続する』,続けてする；〈人〉を『元気づける』", pos: "adjective" },
     { word: "sustainably",     meaning: "持続可能に (AI)", pos: "adverb" },
+=======
+    { word: "unsustainable",   meaning: "TODO", pos: "adjective" },
+    { word: "unsustainably",   meaning: "TODO", pos: "adverb" },
+    { word: "sustainable",     meaning: "…を『持続する』,続けてする；〈人〉を『元気づける』", pos: "adjective" },
+    { word: "sustainably",     meaning: "TODO", pos: "adverb" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "bypass",          meaning: "自動車用迂回(うかい)道路,バイパス；(水道・ガスなどの)側管", pos: "verb" },
     { word: "imperative",      meaning: "『命令的な』,断固とした；(行動などが)『避けられない』,のっぴきならない", pos: "adjective" },
     { word: "imperative",      meaning: "『命令的な』,断固とした；(行動などが)『避けられない』,のっぴきならない", pos: "noun" },
@@ -8101,7 +8742,11 @@ const wordData = {
     { word: "misplace",        meaning: "…を置き間違える;…を置き忘れる；(受ける価値のない人・物に)〈愛情・信頼など〉を間違って与える《+『名』+『in』+『名』》", pos: "verb" },
     { word: "symptomatic",     meaning: "徴候となる;(…の)前兆となる,(…を)示す《+of+名》", pos: "adjective" },
     { word: "degrade",         meaning: "(…に)…の地位(身分)を下げる《+『名』+『to』+『名』》；(…にまで)…の品位(評判)を下げる,を卑しくする《+『名』+『to』+『名』》", pos: "verb" },
+<<<<<<< HEAD
     { word: "degrading",       meaning: "軽蔑されるような、屈辱的な (AI)", pos: "adjective" },
+=======
+    { word: "degrading",       meaning: "TODO", pos: "adjective" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "degradation",     meaning: "(地位の)格下げ；(品位などの)下落", pos: "noun" },
     { word: "discourse",       meaning: "〈C〉(…についての)『講演』,講話;説教《+『on』(『upon』)+『名』》；〈U〉会話,談話", pos: "noun" },
     { word: "amid",            meaning: "…の中に;…のまっさい中に", pos: "preposition" },
@@ -8130,12 +8775,20 @@ const wordData = {
     { word: "strap",           meaning: "(革製や布製の)『ひも』,バンド,帯;(電車の)つり革；(金属製の)帯金,バンド", pos: "verb" },
     { word: "strapping",       meaning: "背が高くてがっしりした,大柄の", pos: "adjective" },
     { word: "scoff",           meaning: "(…を)あざける,嘲笑(ちょうしょう)する《+『at』+『名』》；(…に対する)嘲笑,あざけり;《単数形で》軽べつ(物笑い)の的(まと)《+『at』+『名』》", pos: "verb" },
+<<<<<<< HEAD
     { word: "fiddly",          meaning: "手間のかかる、取り扱いが面倒な (AI)", pos: "adjective" },
+=======
+    { word: "fiddly",          meaning: "TODO", pos: "adjective" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "fiddler",         meaning: "《話》バイオリンひき(violinist)；《俗》詐欺師,ぺてん師", pos: "noun" },
     { word: "fiddle",          meaning: "《話》バイオリン(violin)；《俗》詐欺行為・ぺてん", pos: "verb" },
     { word: "fiddle",          meaning: "《話》バイオリン(violin)；《俗》詐欺行為・ぺてん", pos: "noun" },
     { word: "unmusical",       meaning: "《名詞の前にのみ用いて》『音楽の』;音楽を伴う,音楽に合わせた；(声などが)『音調の美しい』,音楽的な", pos: "adjective" },
+<<<<<<< HEAD
     { word: "unmusically",     meaning: "音楽的にないさまに (AI)", pos: "adverb" },
+=======
+    { word: "unmusically",     meaning: "TODO", pos: "adverb" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "repertory",       meaning: "倉庫;(知識の)宝庫", pos: "noun" },
     { word: "concerto",        meaning: "協奏曲,コンチェルト", pos: "noun" },
     { word: "premier",         meaning: "『第1位の』;『首席の』(chief)；(フランス・イタリア・日本などの)『首相』", pos: "adjective" },
@@ -8148,7 +8801,11 @@ const wordData = {
     { word: "acoustics",       meaning: "《単数扱い》音響学；《複数扱い》(劇場などの)音響効果", pos: "noun" },
     { word: "compromised",     meaning: "〈U〉〈C〉(…との)『妥協』,和解,和解《+『with』+『名』》；〈C〉妥協案,折衷案;折衷したもの", pos: "adjective" },
     { word: "daunt",           meaning: "…をおどす;…をひるませる(discourage)", pos: "verb" },
+<<<<<<< HEAD
     { word: "daunting",        meaning: "気をもそっとする、恐ろしい (AI)", pos: "adjective" },
+=======
+    { word: "daunting",        meaning: "TODO", pos: "adjective" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "realist",         meaning: "現実主義者;写実主義者;実在論者", pos: "noun" },
     { word: "realism",         meaning: "現実主義；写実主義,リアリズム", pos: "noun" },
     { word: "recess",          meaning: "〈C〉〈U〉(通常の活動の一時的な)『休み』,休憩；〈U〉《米》(学校の)休み時間,休暇", pos: "noun" },
@@ -8169,11 +8826,19 @@ const wordData = {
     { word: "impervious",      meaning: "物を通さない;(…を)通さない《+『to』+『名』》；《補語にのみ用いて》(人が)(批評などに)影響されない;(…を)感じない《+『to』+『名』》", pos: "adjective" },
     { word: "ludicrous",       meaning: "おかしい,こっけいな,ばかばかしい(ridiculous)", pos: "adjective" },
     { word: "ludicrously",     meaning: "おかしい,こっけいな,ばかばかしい(ridiculous)", pos: "adverb" },
+<<<<<<< HEAD
     { word: "cost-effective",  meaning: "費用対効果が良い (AI)", pos: "adjective" },
     { word: "gruesome",        meaning: "恐ろしい,ぞっとする", pos: "adjective" },
     { word: "gruesomely",      meaning: "恐ろしい,ぞっとする", pos: "adverb" },
     { word: "envisage",        meaning: "〈将来の物・事〉を心に描く,思い浮かべる", pos: "verb" },
     { word: "screenwriter",    meaning: "脚本家 (AI)", pos: "noun" },
+=======
+    { word: "cost-effective",  meaning: "TODO", pos: "adjective" },
+    { word: "gruesome",        meaning: "恐ろしい,ぞっとする", pos: "adjective" },
+    { word: "gruesomely",      meaning: "恐ろしい,ぞっとする", pos: "adverb" },
+    { word: "envisage",        meaning: "〈将来の物・事〉を心に描く,思い浮かべる", pos: "verb" },
+    { word: "screenwriter",    meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "mingle",          meaning: "(…と)…を『混ぜる』,混ぜ合わせる《+『名』+『with』+『名』》；(…と)『混じる』,一つになる《+『with』+『名』》", pos: "verb" },
     { word: "churn",           meaning: "かく乳器(クリームやミルクをかき混ぜてバターを作る)；〈クリーム・ミルク〉をかく乳器に入れてかき混ぜる", pos: "verb" },
     { word: "buffer",          meaning: "(鉄道車両などの衝突の衝撃を弱める)緩衝器；間に立って争いや衝突の衝撃を弱める人(物)", pos: "verb" },
@@ -8194,7 +8859,11 @@ const wordData = {
     { word: "disillusionment", meaning: "迷いから覚めること(覚めた状態);幻滅", pos: "noun" },
     { word: "demise",          meaning: "《遠回しに》(人の)死；《ふざけて》(物事の)消滅;終末", pos: "noun" },
     { word: "raunchy",         meaning: "汚らしい,不潔な；みだらな,わいせつな", pos: "adjective" },
+<<<<<<< HEAD
     { word: "raunchily",       meaning: "わいせつに (AI)", pos: "adverb" },
+=======
+    { word: "raunchily",       meaning: "TODO", pos: "adverb" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "overdraft",       meaning: "(銀行の)当座貸越(金額)・(預金者側から見れば「借」越し); (手形の)過振(かぶり)；当座貸越[額];(手形・小切手の)過振り", pos: "verb" },
     { word: "overdraft",       meaning: "(銀行の)当座貸越(金額)・(預金者側から見れば「借」越し); (手形の)過振(かぶり)；当座貸越[額];(手形・小切手の)過振り", pos: "noun" },
     { word: "synopsis",        meaning: "(特に映画・劇・本などの)概要,粗筋", pos: "noun" },
@@ -8237,11 +8906,19 @@ const wordData = {
     { word: "phenomenally",    meaning: "自然現象の(に関する)；並みはずれた,驚異的な", pos: "adverb" },
     { word: "prophet",         meaning: "(霊感や神の力による)『預言者』；(将来のでき事を)予測する人,予言する人", pos: "noun" },
     { word: "prophetic",       meaning: "予言者の;預言の,予言の,予測の;(…を)預言(予言)する《+『of』+『名』》", pos: "adjective" },
+<<<<<<< HEAD
     { word: "paywall",         meaning: "有料記事の閲覧を制限する仕組み (AI)", pos: "noun" },
     { word: "firewall",        meaning: "ファイアウォール (AI)", pos: "noun" },
     { word: "invoice",         meaning: "送り状(値段や輸送料をつけて,買い手に送る品物のリスト)；…の送り状を作る", pos: "noun" },
     { word: "demolition",      meaning: "(建物などの)破壊,取り壊し", pos: "noun" },
     { word: "demo",            meaning: "デモ（実演、デモstration） (AI)", pos: "noun" },
+=======
+    { word: "paywall",         meaning: "TODO", pos: "noun" },
+    { word: "firewall",        meaning: "TODO", pos: "noun" },
+    { word: "invoice",         meaning: "送り状(値段や輸送料をつけて,買い手に送る品物のリスト)；…の送り状を作る", pos: "noun" },
+    { word: "demolition",      meaning: "(建物などの)破壊,取り壊し", pos: "noun" },
+    { word: "demo",            meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "gig",             meaning: "1頭引きの二輪馬車；(船長用に船に載せてある)快速ボート", pos: "noun" },
     { word: "socialization",   meaning: "社会主義化；社交的にすること", pos: "noun" },
     { word: "antiquity",       meaning: "〈U〉古代(特に中世以前を指す);《集合的に》古代人；〈U〉古さ,古風", pos: "noun" },
@@ -8266,7 +8943,11 @@ const wordData = {
     { word: "credible",        meaning: "信用できる,確実な", pos: "adjective" },
     { word: "credibly",        meaning: "信用できて,確かな筋から", pos: "adverb" },
     { word: "credibility",     meaning: "信用できること,確実性", pos: "noun" },
+<<<<<<< HEAD
     { word: "credential",      meaning: "資格証明書 (AI)", pos: "noun" },
+=======
+    { word: "credential",      meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "acutely",         meaning: "(先の)『鋭い』,とがった；(痛み・感情などが)『激しい』,強い", pos: "adverb" },
     { word: "prohibitive",     meaning: "禁止する,禁制の；(価格が)手がでないほど高い;(顔つきなどから)近づきにくい", pos: "adjective" },
     { word: "prohibitively",   meaning: "禁止する,禁制の；(価格が)手がでないほど高い;(顔つきなどから)近づきにくい", pos: "adverb" },
@@ -8300,7 +8981,11 @@ const wordData = {
     { word: "uniformity",      meaning: "〈U〉一定,不変;〈C〉一定の物；〈U〉同一性,画一性;〈C〉画一的な物", pos: "noun" },
     { word: "numb",            meaning: "麻痺(まひ)した,感覚を失った,しびれた；…の感覚を失わせる,をしびれさせる", pos: "adjective" },
     { word: "numb",            meaning: "麻痺(まひ)した,感覚を失った,しびれた；…の感覚を失わせる,をしびれさせる", pos: "verb" },
+<<<<<<< HEAD
     { word: "tastebud",        meaning: "味蕾 (AI)", pos: "noun" },
+=======
+    { word: "tastebud",        meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "amateur",         meaning: "(専門家に対して)アマチュア,しろうと；愛好者,ファン", pos: "noun" },
     { word: "amateur",         meaning: "(専門家に対して)アマチュア,しろうと；愛好者,ファン", pos: "adjective" },
     { word: "retrace",         meaning: "…を引き返す；…をさかのぼって調べる(思い出す)", pos: "verb" },
@@ -8349,17 +9034,30 @@ const wordData = {
     { word: "exhilarate",      meaning: "〈人〉をうきうきさせる,陽気にさせる", pos: "verb" },
     { word: "exhilarating",    meaning: "うきうきさせる,快活にさせる", pos: "adjective" },
     { word: "exhilaration",    meaning: "うきうきさせること,陽気", pos: "noun" },
+<<<<<<< HEAD
     { word: "physicality",     meaning: "身体性 (AI)", pos: "noun" },
     { word: "hack",            meaning: "《副詞[句]を伴って》(おのなどで)…をたたき切る,めった切りにする；…をたたき切って作る", pos: "verb" },
     { word: "hack",            meaning: "《副詞[句]を伴って》(おのなどで)…をたたき切る,めった切りにする；…をたたき切って作る", pos: "noun" },
     { word: "lust",            meaning: "(…に対する)『強い欲望』,渇望《+『for』(『of』)+『名』》；色欲,肉欲", pos: "noun" },
     { word: "unsettling",      meaning: "気分を悪くする、落ち着かない (AI)", pos: "adjective" },
+=======
+    { word: "physicality",     meaning: "TODO", pos: "noun" },
+    { word: "hack",            meaning: "《副詞[句]を伴って》(おのなどで)…をたたき切る,めった切りにする；…をたたき切って作る", pos: "verb" },
+    { word: "hack",            meaning: "《副詞[句]を伴って》(おのなどで)…をたたき切る,めった切りにする；…をたたき切って作る", pos: "noun" },
+    { word: "lust",            meaning: "(…に対する)『強い欲望』,渇望《+『for』(『of』)+『名』》；色欲,肉欲", pos: "noun" },
+    { word: "unsettling",      meaning: "TODO", pos: "adjective" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "unsettle",        meaning: "〈人心〉を動揺させる,不安にさせる；〈固定・安定した物〉をぐらぐらにする,不安定にする", pos: "verb" },
     { word: "suburban",        meaning: "郊外の；郊外じみた,やぼったい,偏狭な", pos: "adjective" },
     { word: "suburbia",        meaning: "《集合的に》郊外；《集合的に》郊外居住者", pos: "noun" },
     { word: "dramatist",       meaning: "劇作家", pos: "noun" },
+<<<<<<< HEAD
     { word: "quirky",          meaning: "変な、珍しい、個性的な (AI)", pos: "adjective" },
     { word: "quirky",          meaning: "奇抜な人 (AI)", pos: "noun" },
+=======
+    { word: "quirky",          meaning: "TODO", pos: "adjective" },
+    { word: "quirky",          meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "sprawl",          meaning: "手足をむぞうさに投げ出してすわる(横になる)；〈枝などが〉ぶざまに伸びる,はびこる", pos: "noun" },
     { word: "sprawl",          meaning: "手足をむぞうさに投げ出してすわる(横になる)；〈枝などが〉ぶざまに伸びる,はびこる", pos: "verb" },
     { word: "ingenuity",       meaning: "発明(くふう)の才能,創意くふう力；巧妙さ,精巧さ", pos: "noun" },
@@ -8392,12 +9090,20 @@ const wordData = {
     { word: "remorselessly",   meaning: "無慈悲な,無情な", pos: "adverb" },
     { word: "inexcusable",     meaning: "言い訳のたたない,許しがたい", pos: "adjective" },
     { word: "inexcusably",     meaning: "言い訳のたたないほど", pos: "adverb" },
+<<<<<<< HEAD
     { word: "unassisted",      meaning: "助けなしの (AI)", pos: "adjective" },
+=======
+    { word: "unassisted",      meaning: "TODO", pos: "adjective" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "heighten",        meaning: "…を高くする,高める；…の程度(量,強さなど)を増す,を強める", pos: "verb" },
     { word: "fixture",         meaning: "(住宅などに取り付けた)付属設備；(同一職業・地位などに)長く留まっている人", pos: "noun" },
     { word: "bulk",            meaning: "『かさばっていること』；《the bulk》(…の)大部分,大半《+『of』+『名』》", pos: "noun" },
     { word: "bulky",           meaning: "かさばった,ばかに大きい；扱いにくい", pos: "adjective" },
+<<<<<<< HEAD
     { word: "mark-up",         meaning: "利益率 (AI)", pos: "noun" },
+=======
+    { word: "mark-up",         meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "complementary",   meaning: "補足的な,補充する", pos: "adjective" },
     { word: "complimentary",   meaning: "あいさつの,お祝いの;賞賛の;おせじの；招待の,無料の", pos: "adjective" },
     { word: "staple",          meaning: "つぼくぎ(電線などを固定する『U』字形のくぎ)；(書類・製本用の)留め金,ホッチキスの針", pos: "noun" },
@@ -8415,7 +9121,11 @@ const wordData = {
   C2: [
     { word: "exude",           meaning: "〈汗など〉をにじみ出させる;〈気分など〉を発散する；〈液体・気分などが〉にじみ出る", pos: "verb" },
     { word: "envisage",        meaning: "〈将来の物・事〉を心に描く,思い浮かべる", pos: "verb" },
+<<<<<<< HEAD
     { word: "headmistress",    meaning: "女子校の校長 (AI)", pos: "noun" },
+=======
+    { word: "headmistress",    meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "mien",            meaning: "(人柄・感情が分かるような)態度,物腰,様子", pos: "noun" },
     { word: "timidity",        meaning: "おくびょう,小心;内気", pos: "noun" },
     { word: "unravel",         meaning: "〈編物など〉を解く;〈もつれ〉をほどく；〈難問など〉を解明する", pos: "verb" },
@@ -8503,6 +9213,7 @@ const wordData = {
     { word: "indulgently",     meaning: "気ままな;寛大な,甘い", pos: "adverb" },
     { word: "laudatory",       meaning: "賞賛の,賛美の", pos: "adjective" },
     { word: "laud",            meaning: "…を高く賞賛する", pos: "verb" },
+<<<<<<< HEAD
     { word: "glitz",           meaning: "きらびやかさ (AI)", pos: "noun" },
     { word: "glitzy",          meaning: "きらびやかな (AI)", pos: "adjective" },
     { word: "automate",        meaning: "〈工場・機械〉に自動装置をつける,をオートメーション化する", pos: "verb" },
@@ -8510,6 +9221,15 @@ const wordData = {
     { word: "athleticism",     meaning: "運動能力 (AI)", pos: "noun" },
     { word: "daunt",           meaning: "…をおどす;…をひるませる(discourage)", pos: "verb" },
     { word: "daunting",        meaning: "気をもそろえるような、勇気を奪われるような (AI)", pos: "adjective" },
+=======
+    { word: "glitz",           meaning: "TODO", pos: "noun" },
+    { word: "glitzy",          meaning: "TODO", pos: "adjective" },
+    { word: "automate",        meaning: "〈工場・機械〉に自動装置をつける,をオートメーション化する", pos: "verb" },
+    { word: "apprehend",       meaning: "《文》…を逮捕する,捕える(arrest)；《古》〈意味〉を理解する", pos: "verb" },
+    { word: "athleticism",     meaning: "TODO", pos: "noun" },
+    { word: "daunt",           meaning: "…をおどす;…をひるませる(discourage)", pos: "verb" },
+    { word: "daunting",        meaning: "TODO", pos: "adjective" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "acreage",         meaning: "エーカー数,面積", pos: "noun" },
     { word: "affectation",     meaning: "〈C〉〈U〉(…の)見せかけ,ふりをすること《+『of』+『名』》；〈U〉〈C〉気どり,てらい;〈C〉きざな言動", pos: "noun" },
     { word: "imposition",      meaning: "〈U〉(税・義務などを)課すること,負わせること《+『of』+『名』》；〈C〉税;重荷", pos: "noun" },
@@ -8527,8 +9247,13 @@ const wordData = {
     { word: "tenacious",       meaning: "《補語にのみ用いて》(…に)しっかりしがみついている,固執している《+of+名》；粘り強い,執ような", pos: "adjective" },
     { word: "tenaciously",     meaning: "《補語にのみ用いて》(…に)しっかりしがみついている,固執している《+of+名》；粘り強い,執ような", pos: "adverb" },
     { word: "exact",           meaning: "《名詞の前にのみ用いて》(数量など)『正確な』,きっかりの;(物事が)そのままの,そっくりの；(人が)『厳密な』;(機械など)精密な", pos: "verb" },
+<<<<<<< HEAD
     { word: "genomic",         meaning: "ゲノムの (AI)", pos: "adjective" },
     { word: "genomically",     meaning: "遺伝子的に (AI)", pos: "adverb" },
+=======
+    { word: "genomic",         meaning: "TODO", pos: "adjective" },
+    { word: "genomically",     meaning: "TODO", pos: "adverb" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "capacious",       meaning: "広々とした,容量の大きい", pos: "adjective" },
     { word: "unequivocal",     meaning: "あいまいでない,明確な", pos: "adjective" },
     { word: "unequivocally",   meaning: "あいまいでない,明確な", pos: "adverb" },
@@ -8551,14 +9276,23 @@ const wordData = {
     { word: "spuriously",      meaning: "にせの,偽造の", pos: "adverb" },
     { word: "posture",         meaning: "〈U〉(一般的な)姿勢;〈C〉(特定の)姿勢,(モデルなどのとる)ポーズ；〈C〉《通例単数形で》態度,身のこなし;気構え,心組み", pos: "verb" },
     { word: "calorific",       meaning: "熱の,熱を生じる", pos: "adjective" },
+<<<<<<< HEAD
     { word: "fabulate",        meaning: "物語を語る、創作する (AI)", pos: "verb" },
     { word: "fabulation",      meaning: "物語づくり、虚構の創作 (AI)", pos: "noun" },
+=======
+    { word: "fabulate",        meaning: "TODO", pos: "verb" },
+    { word: "fabulation",      meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "octogenarian",    meaning: "80台(80歳‐89歳)の人", pos: "noun" },
     { word: "voracity",        meaning: "大食,猛烈な食欲;貪欲さ", pos: "noun" },
     { word: "brandish",        meaning: "〈刀剣・むちなど〉を振り回す", pos: "verb" },
     { word: "repose",          meaning: "(活動の後などの)『休息』,睡眠；(場所などの)『静けさ』,平隠", pos: "verb" },
     { word: "repose",          meaning: "(活動の後などの)『休息』,睡眠；(場所などの)『静けさ』,平隠", pos: "noun" },
+<<<<<<< HEAD
     { word: "unencumbered",    meaning: "荷物のない、重圧のない (AI)", pos: "adjective" },
+=======
+    { word: "unencumbered",    meaning: "TODO", pos: "adjective" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "buffoonery",      meaning: "道化(どうけ),おどけ;(特に)悪ふざけ", pos: "noun" },
     { word: "gauche",          meaning: "ぎごちない,気のきかない,無器用な", pos: "adjective" },
     { word: "domesticity",     meaning: "〈U〉家庭生活;家庭的なこと,家庭好み", pos: "noun" },
@@ -8585,7 +9319,11 @@ const wordData = {
     { word: "distill",         meaning: "(…に)…を蒸留(精留)する《+『名』+『into』+『名』》；(…から)…を蒸留して作る《+『名』+『from』+『名』》", pos: "verb" },
     { word: "distillation",    meaning: "〈U〉蒸留；〈C〉蒸留液;〈U〉蒸留製品", pos: "noun" },
     { word: "informant",       meaning: "通報者,密告者；インフォーマント(研究者に自分の母国語の資料を提供する人)", pos: "noun" },
+<<<<<<< HEAD
     { word: "vis-a-vis",       meaning: "対して (AI)", pos: "preposition" },
+=======
+    { word: "vis-a-vis",       meaning: "TODO", pos: "preposition" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "overlay",         meaning: "(…の上に)…を覆いかぶせる《+『名』+『on』+『名』》；《受動態で》(…で)…を一面に覆う,の上塗りする《+『名』+『with』+『名』》", pos: "verb" },
     { word: "nostalgia",       meaning: "ノスタルジア,昔を懐しむ気持ち,懐古の情；郷愁", pos: "noun" },
     { word: "nostalgic",       meaning: "郷愁の,郷愁に満ちた；昔を懐しむ,懐古にふける", pos: "adjective" },
@@ -8596,9 +9334,15 @@ const wordData = {
     { word: "residual",        meaning: "残りの,残留の；残余", pos: "adjective" },
     { word: "physiological",   meaning: "生理学上の;生理的な", pos: "adjective" },
     { word: "physiologically", meaning: "生理学上の;生理的な", pos: "adverb" },
+<<<<<<< HEAD
     { word: "methodology",     meaning: "方法論 (AI)", pos: "noun" },
     { word: "methodological",  meaning: "方法論的な (AI)", pos: "adjective" },
     { word: "methodologically", meaning: "方法論的に (AI)", pos: "adverb" },
+=======
+    { word: "methodology",     meaning: "TODO", pos: "noun" },
+    { word: "methodological",  meaning: "TODO", pos: "adjective" },
+    { word: "methodologically", meaning: "TODO", pos: "adverb" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "proportional",    meaning: "比例の,比例による;(…と)比例として《+『to』+『名』》；釣り合った,調和した;(…に)釣り合った《+『to』+『名』》", pos: "adjective" },
     { word: "proportionally",  meaning: "比例の,比例による;(…と)比例として《+『to』+『名』》；釣り合った,調和した;(…に)釣り合った《+『to』+『名』》", pos: "adverb" },
     { word: "habitation",      meaning: "〈U〉居住；〈C〉住所,住み家", pos: "noun" },
@@ -8610,8 +9354,13 @@ const wordData = {
     { word: "contextual",      meaning: "文脈上の,前後関係で決まる", pos: "adjective" },
     { word: "contextually",    meaning: "文脈上の,前後関係で決まる", pos: "adverb" },
     { word: "transmitter",     meaning: "送る(伝える)人(物)；(テレビ・ラジオの)送信機", pos: "noun" },
+<<<<<<< HEAD
     { word: "regulatory",      meaning: "規制に関する (AI)", pos: "adjective" },
     { word: "archival",        meaning: "保存・保管に関する (AI)", pos: "adjective" },
+=======
+    { word: "regulatory",      meaning: "TODO", pos: "adjective" },
+    { word: "archival",        meaning: "TODO", pos: "adjective" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "diffuse",         meaning: "〈光・熱・液体など〉を散らす,放散する,拡散させる；〈学問・知識など〉を広める,普及させる", pos: "adjective" },
     { word: "diffuse",         meaning: "〈光・熱・液体など〉を散らす,放散する,拡散させる；〈学問・知識など〉を広める,普及させる", pos: "verb" },
     { word: "egalitarian",     meaning: "平等主義の；平等主義者", pos: "adjective" },
@@ -8635,9 +9384,15 @@ const wordData = {
     { word: "menial",          meaning: "(仕事などが)くだらない；《古》召使の,召使にふさわしい", pos: "adjective" },
     { word: "insular",         meaning: "島の,島に住む,島にある,島から成る；(島のように)孤立した", pos: "adjective" },
     { word: "antidote",        meaning: "(…の)解毒剤,毒消し《+『against』(『for, to』)+『名』》；(…に対する)対抗手段,矯正手段《+『against』(『for, to』)+『名』》", pos: "noun" },
+<<<<<<< HEAD
     { word: "postural",        meaning: "姿勢の (AI)", pos: "adjective" },
     { word: "posturing",       meaning: "威張り、装い (AI)", pos: "noun" },
     { word: "revelatory",      meaning: "啓示的な (AI)", pos: "adjective" },
+=======
+    { word: "postural",        meaning: "TODO", pos: "adjective" },
+    { word: "posturing",       meaning: "TODO", pos: "noun" },
+    { word: "revelatory",      meaning: "TODO", pos: "adjective" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "prostrate",       meaning: "うつ伏せに[倒れて],身を伏して；力を失った,疲れはてた", pos: "verb" },
     { word: "prostrate",       meaning: "うつ伏せに[倒れて],身を伏して；力を失った,疲れはてた", pos: "adjective" },
     { word: "haphazard",       meaning: "偶然；偶然の;でたらめの", pos: "adjective" },
@@ -8687,10 +9442,17 @@ const wordData = {
     { word: "pressurize",      meaning: "〈飛行機・宇宙船などの内部〉の気圧を正常に保つ,に与圧する；(平常より高く)〈気体・液体〉に加圧する", pos: "verb" },
     { word: "pressurization",  meaning: "与圧[状態]", pos: "noun" },
     { word: "intermediary",    meaning: "中間の,中継の,仲介の,媒介の；仲裁人,仲介者", pos: "noun" },
+<<<<<<< HEAD
     { word: "hotelier",        meaning: "ホテル経営者 (AI)", pos: "noun" },
     { word: "denote",          meaning: "…を示す,表す;…の記号である", pos: "verb" },
     { word: "denotation",      meaning: "〈U〉(記号などによる)表示；〈C〉(語句などの)表示する意味,外延(がいえん)(語句の表面的な意味をいう;connotationは意味の背後に含まれた意味)", pos: "noun" },
     { word: "profitability",   meaning: "収益性 (AI)", pos: "noun" },
+=======
+    { word: "hotelier",        meaning: "TODO", pos: "noun" },
+    { word: "denote",          meaning: "…を示す,表す;…の記号である", pos: "verb" },
+    { word: "denotation",      meaning: "〈U〉(記号などによる)表示；〈C〉(語句などの)表示する意味,外延(がいえん)(語句の表面的な意味をいう;connotationは意味の背後に含まれた意味)", pos: "noun" },
+    { word: "profitability",   meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "jargon",          meaning: "〈U〉〈C〉(特定職業・集団の)専門用語；〈U〉訳の分からない言葉や言い回し", pos: "noun" },
     { word: "declination",     meaning: "〈C〉(真の北極と磁針の)偏差；〈U〉〈C〉赤緯(赤道からある天体までの角距離)", pos: "noun" },
     { word: "vocational",      meaning: "職業の,職業上の；職業指導の", pos: "adjective" },
@@ -8703,11 +9465,19 @@ const wordData = {
     { word: "extracurricular", meaning: "課外の,正規学課以外の", pos: "adjective" },
     { word: "extracurricular", meaning: "課外の,正規学課以外の", pos: "noun" },
     { word: "encompass",       meaning: "(…で)…を取り囲む;取り巻く(surround)《+『名』+『with』(『by』)+『名』》；…を包み込む,包含する(include)", pos: "verb" },
+<<<<<<< HEAD
     { word: "all-encompassing", meaning: "包括的な (AI)", pos: "adjective" },
     { word: "accountability",  meaning: "責任の所在 (AI)", pos: "noun" },
     { word: "frolic",          meaning: "はね回る,ふざける《+『about』》；ふざけること,浮かれ騒ぎ", pos: "verb" },
     { word: "minefield",       meaning: "地雷(機雷)敷設区域；(一般に)危険物の多い所", pos: "noun" },
     { word: "side-step",       meaning: "回避する (AI)", pos: "verb" },
+=======
+    { word: "all-encompassing", meaning: "TODO", pos: "adjective" },
+    { word: "accountability",  meaning: "TODO", pos: "noun" },
+    { word: "frolic",          meaning: "はね回る,ふざける《+『about』》；ふざけること,浮かれ騒ぎ", pos: "verb" },
+    { word: "minefield",       meaning: "地雷(機雷)敷設区域；(一般に)危険物の多い所", pos: "noun" },
+    { word: "side-step",       meaning: "TODO", pos: "verb" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "abundant",        meaning: "『豊富な』,十分な", pos: "adjective" },
     { word: "abundantly",      meaning: "豊富に,たっぷり", pos: "adverb" },
     { word: "abundance",       meaning: "(あり余るほど)『たくさん』,『豊富』;《an~》たくさん(の…)《+『of』+『名』》", pos: "noun" },
@@ -8720,7 +9490,11 @@ const wordData = {
     { word: "wordage",         meaning: "言葉遣い・語彙・語数・言い回し・《集合的に》言葉・冗長・くどさ", pos: "noun" },
     { word: "brevity",         meaning: "(時間の)短さ；簡潔", pos: "noun" },
     { word: "uncanny",         meaning: "不気味な,異様な；(直感力などが)並はずれてよい", pos: "adjective" },
+<<<<<<< HEAD
     { word: "tactic",          meaning: "戦術 (AI)", pos: "noun" },
+=======
+    { word: "tactic",          meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "tactical",        meaning: "戦術上の,戦術的な；かけ引きのうまい,策略にたけた", pos: "adjective" },
     { word: "tactically",      meaning: "戦術上の,戦術的な；かけ引きのうまい,策略にたけた", pos: "adverb" },
     { word: "tactile",         meaning: "触覚の,触覚による,触知しうる", pos: "adjective" },
@@ -8735,7 +9509,11 @@ const wordData = {
     { word: "painstakingly",   meaning: "骨を折って,丹精して", pos: "adverb" },
     { word: "contraption",     meaning: "複雑な装置; 奇想天外な機械；仕掛け《略式》", pos: "noun" },
     { word: "mesh",            meaning: "〈C〉《単数形で》(網・ふるいなどの)目,網目；〈C〉〈U〉網,網細工", pos: "verb" },
+<<<<<<< HEAD
     { word: "enabler",         meaning: "支援者 (AI)", pos: "noun" },
+=======
+    { word: "enabler",         meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "fluctuate",       meaning: "動揺する,変動する,上下する", pos: "verb" },
     { word: "fluctuation",     meaning: "波動;動揺,変動", pos: "noun" },
     { word: "lyricist",        meaning: "叙情詩人；(流行歌・歌謡曲などの)作詞家", pos: "noun" },
@@ -8752,7 +9530,11 @@ const wordData = {
     { word: "philanthropically", meaning: "博愛の,慈善の", pos: "adverb" },
     { word: "precocious",      meaning: "(人が)早熟の", pos: "adjective" },
     { word: "precociously",    meaning: "(人が)早熟の", pos: "adverb" },
+<<<<<<< HEAD
     { word: "wordsmith",       meaning: "文章を巧みに扱う人 (AI)", pos: "noun" },
+=======
+    { word: "wordsmith",       meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "connote",         meaning: "(語が)〈その語から連想される別の意味〉を暗示する；(論理学で)…を内包する", pos: "verb" },
     { word: "connotation",     meaning: "言外の意味；(論理学で)内包", pos: "noun" },
     { word: "herald",          meaning: "(昔の国王や領主の)使者；先触れ,先駆者", pos: "verb" },
@@ -8772,9 +9554,15 @@ const wordData = {
     { word: "rebound",         meaning: "(…から)〈物体が〉はね返る《+『from』+『名』》；(自分に)〈したこと[の報]が〉はね返る《『on』(『upon』)one『self』》", pos: "verb" },
     { word: "rebound",         meaning: "(…から)〈物体が〉はね返る《+『from』+『名』》；(自分に)〈したこと[の報]が〉はね返る《『on』(『upon』)one『self』》", pos: "noun" },
     { word: "proposition",     meaning: "『提案』,申し出；陳述,主張", pos: "noun" },
+<<<<<<< HEAD
     { word: "flagging",        meaning: "衰えている、弱っている (AI)", pos: "adjective" },
     { word: "electrode",       meaning: "電極", pos: "noun" },
     { word: "caffeinate",      meaning: "カフェインで覚醒させる (AI)", pos: "verb" },
+=======
+    { word: "flagging",        meaning: "TODO", pos: "adjective" },
+    { word: "electrode",       meaning: "電極", pos: "noun" },
+    { word: "caffeinate",      meaning: "TODO", pos: "verb" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "cosmic",          meaning: "『宇宙の』,宇宙に関する；広大無辺の,(時的・空間的に)無限の", pos: "adjective" },
     { word: "interlude",       meaning: "(劇・歌劇などの幕合いに奏する)間奏曲;幕間劇；合い間", pos: "noun" },
     { word: "haven",           meaning: "安全な所,避難場所；《まれ》港", pos: "noun" },
@@ -8782,13 +9570,21 @@ const wordData = {
     { word: "recuperate",      meaning: "〈健康など〉を回復する；回復する,元気になる", pos: "verb" },
     { word: "recuperation",    meaning: "(健康などの)回復", pos: "noun" },
     { word: "recuperative",    meaning: "回復に役立つ,元気づける；回復力のある", pos: "adjective" },
+<<<<<<< HEAD
     { word: "cultish",         meaning: "教団じみた (AI)", pos: "adjective" },
+=======
+    { word: "cultish",         meaning: "TODO", pos: "adjective" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "seismic",         meaning: "地震の,地震によって生ずる", pos: "adjective" },
     { word: "irrevocably",     meaning: "取り消し(変更)できないように,取り返しのつかぬほどに", pos: "adverb" },
     { word: "irrevocable",     meaning: "(過去などが)呼び戻せない;(言葉・決定などが)取り消し(変更)できない", pos: "adjective" },
     { word: "slither",         meaning: "(蛇のように)するする滑る;(不規則に)ずるずると滑る", pos: "verb" },
     { word: "unnerve",         meaning: "…の勇気(気力)を失わせる;…の冷静さを失わせる", pos: "verb" },
+<<<<<<< HEAD
     { word: "unnerving",       meaning: "気を失わせる、落ち着きを失わせる (AI)", pos: "adjective" },
+=======
+    { word: "unnerving",       meaning: "TODO", pos: "adjective" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "unnervingly",     meaning: "…の勇気(気力)を失わせる;…の冷静さを失わせる", pos: "adverb" },
     { word: "protrude",        meaning: "(…から)突き出る《+『from』+『名』》；…を突き出す", pos: "verb" },
     { word: "protrusion",      meaning: "〈U〉突き出すこと,突き出ていること；〈C〉突き出た部分,隆起", pos: "noun" },
@@ -8796,9 +9592,15 @@ const wordData = {
     { word: "procedural",      meaning: "(特に法的な)手続き[上]の,手順の", pos: "adjective" },
     { word: "procedural",      meaning: "(特に法的な)手続き[上]の,手順の", pos: "noun" },
     { word: "demystify",       meaning: "…のなぞを解く", pos: "verb" },
+<<<<<<< HEAD
     { word: "demystification", meaning: "難解さの解消 (AI)", pos: "noun" },
     { word: "proprietary",     meaning: "所有主の；個人所有の", pos: "adjective" },
     { word: "proprietorial",   meaning: "所有者らしい、所有権を強調する (AI)", pos: "adjective" },
+=======
+    { word: "demystification", meaning: "TODO", pos: "noun" },
+    { word: "proprietary",     meaning: "所有主の；個人所有の", pos: "adjective" },
+    { word: "proprietorial",   meaning: "TODO", pos: "adjective" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "tantamount",      meaning: "(…と)同等の,(…に)相当した《+to+名》", pos: "adjective" },
     { word: "floodgates",      meaning: "(水量の調節をする)水門", pos: "noun" },
     { word: "imperceptible",   meaning: "わずかの,かすかな；知覚(感知)できない(人・感覚などに)感じられない《+『to』+『名』》", pos: "adjective" },
@@ -8814,7 +9616,11 @@ const wordData = {
     { word: "indolent",        meaning: "無精な,怠惰な", pos: "adjective" },
     { word: "indolently",      meaning: "無精な,怠惰な", pos: "adverb" },
     { word: "indolence",       meaning: "無精,怠惰", pos: "noun" },
+<<<<<<< HEAD
     { word: "taste-maker",     meaning: "味の主導者 (AI)", pos: "noun" },
+=======
+    { word: "taste-maker",     meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "deviant",         meaning: "(基準から)外れた,逸脱した,異常な；常軌を逸した物(人),(特に)性欲倒錯者", pos: "noun" },
     { word: "deviant",         meaning: "(基準から)外れた,逸脱した,異常な；常軌を逸した物(人),(特に)性欲倒錯者", pos: "adjective" },
     { word: "deviantly",       meaning: "(基準から)外れた,逸脱した,異常な；常軌を逸した物(人),(特に)性欲倒錯者", pos: "adverb" },
@@ -8825,7 +9631,11 @@ const wordData = {
     { word: "venomous",        meaning: "(動物が)毒液を出す；毒のある,有毒な", pos: "adjective" },
     { word: "venomously",      meaning: "(動物が)毒液を出す；毒のある,有毒な", pos: "adverb" },
     { word: "choreography",    meaning: "(バレエ・ダンスの)振付け,舞踏法", pos: "noun" },
+<<<<<<< HEAD
     { word: "choreographical", meaning: "振付の (AI)", pos: "adjective" },
+=======
+    { word: "choreographical", meaning: "TODO", pos: "adjective" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "archetype",       meaning: "(…の)原型,模範,手本《+『of』+『名』》", pos: "noun" },
     { word: "archetypal",      meaning: "原型の,典型の", pos: "adjective" },
     { word: "dissension",      meaning: "(深刻な)意見の衝突,紛争;〈C〉不和(紛争)の原因", pos: "noun" },
@@ -8836,7 +9646,11 @@ const wordData = {
     { word: "inert",           meaning: "(物質・物体が)活動する力がない；化学作用を起こさない", pos: "adjective" },
     { word: "hitherto",        meaning: "今まで,これまで(until now)", pos: "adverb" },
     { word: "angst",           meaning: "(ばく然とした)不安", pos: "noun" },
+<<<<<<< HEAD
     { word: "angsty",          meaning: "もやもやした、気分が不安定な (AI)", pos: "adjective" },
+=======
+    { word: "angsty",          meaning: "TODO", pos: "adjective" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "drabness",        meaning: "単調な,退屈な,おもしろくない；くすんだ茶色の", pos: "noun" },
     { word: "melodious",       meaning: "美しく聞こえる,調子のよい；旋律的な", pos: "adjective" },
     { word: "melodiously",     meaning: "美しく聞こえる,調子のよい；旋律的な", pos: "adverb" },
@@ -8873,7 +9687,11 @@ const wordData = {
     { word: "prissy",          meaning: "やかましい,こうるさい", pos: "adjective" },
     { word: "reptilian",       meaning: "爬(は)虫類の;爬行性の；卑しい,卑劣な", pos: "adjective" },
     { word: "diminish",        meaning: "…を『小さくする』,『減らす』,少なくする；〈音程〉を半音狭くする", pos: "verb" },
+<<<<<<< HEAD
     { word: "undiminishing",   meaning: "減少しない (AI)", pos: "adjective" },
+=======
+    { word: "undiminishing",   meaning: "TODO", pos: "adjective" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "contagion",       meaning: "〈U〉接触伝染,感染；〈C〉接触伝染病", pos: "noun" },
     { word: "homestead",       meaning: "家屋敷;(建物も含めた)農場；《米史》(入植者へ移譲される)自作農場", pos: "noun" },
     { word: "incumbent",       meaning: "義務として掛かる,責務がある；《名詞の前にのみ用いて》《おもに米》現職の,在職の", pos: "noun" },
@@ -8883,7 +9701,11 @@ const wordData = {
     { word: "nonchalantly",    meaning: "むとんじゃくな,無関心な;(…に)むとんじゃくである《+『about』(『over』)+『名』》", pos: "adverb" },
     { word: "mesmeric",        meaning: "催眠術の", pos: "adjective" },
     { word: "stultify",        meaning: "〈精神など〉をだめにする,鈍らせる；…をばからしく見せる,無意味にする", pos: "verb" },
+<<<<<<< HEAD
     { word: "stultifyingly",   meaning: "つまらなく、退屈に感じさせるように (AI)", pos: "adverb" },
+=======
+    { word: "stultifyingly",   meaning: "TODO", pos: "adverb" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "wallow",          meaning: "(泥・水などの中を)ころがり回る,ごろごろする;のたうつ《+in+名》；(快楽などに)ふける,おぼれる《+in+名》", pos: "verb" },
     { word: "ponderous",       meaning: "大きくて重い,どっしりした;重くて扱いにくい；(動作などが)のっそりとした", pos: "adjective" },
     { word: "ponderously",     meaning: "大きくて重い,どっしりした;重くて扱いにくい；(動作などが)のっそりとした", pos: "adverb" },
@@ -8895,7 +9717,11 @@ const wordData = {
     { word: "antediluvian",    meaning: "ノア(Noah)の大洪水以前の；古くさい,時代おくれの", pos: "adjective" },
     { word: "ostensible",      meaning: "(説明などが)表面上の,見せかけの(apparent)", pos: "adjective" },
     { word: "ostensibly",      meaning: "表面上,表向きは", pos: "adverb" },
+<<<<<<< HEAD
     { word: "interlocking",    meaning: "互いにかみ合う (AI)", pos: "adjective" },
+=======
+    { word: "interlocking",    meaning: "TODO", pos: "adjective" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "plane",           meaning: "『平面』,水平面；『水準』,程度", pos: "noun" },
     { word: "undemonstrative", meaning: "感情などを表に出さない,慎み深い;内気な", pos: "adjective" },
     { word: "undemonstratively", meaning: "感情などを表に出さない,慎み深い;内気な", pos: "adverb" },
@@ -8910,20 +9736,35 @@ const wordData = {
     { word: "austerely",       meaning: "(人・表情・態度などが)厳しい,厳格な；(生活などが)質素な,禁欲的な", pos: "adverb" },
     { word: "austerity",       meaning: "〈U〉(態度・生活などの)厳しさ,厳格さ;(文体・様式などの)簡潔さ；《複数形で》禁欲(耐乏)生活", pos: "noun" },
     { word: "idiosyncrasy",    meaning: "(個人的)特質,特異性;特異な行動(反応)", pos: "noun" },
+<<<<<<< HEAD
     { word: "idiosyncratic",   meaning: "個性的で珍しい (AI)", pos: "adjective" },
+=======
+    { word: "idiosyncratic",   meaning: "TODO", pos: "adjective" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "idiomatic",       meaning: "慣用語法にかなった,慣用的な,慣用語法の多い", pos: "adjective" },
     { word: "idiomatically",   meaning: "慣用語法にかなった,慣用的な,慣用語法の多い", pos: "adverb" },
     { word: "kinetic",         meaning: "運動の；動きによる,動的な", pos: "adjective" },
     { word: "kinetically",     meaning: "運動の；動きによる,動的な", pos: "adverb" },
+<<<<<<< HEAD
     { word: "unmediated",      meaning: "直接の (AI)", pos: "adjective" },
     { word: "mediate",         meaning: "〈紛争・相違点など〉を調停する,仲裁する；〈妥協・和解・同意など〉を仲裁して成立させる", pos: "verb" },
     { word: "mediation",       meaning: "調停,仲裁", pos: "noun" },
     { word: "unharried",       meaning: "落ち着いていて、急かされない (AI)", pos: "adjective" },
+=======
+    { word: "unmediated",      meaning: "TODO", pos: "adjective" },
+    { word: "mediate",         meaning: "〈紛争・相違点など〉を調停する,仲裁する；〈妥協・和解・同意など〉を仲裁して成立させる", pos: "verb" },
+    { word: "mediation",       meaning: "調停,仲裁", pos: "noun" },
+    { word: "unharried",       meaning: "TODO", pos: "adjective" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "figurative",      meaning: "比喩(ひゆ)的な；比喩の多い", pos: "adjective" },
     { word: "figuratively",    meaning: "比喩(ひゆ)的な；比喩の多い", pos: "adverb" },
     { word: "exorcism",        meaning: "悪霊を払うこと", pos: "noun" },
     { word: "exorcist",        meaning: "悪霊を払う人", pos: "noun" },
+<<<<<<< HEAD
     { word: "mundanity",       meaning: "日常性 (AI)", pos: "noun" },
+=======
+    { word: "mundanity",       meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "mediocrity",      meaning: "〈U〉普通,並み；〈C〉並みの人", pos: "noun" },
     { word: "dubiously",       meaning: "疑わしい,はっきりしない(uncertain),あいまいな(ambiguous)；疑っている,不審に思っている", pos: "adverb" },
     { word: "curate",          meaning: "(おもに英国国教会の)牧師補,副牧師(rectorまたはvicarの助手または代理);(カトリックの)助任司祭", pos: "verb" },
@@ -8959,8 +9800,13 @@ const wordData = {
     { word: "snippet",         meaning: "切れ端;断片,小片；《複数形で》わずかな情報(ニュース)", pos: "noun" },
     { word: "practitioner",    meaning: "開業医;弁護士；技術者,工芸家", pos: "noun" },
     { word: "ephemeral",       meaning: "(昆虫・草などが)1日限りの；短命の,はかない,つかの間の", pos: "adjective" },
+<<<<<<< HEAD
     { word: "ephemera",        meaning: "一時的なもの、短命な物 (AI)", pos: "noun" },
     { word: "ephemerality",    meaning: "一時性 (AI)", pos: "noun" },
+=======
+    { word: "ephemera",        meaning: "TODO", pos: "noun" },
+    { word: "ephemerality",    meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "summarily",       meaning: "かいつまんで,手短に；略式に,即決で", pos: "adverb" },
     { word: "skim",            meaning: "〈液体〉から『上澄みを取る』,浮遊物をすくい取る；(液体から)〈浮遊物〉を『すくい取る』,〈上澄み〉を取る《+『名』+『from』(『off』)+『名』》", pos: "verb" },
     { word: "infallibly",      meaning: "絶対確実に,全然誤りなく；《英話》いつも,きっと", pos: "adverb" },
@@ -8974,14 +9820,22 @@ const wordData = {
     { word: "revulsion",       meaning: "(…に対する)嫌悪,反感《+『against』+『名』》；《文》(感情・持論などの)激変,急変", pos: "noun" },
     { word: "arcane",          meaning: "神秘的な,不可思議な", pos: "adjective" },
     { word: "arcanely",        meaning: "神秘的な,不可思議な", pos: "adverb" },
+<<<<<<< HEAD
     { word: "porten",          meaning: "港 (AI)", pos: "noun" },
+=======
+    { word: "porten",          meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "divination",      meaning: "占い,易断；予言,予知", pos: "noun" },
     { word: "flit",            meaning: "〈鳥・コウモリなどが〉すいすい(ひらひら)飛ぶ；〈思い・表情などが〉かすめる", pos: "verb" },
     { word: "hitch",           meaning: "(かぎ・ロープ・皮ひもなどで)(…に)…をつなぐ《+『名』+『to』+『名』》；…をぐいと動かす,引き上げる《+『up』+『名』,+『名』+『up』》", pos: "verb" },
     { word: "prone",           meaning: "《補語にのみ用いて》傾向がある；うつぶせの,平伏した", pos: "adjective" },
     { word: "scavenger",       meaning: "腐肉を常食とする動物(ハゲタカ(vulture)・ハイエナ(hyena)など)；(食物や金目のものを探して)ごみあさりをする人", pos: "noun" },
     { word: "vermin",          meaning: "害獣,害鳥,害虫；世を毒する者,ならず者", pos: "noun" },
+<<<<<<< HEAD
     { word: "totemic",         meaning: "トーテム的な (AI)", pos: "adjective" },
+=======
+    { word: "totemic",         meaning: "TODO", pos: "adjective" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "emulate",         meaning: "…と張り合う,に負けまいとする；…を手本とする,見習う", pos: "verb" },
     { word: "emulation",       meaning: "張り合うこと,競争；見習うこと,模範とすること", pos: "noun" },
     { word: "avian",           meaning: "鳥類の,鳥の", pos: "adjective" },
@@ -9010,7 +9864,11 @@ const wordData = {
     { word: "allusion",        meaning: "(…の)ほのめかし,あてつけ;(…の)引喩(いんゆ)《+『to』+『名』》", pos: "noun" },
     { word: "allude",          meaning: "《文》(文や話の中で)(…のことを)『ほのめかす』,それとなく言う《+『to』+『名』(do『ing』)》", pos: "verb" },
     { word: "disparage",       meaning: "〈人・物〉の信用を落とす,評判を悪くする；…を見くびる,軽んじる", pos: "verb" },
+<<<<<<< HEAD
     { word: "disparaging",     meaning: "軽蔑する、貶める (AI)", pos: "adjective" },
+=======
+    { word: "disparaging",     meaning: "TODO", pos: "adjective" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "disparagingly",   meaning: "軽んじて,見くびって", pos: "adverb" },
     { word: "disparagement",   meaning: "見くびること；悪口,非難", pos: "noun" },
     { word: "huddle",          meaning: "群がり寄る,体を寄せ合う《+『up』(『together』)》;縮こまる《+『up』》；(アメリカンフットボールで作戦を打ち合わせるために)スクリメージ線の後方に集合する", pos: "verb" },
@@ -9054,7 +9912,11 @@ const wordData = {
     { word: "moor",            meaning: "ムーア人(アフリカ北西部に住むイスラム教徒)；《英》荒れ地,荒野(こうや)(特にイングランド・スコットランド地方のヒース(heather)などが一面に生えた湿地)", pos: "noun" },
     { word: "solitary",        meaning: "『ひとりぼっちの』；孤独な,一人でする", pos: "adjective" },
     { word: "solitary",        meaning: "『ひとりぼっちの』；孤独な,一人でする", pos: "noun" },
+<<<<<<< HEAD
     { word: "solitariness",    meaning: "孤独な状態 (AI)", pos: "noun" },
+=======
+    { word: "solitariness",    meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "solitude",        meaning: "〈U〉『弧独』,独居；〈C〉人里離れた寂しい場所,辺地", pos: "noun" },
     { word: "adhere",          meaning: "〈物が〉(…に)『くっつく』,付着する,粘着する《+『to』+『名』》；〈人が〉(決心・主義などに)執着する,固守する《+『to』+『名』》", pos: "verb" },
     { word: "adhesion",        meaning: "粘着,付着", pos: "noun" },
@@ -9083,12 +9945,20 @@ const wordData = {
     { word: "rhetorical",      meaning: "修辞学の；(文体が)華麗な,(弁舌が)美辞を弄する(ろうする)", pos: "adjective" },
     { word: "rhetorically",    meaning: "修辞学;演説法；美辞麗句で飾った言葉", pos: "adverb" },
     { word: "flighty",         meaning: "(女性が)うわついた,軽はずみな,移り気の;ちょっと頭がおかしい", pos: "adjective" },
+<<<<<<< HEAD
     { word: "flightiness",     meaning: "気まぐれさ、浮き立ち気味な性質 (AI)", pos: "noun" },
+=======
+    { word: "flightiness",     meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "brimstone",       meaning: "イオウ(sulfur)", pos: "noun" },
     { word: "impeccable",      meaning: "(行儀・性格などが)非の打ち所のない,欠点のない", pos: "adjective" },
     { word: "impeccably",      meaning: "非の打ち所なく", pos: "adverb" },
     { word: "romp",            meaning: "はしゃぎ回る,ふざけ回る《+『about』(『around』)》；(レースで)楽勝する", pos: "verb" },
+<<<<<<< HEAD
     { word: "romper",          meaning: "破る者 (AI)", pos: "noun" },
+=======
+    { word: "romper",          meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "meticulous",      meaning: "細かなことに気を配る;(…に)細かく気を配る《+『in』+『名』(do『ing』)》", pos: "adjective" },
     { word: "meticulously",    meaning: "細かなことに気を配る;(…に)細かく気を配る《+『in』+『名』(do『ing』)》", pos: "adverb" },
     { word: "ingratiate",      meaning: "気に入られるようにする, 迎合する", pos: "verb" },
@@ -9120,7 +9990,11 @@ const wordData = {
     { word: "glint",           meaning: "きらり(ぴかり)と光る；きらめき,きらりとした光", pos: "noun" },
     { word: "infernal",        meaning: "地獄の；悪魔のような,極悪非道な", pos: "adjective" },
     { word: "infernally",      meaning: "地獄の；悪魔のような,極悪非道な", pos: "adverb" },
+<<<<<<< HEAD
     { word: "presentational",  meaning: "表現的な (AI)", pos: "adjective" },
+=======
+    { word: "presentational",  meaning: "TODO", pos: "adjective" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "embed",           meaning: "(コンクリートなどに)…を埋める,はめ込む《+『名』+『in』+『名』》;(…を)…に埋める《+『名』+『with』+『名』》；(心などに)…を深くとどめる《+『名』+『in』+『名』》", pos: "verb" },
     { word: "plume",           meaning: "《複数形で》(特に大きくて目立つ装飾用の)『羽毛』,羽毛飾り,(帽子などの)前立(まえだて)；大きな羽毛に似た形の物;水柱,煙など《+『of』+『名』》", pos: "noun" },
     { word: "happenstance",    meaning: "偶然のでき事", pos: "noun" },
@@ -9150,7 +10024,11 @@ const wordData = {
     { word: "accessibility",   meaning: "近づきやすさ,到達可能性；(高齢者・障害者に対する)利用しやすさ,アクセシビリティ", pos: "noun" },
     { word: "cognitive",       meaning: "認識の(に関する,を要する)", pos: "adjective" },
     { word: "artifact",        meaning: "(天然物と区別して)人工物,加工品;(特に)古代人が使った道具(武器,装飾品)", pos: "noun" },
+<<<<<<< HEAD
     { word: "preservationist", meaning: "保存主義者 (AI)", pos: "noun" },
+=======
+    { word: "preservationist", meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "qualm",           meaning: "(…についての)突然の不安(疑惑)《+『about』+『名』(do『ing』)》；《しばしば複数形で》(…についての)良心のかしゃく《+『about』+『名』(do『ing』)》", pos: "noun" },
     { word: "besiege",         meaning: "…を包囲攻撃する,包囲する;…に取り囲むように押し寄せる；(要求・依頼などで)〈人〉を攻めたてる《+『名』〈人〉+『with』+『名』》", pos: "verb" },
     { word: "cloister",        meaning: "(修道院・大学などの中庭を囲んだ)回廊,柱廊；修道院;修道院の生活", pos: "noun" },
@@ -9163,7 +10041,11 @@ const wordData = {
     { word: "fabricate",       meaning: "…を組み立てる,(組み立てて)…を制作(建造)する；〈うそなど〉を作り上げる;〈文書など〉を偽造する", pos: "verb" },
     { word: "fabrication",     meaning: "〈U〉組み立て,製作,建造；〈U〉偽造,でっち上げ", pos: "noun" },
     { word: "patchy",          meaning: "つぎはぎだらけの；寄せ集めの;不調和な", pos: "adjective" },
+<<<<<<< HEAD
     { word: "patchily",        meaning: "不均一に (AI)", pos: "adverb" },
+=======
+    { word: "patchily",        meaning: "TODO", pos: "adverb" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "resounding",      meaning: "(音などが)鳴り響く,大きくはっきりとした；(成功などが)知れ渡った,たいへんな", pos: "adjective" },
     { word: "resoundingly",    meaning: "(音などが)鳴り響く,大きくはっきりとした；(成功などが)知れ渡った,たいへんな", pos: "adverb" },
     { word: "resound",         meaning: "(音で)〈場所が〉鳴り響く,反響する《+『with』+『名』》；(…に)〈音が〉鳴り響く,〈物が〉大音響を上げる;《比喩(ひゆ)的に》〈名声などが〉鳴り響く《+『through』(『throughout, all over』)+『名』》", pos: "verb" },
@@ -9175,7 +10057,11 @@ const wordData = {
     { word: "hysteria",        meaning: "ヒステリー；(一般に)病的興奮;(群衆などの)熱狂,狂乱", pos: "noun" },
     { word: "hysterical",      meaning: "ヒステリー[性]の;ヒステリー症にかかった(かかりやすい)；病的に興奮した", pos: "adjective" },
     { word: "hysterically",    meaning: "ヒステリーを起こして;異常に興奮して", pos: "adverb" },
+<<<<<<< HEAD
     { word: "jarring",         meaning: "不快な、気分を害する (AI)", pos: "adjective" },
+=======
+    { word: "jarring",         meaning: "TODO", pos: "adjective" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "suffuse",         meaning: "(液体・色・光などで)…を満たす,おおう《+名+with+名》", pos: "verb" },
     { word: "totter",          meaning: "おぼつかない足取りで歩く,よろよろ歩く(立ち上がる)；ぐらつく", pos: "verb" },
     { word: "pyre",            meaning: "(死体を焼くのに使う)積みまき・火葬用の薪の山", pos: "noun" },
@@ -9190,8 +10076,13 @@ const wordData = {
     { word: "abhorrently",     meaning: "嫌悪(けんお)すべき,憎むべき;(…にとって)嫌悪すべき《+『to』+『名』》", pos: "adverb" },
     { word: "aberration",      meaning: "正道からはずれること,非行,異常；(軽い)精神異常", pos: "noun" },
     { word: "emulsify",        meaning: "…を乳状(乳剤)にする", pos: "verb" },
+<<<<<<< HEAD
     { word: "emulsification",  meaning: "乳化作用 (AI)", pos: "noun" },
     { word: "emulsifier",      meaning: "乳化剤 (AI)", pos: "noun" },
+=======
+    { word: "emulsification",  meaning: "TODO", pos: "noun" },
+    { word: "emulsifier",      meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "additive",        meaning: "(製造品に)添加された;足し算の；添加物", pos: "noun" },
     { word: "additive",        meaning: "(製造品に)添加された;足し算の；添加物", pos: "adjective" },
     { word: "confection",      meaning: "糖菓(キャンデー・砂糖づけなど)", pos: "noun" },
@@ -9221,6 +10112,7 @@ const wordData = {
     { word: "shoal",           meaning: "浅瀬,州,砂州(さす)；浅瀬の", pos: "noun" },
     { word: "scroll",          meaning: "〈C〉(記録などを書きとめておくための羊皮紙,パピルス紙などの)巻物；〈U〉〈C〉(いすのひじかけ・バイオリンなどの)渦巻き形模様(装飾)", pos: "noun" },
     { word: "collide",         meaning: "(…と)『ぶつかる』,衝突する《+『with』(『against』)+『名』》；〈意志・利害・目的などが〉(…と)一致しない,〈人が〉(…と)衝突する《+『with』+『名』》", pos: "verb" },
+<<<<<<< HEAD
     { word: "collider",        meaning: "衝突機 (AI)", pos: "noun" },
     { word: "edifice",         meaning: "(特に堂々とした)大建築物", pos: "noun" },
     { word: "thicket",         meaning: "『低木の茂み』,やぶ", pos: "noun" },
@@ -9231,6 +10123,18 @@ const wordData = {
     { word: "interweave",      meaning: "(…と)〈糸など〉を織り合わせる《+『名』+『with』+『名』》；〈糸状のものが〉絡み合う,織り混ざる", pos: "verb" },
     { word: "burgeoning",      meaning: "急成長している (AI)", pos: "adjective" },
     { word: "indiscrete",      meaning: "不連続な、離散的でない (AI)", pos: "adjective" },
+=======
+    { word: "collider",        meaning: "TODO", pos: "noun" },
+    { word: "edifice",         meaning: "(特に堂々とした)大建築物", pos: "noun" },
+    { word: "thicket",         meaning: "『低木の茂み』,やぶ", pos: "noun" },
+    { word: "leaven",          meaning: "酵母,イースト,パン種(だね)；(パン種のように)徐々に感化)変化(を与えるもの,原動力,潜んだ力", pos: "verb" },
+    { word: "leavening",       meaning: "TODO", pos: "noun" },
+    { word: "ethos",           meaning: "(個人・社会の信念・習慣・風習を形成する)気風,心情", pos: "noun" },
+    { word: "exhibitionist",   meaning: "自己顕示欲の強い人；露出狂", pos: "noun" },
+    { word: "interweave",      meaning: "(…と)〈糸など〉を織り合わせる《+『名』+『with』+『名』》；〈糸状のものが〉絡み合う,織り混ざる", pos: "verb" },
+    { word: "burgeoning",      meaning: "TODO", pos: "adjective" },
+    { word: "indiscrete",      meaning: "TODO", pos: "adjective" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "indiscretion",    meaning: "〈U〉無分別,思慮のないこと,軽率;(情状酌量(しゃくりょう)の余地のある)不注意；〈C〉無分別な(軽率な)言動", pos: "noun" },
     { word: "telescopic",      meaning: "望遠鏡の;望遠鏡で見た；(目など望遠鏡のように)遠くが見える,遠目の利く", pos: "adjective" },
     { word: "telescopically",  meaning: "望遠鏡の;望遠鏡で見た；(目など望遠鏡のように)遠くが見える,遠目の利く", pos: "adverb" },
@@ -9259,7 +10163,11 @@ const wordData = {
     { word: "virtuosity",      meaning: "(特に音楽家の)妙技,技巧", pos: "noun" },
     { word: "cascade",         meaning: "(いく筋にもなって落ちる)小滝,(庭園などの)人工滝；滝状になった物", pos: "verb" },
     { word: "cascade",         meaning: "(いく筋にもなって落ちる)小滝,(庭園などの)人工滝；滝状になった物", pos: "noun" },
+<<<<<<< HEAD
     { word: "crippling",       meaning: "ひどい、深刻な (AI)", pos: "adjective" },
+=======
+    { word: "crippling",       meaning: "TODO", pos: "adjective" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "nascent",         meaning: "始まりの,初期の", pos: "adjective" },
     { word: "smattering",      meaning: "《a~》(…の)生かじりの知識《+『of』+『名』》", pos: "noun" },
     { word: "corpus",          meaning: "(特定の事に関する,または特殊の性質の)文書資料の集成；(研究用に収集した)資料", pos: "noun" },
@@ -9270,7 +10178,11 @@ const wordData = {
     { word: "formidable",      meaning: "『恐ろしい』；手ごわい", pos: "adjective" },
     { word: "squint",          meaning: "斜視,やぶにらみ；《英話》一べつ,一目", pos: "verb" },
     { word: "hoist",           meaning: "〈旗・帆など〉を『揚げる』,揚げる;(綱・起重機で)〈重い物〉を引き上げる；引き上げ,持ち上げ,掲揚", pos: "verb" },
+<<<<<<< HEAD
     { word: "flatout",         meaning: "全力で、まっすぐ、非常に (AI)", pos: "adverb" },
+=======
+    { word: "flatout",         meaning: "TODO", pos: "adverb" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "buzzard",         meaning: "(米国産の)ハゲタカ；(ヨーロッパ産の)ノスリ", pos: "noun" },
     { word: "bogus",           meaning: "にせの,いんちきの", pos: "adjective" },
     { word: "derision",        meaning: "あざけり,あざ笑い;〈C〉あざけりの的,物笑いの種", pos: "noun" },
@@ -9285,14 +10197,23 @@ const wordData = {
     { word: "agility",         meaning: "(動作または頭の働きの)機敏さ,明敏さ", pos: "noun" },
     { word: "aghast",          meaning: "(…に)びっくりして,驚きあきれて《+『at』+『名』》", pos: "adjective" },
     { word: "dwarf",           meaning: "(童話の)『こびと』,一寸法師；(人間の)こびと", pos: "verb" },
+<<<<<<< HEAD
     { word: "dwarfism",        meaning: "小人症 (AI)", pos: "noun" },
+=======
+    { word: "dwarfism",        meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "etch",            meaning: "〈絵など〉をエッチングで描く(彫る)；エッチングで描く", pos: "verb" },
     { word: "etching",         meaning: "〈U〉食刻法,エッチング(銅板にろうを塗り,その上に針で絵などを描き,露出した部分を酸で腐食して原版を作る法)；〈C〉食刻版画,エッチング", pos: "noun" },
     { word: "rapture",         meaning: "〈U〉『非常に幸福な』(『うれしい』)『気持ち』,大喜び,有頂天；《複数形で》(…について)大喜び,有頂天《+『at』(『about, over』)+『名』》", pos: "noun" },
     { word: "rapturous",       meaning: "大喜びの,有頂天の;熱狂的な", pos: "adjective" },
     { word: "rapturously",     meaning: "大喜びの,有頂天の;熱狂的な", pos: "adverb" },
+<<<<<<< HEAD
     { word: "ad-lib",          meaning: "即興で話す (AI)", pos: "verb" },
     { word: "improvisational", meaning: "即興的な (AI)", pos: "adjective" },
+=======
+    { word: "ad-lib",          meaning: "TODO", pos: "verb" },
+    { word: "improvisational", meaning: "TODO", pos: "adjective" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "acrobatics",      meaning: "軽業(曲芸)の演技；《単数扱い》軽業(曲芸)の技術", pos: "noun" },
     { word: "acrobatically",   meaning: "軽業的な,曲芸的な", pos: "adverb" },
     { word: "acrobatic",       meaning: "軽業的な,曲芸的な", pos: "adjective" },
@@ -9310,13 +10231,21 @@ const wordData = {
     { word: "hover",           meaning: "〈鳥・ヘリコプターなどが〉空に浮かぶ;(…の上を)舞う《+about(above, over)+名》；〈人などが〉(…の周辺を)うろつく,(…に)つきまとう《+about(around, near)+名》", pos: "verb" },
     { word: "apostle",         meaning: "〈C〉《A-》使徒(キリストの12人の弟子の一人);《the Apostles》(キリストの)12使徒；〈C〉(ある地域・国におけるキリスト教の)最初の宣教師,有名な宣教師", pos: "noun" },
     { word: "blubber",         meaning: "〈U〉クジラ・アザラシなどの脂肪；〈C〉泣きじゃくり", pos: "noun" },
+<<<<<<< HEAD
     { word: "blubbery",        meaning: "ぐずぐずした、ぐずついた (AI)", pos: "adjective" },
+=======
+    { word: "blubbery",        meaning: "TODO", pos: "adjective" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "merger",          meaning: "(特に二つ以上の会社・組織の)吸収合併", pos: "noun" },
     { word: "trifle",          meaning: "〈C〉つまらない事(物)；〈C〉少額の金,はした金", pos: "noun" },
     { word: "trifle",          meaning: "〈C〉つまらない事(物)；〈C〉少額の金,はした金", pos: "verb" },
     { word: "paramount",       meaning: "最高の,優れた", pos: "adjective" },
     { word: "squirm",          meaning: "体をよじる,もがく；もじもじする,きまり悪がる", pos: "verb" },
+<<<<<<< HEAD
     { word: "squirmy",         meaning: "もぞもぞした、ぐらぐらした (AI)", pos: "adjective" },
+=======
+    { word: "squirmy",         meaning: "TODO", pos: "adjective" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "floe",            meaning: "浮氷塊;(浮氷塊から割れた)浮氷片", pos: "noun" },
     { word: "embody",          meaning: "〈思想・感情など〉を『具体化する』；(ある形態の中に)…をまとめる,包含する", pos: "verb" },
     { word: "embodiment",      meaning: "(…の)具体化されたもの,化身(けしん),権化(ごんげ)《+『of』+『名』》", pos: "noun" },
@@ -9329,8 +10258,13 @@ const wordData = {
     { word: "subsidy",         meaning: "(国家・団体などの)補助金,助成金,奨励金", pos: "noun" },
     { word: "subsidize",       meaning: "…に補助金(奨励金)を与える", pos: "verb" },
     { word: "legion",          meaning: "(古代ローマの)軍団(3,000‐6,000人の歩兵と300‐700人の騎兵より成る)；軍勢,軍隊(army)", pos: "noun" },
+<<<<<<< HEAD
     { word: "confrontational", meaning: "対立的で、相手と正面から向き合うような (AI)", pos: "adjective" },
     { word: "confrontationally", meaning: "対立的に、挑戦的に (AI)", pos: "adverb" },
+=======
+    { word: "confrontational", meaning: "TODO", pos: "adjective" },
+    { word: "confrontationally", meaning: "TODO", pos: "adverb" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "bout",            meaning: "一試合,一勝負；(…している)一時的な期間;(…の)発作(fit)《+『of』+『名』》", pos: "noun" },
     { word: "gout",            meaning: "〈U〉痛風", pos: "noun" },
     { word: "hinder",          meaning: "後方の,後部の；〈物事〉を『運行を妨げる』;〈人〉を『じゃまする』", pos: "verb" },
@@ -9338,7 +10272,11 @@ const wordData = {
     { word: "myriad",          meaning: "無数；《古》1万", pos: "adjective" },
     { word: "histrionic",      meaning: "(動作などが)芝居がかった；演技の;演劇の", pos: "adjective" },
     { word: "histrionically",  meaning: "芝居がかって；演技(演劇)に関して", pos: "adverb" },
+<<<<<<< HEAD
     { word: "marketability",   meaning: "販売可能性 (AI)", pos: "noun" },
+=======
+    { word: "marketability",   meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "tacit",           meaning: "言わず語らずの,暗黙の;無言の", pos: "adjective" },
     { word: "tacitly",         meaning: "言わず語らずの,暗黙の;無言の", pos: "adverb" },
     { word: "taciturn",        meaning: "口数が少ない,無口の", pos: "adjective" },
@@ -9362,15 +10300,24 @@ const wordData = {
     { word: "deaden",          meaning: "…を力(勢い)を弱める", pos: "verb" },
     { word: "attuned",         meaning: "(…に)…を一致させる,調和させる,《+『名』+『to』+『名』(do『ing』)》", pos: "adjective" },
     { word: "attributive",     meaning: "(形容詞が)限定的な(通例名詞の前にきて直接に名詞を修飾すること;日本語の連体形,連体詞にあたる)；限定詞(名詞の前で形容詞として働く語)", pos: "adjective" },
+<<<<<<< HEAD
     { word: "ecotourism",      meaning: "エコツーリズム (AI)", pos: "noun" },
+=======
+    { word: "ecotourism",      meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "surge",           meaning: "波のように押し寄せる,殺到する；〈感情が〉こみあげる《+up》", pos: "verb" },
     { word: "surge",           meaning: "波のように押し寄せる,殺到する；〈感情が〉こみあげる《+up》", pos: "noun" },
     { word: "farcical",        meaning: "笑劇の,笑劇的な；茶番めいた,こっけいな,ばかげた", pos: "adjective" },
     { word: "incise",          meaning: "…に切り込みを入れる;…を刻む", pos: "verb" },
     { word: "incipient",       meaning: "始まりの,初期の", pos: "adjective" },
     { word: "echolocation",    meaning: "レーダー反射法(レーダーを使って物体の位置を決定する方法)", pos: "noun" },
+<<<<<<< HEAD
     { word: "echolocate",      meaning: "エコロケーションする（音の反響を使って位置を特定する） (AI)", pos: "verb" },
     { word: "reverb",          meaning: "リバーブ（響き、残響） (AI)", pos: "noun" },
+=======
+    { word: "echolocate",      meaning: "TODO", pos: "verb" },
+    { word: "reverb",          meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
     { word: "reverberation",   meaning: "反響音", pos: "noun" },
     { word: "reverberate",     meaning: "〈音が〉響き渡る,鳴り響く", pos: "verb" },
     { word: "ingenuous",       meaning: "すなおな,率直な(candid);(…に対して)率直な《+『with』+『名』》；無邪気な,純真な", pos: "adjective" },
@@ -9379,6 +10326,7 @@ const wordData = {
     { word: "elasticity",      meaning: "弾力,弾性;伸縮自在;融通性", pos: "noun" },
     { word: "synthesis",       meaning: "〈U〉総合,統合[すること]；〈C〉総合体,統合されたもの", pos: "noun" },
     { word: "salivary",        meaning: "だ液の;だ液を分泌する", pos: "adjective" },
+<<<<<<< HEAD
     { word: "hypnotherapy",    meaning: "催眠療法 (AI)", pos: "noun" },
     { word: "wholly",          meaning: "『まったく』,完全に(completely)", pos: "adverb" },
     { word: "remorseful",      meaning: "後悔している,良心のかしゃくにたえない", pos: "adjective" },
@@ -9389,5 +10337,17 @@ const wordData = {
     { word: "inexorable",      meaning: "(人が)情け容赦のない,冷酷な；(物事が)変えられない,動かし得ない", pos: "adjective" },
     { word: "inexorably",      meaning: "めぐりあわせなく、あきらめずに。 (AI)", pos: "adverb" },
     { word: "inexorability",   meaning: "不屈の性質、あきらめない性質 (AI)", pos: "noun" },
+=======
+    { word: "hypnotherapy",    meaning: "TODO", pos: "noun" },
+    { word: "wholly",          meaning: "『まったく』,完全に(completely)", pos: "adverb" },
+    { word: "remorseful",      meaning: "後悔している,良心のかしゃくにたえない", pos: "adjective" },
+    { word: "remonstrance",    meaning: "忠告,いさめ", pos: "noun" },
+    { word: "unexcused",       meaning: "TODO", pos: "adjective" },
+    { word: "unexceptionally", meaning: "例外的に;非常に", pos: "adverb" },
+    { word: "unexceptional",   meaning: "例外でない,通例の；例外を認めない", pos: "adjective" },
+    { word: "inexorable",      meaning: "(人が)情け容赦のない,冷酷な；(物事が)変えられない,動かし得ない", pos: "adjective" },
+    { word: "inexorably",      meaning: "TODO", pos: "adverb" },
+    { word: "inexorability",   meaning: "TODO", pos: "noun" },
+>>>>>>> d1a4e9b1e9beba868e78df198ca648f2cf5a18e4
   ],
 };

@@ -47,6 +47,14 @@
       </div>
     </div>
 
+    <div id="deck-size-section">
+      <div class="mastery-input">
+        <span class="section-label">出題数</span>
+        <input type="number" id="deck-size-input" value="20" min="1">
+        <span>問</span>
+      </div>
+    </div>
+
     <div id="animation-section">
       <label class="animation-label">
         <input type="checkbox" id="welcome-flip-anim" checked>
@@ -59,12 +67,26 @@
     </div>
 
     <div id="save-section">
-      <label for="save-input">セーブデータ（任意）</label>
-      <textarea id="save-input" placeholder="以前のセーブデータのテキストを貼り付けると、続きから練習できます..."></textarea>
-      <p id="save-warning"></p>
+      <p id="save-status"></p>
+      <div id="save-section-btns">
+        <button id="btn-clear-save" hidden>データをリセット</button>
+        <button id="btn-toggle-text-io">テキスト ▾</button>
+      </div>
+      <div id="text-io-area" hidden>
+        <button id="btn-export-text">コピー（エクスポート）</button>
+        <textarea id="import-textarea" placeholder="テキストデータを貼り付け（インポート）..."></textarea>
+        <p id="import-warning"></p>
+        <button id="btn-import-text">読み込む</button>
+      </div>
     </div>
 
     <button id="btn-start">スタート</button>
+
+    <p id="license-note">
+      単語データ：<a href="https://github.com/openlanguageprofiles/olp-en-cefrj" target="_blank" rel="noopener">CEFR-J Wordlist</a>（Tono Lab, CC BY-SA 4.0）／
+      Octanove Vocabulary Profile（Octanove Labs, CC BY 4.0）／
+      <a href="https://github.com/kujirahand/EJDict" target="_blank" rel="noopener">EJDict</a>（kujirahand, Public Domain）
+    </p>
   </div>
 
   <!-- 学習画面 -->
@@ -133,14 +155,12 @@
     </div>
 
     <div id="save-output-section">
-      <p class="save-label">セーブデータ（コピーして保存）</p>
-      <textarea id="save-textarea" readonly></textarea>
-      <button id="btn-save">ダウンロード</button>
+      <p class="save-label">セーブデータを自動保存しました</p>
     </div>
 
     <div id="result-actions">
       <button id="btn-continue" class="btn-secondary">続きから再開</button>
-      <button id="btn-restart" class="btn-secondary">最初からやり直す</button>
+      <button id="btn-restart" class="btn-secondary">タイトルへ戻る</button>
     </div>
   </div>
 
