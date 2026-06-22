@@ -392,8 +392,7 @@ const wordData = {
     { word: "grammar",         meaning: "文法；語法；文法書", pos: "noun" },
     { word: "grandfather",     meaning: "祖父；祖父さん；じいさん", pos: "noun" },
     { word: "grandma",         meaning: "おばあちゃん", pos: "noun" },
-    { word: "grandmother",     meaning: "祖母；おばあさん；じいさん（※注：「じいさん」は誤り。正しくは「おばあさん」のみ）  
-→ 正しい出力：祖母；おばあさん", pos: "noun" },
+    { word: "grandmother",     meaning: "祖母；おばあさん", pos: "noun" },
     { word: "grandpa",         meaning: "おじいちゃん；祖父；じいさん", pos: "noun" },
     { word: "grandparent",     meaning: "祖父母；祖母；祖父", pos: "noun" },
     { word: "grape",           meaning: "ぶどう；ぶどうの実；ぶどうの木", pos: "noun" },
