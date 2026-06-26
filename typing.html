@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>英単語タイピング練習</title>
+  <style>
+    :root {
+      --grad: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      --green: #22c55e;
+      --red: #ef4444;
+      --gray: #9ca3af;
+      --cursor-color: #667eea;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      min-height: 100vh;
+      background: var(--grad);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      font-family: 'Segoe UI', 'Hiragino Sans', 'Yu Gothic', sans-serif;
+    }
+
+    .screen { display: none; width: 100%; max-width: 700px; flex-direction: column; align-items: center; gap: 20px; }
+    .screen.active { display: flex; }
+
+    .card {
+      background: rgba(255,255,255,0.95);
+      border-radius: 20px;
+      padding: 28px;
+      width: 100%;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+    }
+
+    h1 { color: white; font-size: 2rem; font-weight: 700; }
+    .subtitle { color: rgba(255,255,255,0.8); }
+
+    .section-label {
+      display: block;
+      font-size: 0.78rem;
+      color: #6b7280;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      margin-bottom: 10px;
+    }
+
+    #level-selector { display: flex; flex-wrap: wrap; gap: 8px; }
+    .level-btn {
+      padding: 9px 20px;
+      border: 2px solid #e5e7eb;
+      border-radius: 10px;
+      background: white;
+      cursor: pointer;
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #374151;
+      transition: all 0.15s;
+    }
+    .level-btn.selected { background: #667eea; border-color: #667eea; color: white; }
+    .level-btn:hover:not(.selected) { border-color: #667eea; color: #667eea; }
+
+    .row { display: flex; align-items: center; gap: 10px; margin-top: 20px; }
+    .row input[type=number] {
+      width: 72px;
+      padding: 8px 10px;
+      border: 2px solid #e5e7eb;
+      border-radius: 8px;
+      font-size: 1rem;
+      text-align: center;
+      outline: none;
+      transition: border-color 0.15s;
+    }
+    .row input[type=number]:focus { border-color: #667eea; }
+    .row span { color: #374151; }
+
+    #btn-start {
+      background: var(--grad);
+      color: white;
+      border: none;
+      padding: 14px 44px;
+      border-radius: 12px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(102,126,234,0.45);
+      transition: transform 0.12s, box-shadow 0.12s;
+    }
+    #btn-start:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(102,126,234,0.55); }
+    #btn-start:active { transform: translateY(0); }
+
+    /* ── Typing screen ── */
+    #typing-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      color: rgba(255,255,255,0.9);
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .progress-bar-wrap {
+      width: 100%;
+      height: 5px;
+      background: rgba(255,255,255,0.25);
+      border-radius: 3px;
+      overflow: hidden;
+    }
+    #progress-bar {
+      height: 100%;
+      background: white;
+      border-radius: 3px;
+      transition: width 0.35s ease;
+    }
+
+    .stats-row { display: flex; gap: 32px; justify-content: center; }
+    .stat-item { display: flex; flex-direction: column; align-items: center; gap: 2px; }
+    .stat-value { font-size: 1.4rem; font-weight: 700; color: white; }
+    .stat-label { font-size: 0.68rem; color: rgba(255,255,255,0.65); text-transform: uppercase; letter-spacing: 0.05em; }
+
+    #typing-card {
+      background: rgba(255,255,255,0.95);
+      border-radius: 20px;
+      padding: 40px 32px;
+      width: 100%;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+      cursor: text;
+      min-height: 160px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+      transition: box-shadow 0.15s;
+    }
+    #typing-card.focused { box-shadow: 0 20px 60px rgba(0,0,0,0.2), 0 0 0 3px rgba(102,126,234,0.35); }
+
+    #type-display {
+      font-family: 'Courier New', 'Noto Sans Mono', monospace;
+      font-size: 1.55rem;
+      line-height: 2;
+      text-align: center;
+      word-break: break-all;
+      user-select: none;
+    }
+    #type-display .correct  { color: var(--green); }
+    #type-display .incorrect { color: white; background: var(--red); border-radius: 3px; }
+    #type-display .pending  { color: var(--gray); }
+    #type-display .current  { color: var(--gray); border-bottom: 2.5px solid var(--cursor-color); }
+
+    #pos-hint { font-size: 0.82rem; color: #9ca3af; font-style: italic; }
+
+    #click-hint { font-size: 0.8rem; color: #9ca3af; }
+
+    #hidden-input {
+      position: fixed;
+      left: -9999px;
+      opacity: 0;
+      width: 1px;
+      height: 1px;
+    }
+
+    #btn-skip {
+      background: rgba(255,255,255,0.15);
+      color: white;
+      border: 1px solid rgba(255,255,255,0.4);
+      padding: 9px 24px;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      cursor: pointer;
+      backdrop-filter: blur(4px);
+      transition: background 0.15s;
+    }
+    #btn-skip:hover { background: rgba(255,255,255,0.28); }
+
+    /* ── Result screen ── */
+    .result-label { color: rgba(255,255,255,0.75); font-size: 1rem; text-align: center; }
+    .big-stat { font-size: 4.5rem; font-weight: 700; color: white; line-height: 1; }
+
+    #wrong-list {
+      background: rgba(255,255,255,0.95);
+      border-radius: 20px;
+      padding: 24px;
+      width: 100%;
+      max-height: 300px;
+      overflow-y: auto;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+    }
+    .wrong-entry {
+      padding: 10px 0;
+      border-bottom: 1px solid #f3f4f6;
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+    }
+    .wrong-entry:last-child { border-bottom: none; }
+    .we-word { font-weight: 700; color: #374151; min-width: 110px; font-family: monospace; }
+    .we-meaning { color: #6b7280; font-size: 0.9rem; }
+    .we-skip { color: #f59e0b; font-size: 0.78rem; white-space: nowrap; }
+
+    .result-btns { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
+    .btn-outline {
+      background: rgba(255,255,255,0.15);
+      color: white;
+      border: 2px solid rgba(255,255,255,0.5);
+      padding: 12px 28px;
+      border-radius: 12px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      backdrop-filter: blur(4px);
+      transition: background 0.15s;
+    }
+    .btn-outline:hover { background: rgba(255,255,255,0.28); }
+  </style>
+</head>
+<body>
+
+<!-- ── Welcome ── -->
+<div id="screen-welcome" class="screen active">
+  <h1>タイピング練習</h1>
+  <p class="subtitle">英単語 + 日本語の意味をそのまま入力</p>
+
+  <div class="card">
+    <span class="section-label">レベルを選択（複数可）</span>
+    <div id="level-selector">
+      <button class="level-btn selected" data-level="A1">A1</button>
+      <button class="level-btn" data-level="A2">A2</button>
+      <button class="level-btn" data-level="B1">B1</button>
+      <button class="level-btn" data-level="B2">B2</button>
+      <button class="level-btn" data-level="C1">C1</button>
+      <button class="level-btn" data-level="C2">C2</button>
+    </div>
+
+    <div class="row">
+      <span class="section-label" style="margin:0">出題数</span>
+      <input type="number" id="deck-size" value="20" min="1" max="500">
+      <span>問</span>
+    </div>
+  </div>
+
+  <button id="btn-start">スタート</button>
+</div>
+
+<!-- ── Typing ── -->
+<div id="screen-typing" class="screen">
+  <div id="typing-header">
+    <span id="level-badge"></span>
+    <span id="progress-label">1 / 20</span>
+  </div>
+
+  <div class="progress-bar-wrap">
+    <div id="progress-bar" style="width:0%"></div>
+  </div>
+
+  <div class="stats-row">
+    <div class="stat-item">
+      <span class="stat-value" id="stat-acc">100%</span>
+      <span class="stat-label">正確率</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-value" id="stat-wpm">0</span>
+      <span class="stat-label">WPM</span>
+    </div>
+  </div>
+
+  <div id="typing-card">
+    <div id="type-display"></div>
+    <div id="pos-hint"></div>
+    <div id="click-hint">クリックしてフォーカス</div>
+  </div>
+
+  <input id="hidden-input" type="text"
+         autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+
+  <button id="btn-skip">スキップ</button>
+</div>
+
+<!-- ── Result ── -->
+<div id="screen-result" class="screen">
+  <p class="result-label">完了！</p>
+  <div class="big-stat" id="final-acc">100%</div>
+
+  <div class="stats-row">
+    <div class="stat-item">
+      <span class="stat-value" id="final-wpm">0</span>
+      <span class="stat-label">WPM</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-value" id="final-chars">0</span>
+      <span class="stat-label">打鍵数</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-value" id="final-errors">0</span>
+      <span class="stat-label">ミス数</span>
+    </div>
+  </div>
+
+  <div id="wrong-list" style="display:none">
+    <span class="section-label">間違えた / スキップした単語</span>
+    <div id="wrong-items"></div>
+  </div>
+
+  <div class="result-btns">
+    <button class="btn-outline" id="btn-retry">もう一度</button>
+    <button class="btn-outline" id="btn-home">タイトルへ</button>
+  </div>
+</div>
+
+<script src="words.js"></script>
+<script>
+'use strict';
+
+const posMap = {
+  noun: '名詞', verb: '動詞', adjective: '形容詞',
+  adverb: '副詞', preposition: '前置詞', conjunction: '接続詞',
+  pronoun: '代名詞', determiner: '限定詞', interjection: '感動詞',
+};
+
+// ── Elements ──
+const $ = id => document.getElementById(id);
+const screens = {
+  welcome: $('screen-welcome'),
+  typing:  $('screen-typing'),
+  result:  $('screen-result'),
+};
+const hiddenInput = $('hidden-input');
+const typeDisplay = $('type-display');
+const posHint     = $('pos-hint');
+const clickHint   = $('click-hint');
+const progressLabel = $('progress-label');
+const progressBar   = $('progress-bar');
+const levelBadge    = $('level-badge');
+const typingCard    = $('typing-card');
+const statAcc = $('stat-acc');
+const statWpm = $('stat-wpm');
+
+// ── State ──
+let queue          = [];
+let currentIdx     = 0;
+let targetChars    = [];   // Unicode-safe char array of the target string
+let prevInputLen   = 0;    // hiddenInput length on previous processInput call
+let totalTyped     = 0;    // cumulative chars typed (not counting backspace deletions)
+let totalErrors    = 0;    // chars that didn't match target
+let sessionStart   = null;
+let wrongWords     = [];
+let isAdvancing    = false;
+let isComposing    = false;
+let selectedLevels = ['A1'];
+let lastSettings   = {};
+
+// ── Helpers ──
+function showScreen(name) {
+  Object.values(screens).forEach(s => s.classList.remove('active'));
+  screens[name].classList.add('active');
+}
+
+function shuffle(arr) {
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
+function esc(s) {
+  return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+
+// ── Level selector ──
+document.querySelectorAll('.level-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    btn.classList.toggle('selected');
+    selectedLevels = [...document.querySelectorAll('.level-btn.selected')]
+      .map(b => b.dataset.level);
+  });
+});
+
+// ── Start ──
+$('btn-start').addEventListener('click', () => {
+  if (!selectedLevels.length) { alert('レベルを1つ以上選んでください。'); return; }
+  const count = Math.max(1, parseInt($('deck-size').value) || 20);
+  startSession(selectedLevels, count);
+});
+
+function startSession(levels, count) {
+  let pool = [];
+  levels.forEach(lv => { if (wordData[lv]) pool.push(...wordData[lv]); });
+  if (!pool.length) { alert('単語データが見つかりません。'); return; }
+  shuffle(pool);
+  queue = pool.slice(0, count);
+
+  currentIdx   = 0;
+  totalTyped   = 0;
+  totalErrors  = 0;
+  wrongWords   = [];
+  sessionStart = null;
+  isAdvancing  = false;
+  lastSettings = { levels, count };
+
+  levelBadge.textContent = levels.join(' / ');
+  showScreen('typing');
+  loadWord(0);
+
+  typingCard.addEventListener('click', focusInput);
+  focusInput();
+}
+
+function focusInput() { hiddenInput.focus(); }
+
+// ── Load word ──
+function loadWord(idx) {
+  if (idx >= queue.length) { finishSession(); return; }
+
+  const entry  = queue[idx];
+  const target = entry.word + ' ' + entry.meaning;
+  targetChars  = [...target];          // Unicode-safe split
+  prevInputLen = 0;
+  isAdvancing  = false;
+
+  hiddenInput.value = '';
+  renderDisplay([]);
+  posHint.textContent   = posMap[entry.pos] || entry.pos || '';
+  clickHint.style.display = 'none';   // hide after first word loads
+  updateProgress();
+
+  if (!sessionStart) sessionStart = Date.now();
+  focusInput();
+}
+
+// ── Render ──
+function renderDisplay(typed) {
+  let html = '';
+  for (let i = 0; i < targetChars.length; i++) {
+    // Render spaces as non-breaking to preserve layout
+    const ch = targetChars[i] === ' ' ? ' ' : targetChars[i];
+    if (i < typed.length) {
+      const cls = typed[i] === targetChars[i] ? 'correct' : 'incorrect';
+      html += `<span class="${cls}">${esc(ch)}</span>`;
+    } else if (i === typed.length) {
+      html += `<span class="current">${esc(ch)}</span>`;
+    } else {
+      html += `<span class="pending">${esc(ch)}</span>`;
+    }
+  }
+  typeDisplay.innerHTML = html;
+}
+
+// ── Input ──
+hiddenInput.addEventListener('compositionstart', () => { isComposing = true; });
+hiddenInput.addEventListener('compositionend',   () => { isComposing = false; processInput(); });
+hiddenInput.addEventListener('input', () => { if (!isComposing) processInput(); });
+hiddenInput.addEventListener('focus', () => typingCard.classList.add('focused'));
+hiddenInput.addEventListener('blur',  () => typingCard.classList.remove('focused'));
+
+function processInput() {
+  if (isAdvancing) return;
+
+  const typed  = [...hiddenInput.value];
+  const newLen = typed.length;
+
+  // Count newly typed characters (ignore backspace deletions)
+  if (newLen > prevInputLen) {
+    for (let i = prevInputLen; i < newLen; i++) {
+      if (i < targetChars.length) {
+        totalTyped++;
+        if (typed[i] !== targetChars[i]) totalErrors++;
+      }
+    }
+  }
+  prevInputLen = newLen;
+
+  renderDisplay(typed);
+  updateStats();
+
+  // Auto-advance when all chars are correctly typed
+  if (newLen >= targetChars.length) {
+    let allCorrect = true;
+    for (let i = 0; i < targetChars.length; i++) {
+      if (typed[i] !== targetChars[i]) { allCorrect = false; break; }
+    }
+    if (allCorrect) {
+      isAdvancing = true;
+      setTimeout(() => advance(false), 260);
+    }
+  }
+}
+
+// ── Advance ──
+function advance(skipped) {
+  const entry = queue[currentIdx];
+  if (skipped) {
+    wrongWords.push({ ...entry, skipped: true });
+  } else {
+    // Flag as wrong if there were any mismatches during this word
+    const typed = [...hiddenInput.value];
+    const hadError = targetChars.some((ch, i) => typed[i] !== ch);
+    if (hadError) wrongWords.push(entry);
+  }
+  currentIdx++;
+  loadWord(currentIdx);
+}
+
+$('btn-skip').addEventListener('click', () => {
+  if (isAdvancing) return;
+  advance(true);
+});
+
+// ── Progress ──
+function updateProgress() {
+  progressLabel.textContent = `${currentIdx + 1} / ${queue.length}`;
+  progressBar.style.width   = `${(currentIdx / queue.length) * 100}%`;
+}
+
+// ── Stats ──
+function updateStats() {
+  const acc = totalTyped > 0
+    ? Math.round((totalTyped - totalErrors) / totalTyped * 100)
+    : 100;
+  statAcc.textContent = acc + '%';
+
+  if (sessionStart) {
+    const elapsed = (Date.now() - sessionStart) / 60000;
+    statWpm.textContent = elapsed > 0 ? Math.round(totalTyped / 5 / elapsed) : 0;
+  }
+}
+
+// ── Finish ──
+function finishSession() {
+  typingCard.removeEventListener('click', focusInput);
+
+  const acc = totalTyped > 0
+    ? Math.round((totalTyped - totalErrors) / totalTyped * 100)
+    : 100;
+  const elapsed = sessionStart ? (Date.now() - sessionStart) / 60000 : 1;
+  const wpm     = elapsed > 0 ? Math.round(totalTyped / 5 / elapsed) : 0;
+
+  $('final-acc').textContent    = acc + '%';
+  $('final-wpm').textContent    = wpm;
+  $('final-chars').textContent  = totalTyped;
+  $('final-errors').textContent = totalErrors;
+
+  const wrongList  = $('wrong-list');
+  const wrongItems = $('wrong-items');
+  wrongItems.innerHTML = '';
+
+  if (wrongWords.length) {
+    wrongList.style.display = 'block';
+    wrongWords.forEach(w => {
+      const d = document.createElement('div');
+      d.className = 'wrong-entry';
+      d.innerHTML =
+        `<span class="we-word">${esc(w.word)}</span>` +
+        `<span class="we-meaning">${esc(w.meaning)}</span>` +
+        (w.skipped ? '<span class="we-skip">スキップ</span>' : '');
+      wrongItems.appendChild(d);
+    });
+  } else {
+    wrongList.style.display = 'none';
+  }
+
+  showScreen('result');
+}
+
+$('btn-retry').addEventListener('click', () => startSession(lastSettings.levels, lastSettings.count));
+$('btn-home').addEventListener('click', () => showScreen('welcome'));
+</script>
+</body>
+</html>
