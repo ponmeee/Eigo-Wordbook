@@ -11,8 +11,8 @@
  * and meanings are marked with "(AI)".
  *
  * Usage
- *   node fill_meanings.js [--out <file>] [--concurrency <n>]
- *   Default: --out words_translated.js  --concurrency 1
+ *   node scripts/fill_meanings.js [--out <file>] [--concurrency <n>]
+ *   Default: --out data/words_translated.js  --concurrency 1
  *
  * Output
  *   words_translated.js — fill in "meaning" (Japanese) to produce words_formatted.js
@@ -24,6 +24,9 @@
 const https = require('https');
 const http  = require('http');
 const fs    = require('fs');
+const path  = require('path');
+
+const DATA_DIR = path.join(__dirname, '..', 'data');
 
 // ---------------------------------------------------------------------------
 // Config
@@ -31,11 +34,11 @@ const fs    = require('fs');
 
 const EJDICT_BASE   = 'https://raw.githubusercontent.com/kujirahand/EJDict/master/src/';
 const LETTERS       = 'abcdefghijklmnopqrstuvwxyz'.split('');
-const TEMPLATE_FILE = 'words_generated.js';
+const TEMPLATE_FILE = path.join(DATA_DIR, 'words_generated.js');
 
 const outIndex    = process.argv.indexOf('--out');
 const concIndex   = process.argv.indexOf('--concurrency');
-const OUTPUT_FILE = outIndex  !== -1 ? process.argv[outIndex  + 1] : 'words_translated.js';
+const OUTPUT_FILE = outIndex  !== -1 ? process.argv[outIndex  + 1] : path.join(DATA_DIR, 'words_translated.js');
 const CONCURRENCY = concIndex !== -1 ? parseInt(process.argv[concIndex + 1], 10) : 1;
 
 const MAX_MEANINGS = 2; // max "/" segments to keep per EJDict entry

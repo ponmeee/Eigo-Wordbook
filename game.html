@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WORD RUSH — 英単語タイピングゲーム</title>
+  <link rel="stylesheet" href="app/game.css">
+</head>
+<body>
+
+  <!-- タイトル画面 -->
+  <section id="screen-title" class="screen active">
+    <h1>WORD RUSH</h1>
+    <p class="subtitle">流れてくる英単語を、消える前に打ち切ろう</p>
+
+    <div class="panel">
+      <div class="field">
+        <span class="label">レベル（複数選択可）</span>
+        <div class="chips" id="level-chips">
+          <button class="chip" data-level="A1">A1</button>
+          <button class="chip" data-level="A2">A2</button>
+          <button class="chip" data-level="B1">B1</button>
+          <button class="chip" data-level="B2">B2</button>
+          <button class="chip" data-level="C1">C1</button>
+          <button class="chip" data-level="C2">C2</button>
+        </div>
+      </div>
+
+      <div class="field">
+        <span class="label">コース</span>
+        <div class="chips" id="course-chips">
+          <button class="chip chip-wide" data-sec="60">スプリント<small>60秒</small></button>
+          <button class="chip chip-wide" data-sec="90">スタンダード<small>90秒</small></button>
+          <button class="chip chip-wide" data-sec="120">エンデュランス<small>120秒</small></button>
+        </div>
+      </div>
+
+      <div class="field">
+        <span class="label">出題モード</span>
+        <div class="chips" id="mode-chips">
+          <button class="chip chip-wide" data-mode="show">英単語を見て打つ</button>
+          <button class="chip chip-wide" data-mode="recall">意味から思い出す</button>
+        </div>
+        <p class="field-note" id="mode-note"></p>
+      </div>
+
+      <div class="toggles">
+        <label class="toggle">
+          <input type="checkbox" id="sound-toggle">
+          効果音
+        </label>
+        <label class="toggle">
+          <input type="checkbox" id="speech-toggle">
+          英単語の読み上げ
+        </label>
+      </div>
+
+      <p id="best-line"></p>
+    </div>
+
+    <button id="btn-start" class="btn-primary">スタート <kbd>Space</kbd></button>
+    <p class="note">PC のキーボードで遊ぶゲームです。日本語入力はオフにしてください。</p>
+  </section>
+
+  <!-- プレイ画面 -->
+  <section id="screen-play" class="screen">
+    <div id="hud">
+      <div class="hud-item"><span class="hud-label">SCORE</span><span id="hud-score" class="hud-value">0</span></div>
+      <div class="hud-item"><span class="hud-label">COMBO</span><span id="hud-combo" class="hud-value">0</span></div>
+      <div class="hud-item"><span class="hud-label">TIME</span><span id="hud-time" class="hud-value">60</span></div>
+    </div>
+    <div id="time-bar"><div id="time-fill"></div></div>
+
+    <div id="lane">
+      <div id="lane-track"></div>
+      <div id="lane-end"></div>
+      <div id="card" class="card">
+        <span class="card-pos" id="card-pos"></span>
+        <span class="card-meaning" id="card-meaning"></span>
+      </div>
+      <!-- 入力中の英単語（レーンの中央に重ねて表示） -->
+      <div id="type-panel">
+        <p id="type-word"></p>
+        <p id="type-points" title="今打ち切ったら入る点数"></p>
+      </div>
+      <div id="countdown" hidden></div>
+      <div id="pause" hidden>
+        <p>一時停止中</p>
+        <small>キーを押すかクリックで再開</small>
+      </div>
+    </div>
+
+    <p id="type-next">NEXT <span id="next-word"></span></p>
+
+    <p id="ime-warning" hidden>日本語入力（IME）がオンになっています。オフにしてから打ってください。</p>
+    <p class="note"><kbd>Esc</kbd> でやめる</p>
+  </section>
+
+  <!-- 結果画面 -->
+  <section id="screen-result" class="screen">
+    <p id="result-course"></p>
+    <div id="rank"></div>
+    <p id="result-score"></p>
+    <p id="best-badge" hidden>ベスト更新！</p>
+
+    <dl class="stat-grid">
+      <div><dt>打てた単語</dt><dd id="r-cleared"></dd></div>
+      <div><dt>正しく打った数</dt><dd id="r-keys"></dd></div>
+      <div><dt>ミスタイプ</dt><dd id="r-miss"></dd></div>
+      <div><dt>正確率</dt><dd id="r-acc"></dd></div>
+      <div><dt>1秒あたり</dt><dd id="r-kps"></dd></div>
+      <div><dt>最大コンボ</dt><dd id="r-combo"></dd></div>
+    </dl>
+
+    <div id="review" hidden>
+      <span class="label">復習リスト</span>
+      <ul id="review-list"></ul>
+    </div>
+
+    <div class="result-btns">
+      <button id="btn-retry" class="btn-primary">もう一度 <kbd>Enter</kbd></button>
+      <button id="btn-title" class="btn-outline">タイトルへ <kbd>Esc</kbd></button>
+    </div>
+  </section>
+
+  <script src="data/words.js"></script>
+  <script src="app/game.js"></script>
+</body>
+</html>

@@ -6,14 +6,17 @@
  * result to words_formatted.js.
  *
  * Usage:
- *   node reformat_meanings.js [--in <file>] [--out <file>] [--concurrency <n>]
- *   Defaults: --in words_translated.js  --out words_formatted.js  --concurrency 3
+ *   node scripts/reformat_meanings.js [--in <file>] [--out <file>] [--concurrency <n>]
+ *   Defaults: --in data/words_translated.js  --out data/words_formatted.js  --concurrency 3
  */
 
 'use strict';
 
 const http = require('http');
 const fs   = require('fs');
+const path = require('path');
+
+const DATA_DIR = path.join(__dirname, '..', 'data');
 
 // ---------------------------------------------------------------------------
 // Config
@@ -24,8 +27,8 @@ const arg = (flag, def) => {
   return i !== -1 ? process.argv[i + 1] : def;
 };
 
-const INPUT_FILE  = arg('--in',          'words_translated.js');
-const OUTPUT_FILE = arg('--out',         'words_formatted.js');
+const INPUT_FILE  = arg('--in',          path.join(DATA_DIR, 'words_translated.js'));
+const OUTPUT_FILE = arg('--out',         path.join(DATA_DIR, 'words_formatted.js'));
 const CONCURRENCY = parseInt(arg('--concurrency', '3'), 10);
 
 const LM_STUDIO_HOST  = 'localhost';

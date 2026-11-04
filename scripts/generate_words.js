@@ -7,24 +7,27 @@
  *   https://github.com/openlanguageprofiles/olp-en-cefrj
  *
  * Usage
- *   node generate_words.js [words_per_level]
+ *   node scripts/generate_words.js [words_per_level]
  *   Default: 50 words per level
  *
  * Output
- *   words_generated.js  — fill in "meaning" (Japanese) to produce words.js
+ *   data/words_generated.js  — fill in "meaning" (Japanese) to produce words.js
  */
 
 'use strict';
 
 const https = require('https');
 const fs    = require('fs');
+const path  = require('path');
+
+const DATA_DIR = path.join(__dirname, '..', 'data');
 
 // ---------------------------------------------------------------------------
 // Config
 // ---------------------------------------------------------------------------
 
 const WORDS_PER_LEVEL = parseInt(process.argv[2], 10) || 50;
-const OUTPUT_FILE     = 'words_generated.js';
+const OUTPUT_FILE     = path.join(DATA_DIR, 'words_generated.js');
 
 const SOURCES = [
   {
