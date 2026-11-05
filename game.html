@@ -53,6 +53,10 @@
           <input type="checkbox" id="speech-toggle">
           英単語の読み上げ
         </label>
+        <label class="toggle">
+          <input type="checkbox" id="points-toggle">
+          獲得予定の点数を表示
+        </label>
       </div>
 
       <p id="best-line"></p>
@@ -80,6 +84,7 @@
       </div>
       <!-- 入力中の英単語（レーンの中央に重ねて表示） -->
       <div id="type-panel">
+        <p id="type-meaning"><span id="type-pos"></span><span id="type-meaning-text"></span></p>
         <p id="type-word"></p>
         <p id="type-points" title="今打ち切ったら入る点数"></p>
       </div>
@@ -93,7 +98,7 @@
     <p id="type-next">NEXT <span id="next-word"></span></p>
 
     <p id="ime-warning" hidden>日本語入力（IME）がオンになっています。オフにしてから打ってください。</p>
-    <p class="note"><kbd>Esc</kbd> でやめる</p>
+    <p class="note" id="play-help"><kbd>Esc</kbd> でやめる</p>
   </section>
 
   <!-- 結果画面 -->

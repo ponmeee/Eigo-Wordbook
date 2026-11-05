@@ -189,10 +189,10 @@ kbd {
    =========================== */
 /* 入力中の英単語をレーン中央に重ねるので、カードは上寄り（--card-y）を流す */
 #lane {
-  --card-y: 24%;
+  --card-y: 21%;
   position: relative;
   width: 100%;
-  height: 290px;
+  height: 320px;
   border-radius: 18px;
   overflow: hidden;
   background: linear-gradient(180deg, var(--lane-2), var(--lane));
@@ -354,9 +354,33 @@ kbd {
   font-weight: 700;
   letter-spacing: 0.04em;
   text-align: center;
-  word-break: break-all;
+  white-space: nowrap;           /* 2行にしない。長い単語は fitWord() で文字を縮める */
   color: #fff;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* パネル内の固定表示の意味 */
+#type-meaning {
+  max-width: 100%;
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+#type-pos {
+  display: inline-block;
+  font-size: 0.7rem;
+  padding: 1px 8px;
+  margin-right: 8px;
+  border-radius: 99px;
+  color: #c7d2fe;
+  background: rgba(165, 180, 252, 0.2);
+  vertical-align: 0.1em;
 }
 .ch.done { color: #a5b4fc; }
 .ch.rest { color: #fff; }
@@ -392,6 +416,7 @@ kbd {
   transition: color 0.2s;
 }
 #type-points.dim { color: #f87171; }
+#type-points[hidden] { display: none; }
 
 #type-next { font-size: 0.85rem; color: var(--muted); font-weight: 700; letter-spacing: 0.06em; margin-top: -4px; }
 #type-next[hidden] { display: none; }
@@ -499,7 +524,7 @@ kbd {
    =========================== */
 @media (max-width: 520px) {
   .screen { padding: 22px 16px; border-radius: 20px; }
-  #lane { height: 270px; --card-y: 21%; }
+  #lane { height: 300px; --card-y: 19%; }
   #type-panel { padding: 8px 16px 6px; }
   .stat-grid { grid-template-columns: repeat(2, 1fr); }
   #review-list li { grid-template-columns: auto 1fr; }

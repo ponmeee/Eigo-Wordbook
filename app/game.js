@@ -13,7 +13,7 @@ const COURSES = { 60: 'スプリント', 90: 'スタンダード', 120: 'エン�
 const MODES   = { show: '英単語を見て打つ', recall: '意味から思い出す' };
 const MODE_NOTES = {
   show:   '意味と英単語を見ながら打ちます。',
-  recall: '意味と頭文字だけが出ます。カードが半分まで来るか、その単語で5回ミスすると答えが表示されます（その単語の得点は下がります）。',
+  recall: '意味と頭文字だけが出ます。Space キーを押すか、カードが半分まで来るか、その単語で5回ミスすると答えが表示されます（その単語の得点は下がります）。',
 };
 const HINT_MISSES  = 5;    // 「意味から思い出す」で、1語あたりこの回数ミスすると答えを出す
 
@@ -66,13 +66,14 @@ function shuffle(arr) {
 // Settings
 // ===========================
 const settings = (() => {
-  const s = Object.assign({ levels: ['A1'], sec: 60, mode: 'show', sound: true, speech: true }, store.get('wordrush-settings', {}));
+  const s = Object.assign({ levels: ['A1'], sec: 60, mode: 'show', sound: true, speech: true, showPoints: true }, store.get('wordrush-settings', {}));
   s.levels = Array.isArray(s.levels) ? s.levels.filter(l => LEVELS.includes(l) && wordData[l]?.length) : [];
   if (!s.levels.length) s.levels = ['A1'];
   if (!COURSES[s.sec]) s.sec = 60;
   if (!MODES[s.mode]) s.mode = 'show';
   s.sound = s.sound !== false;
   s.speech = s.speech !== false;
+  s.showPoints = s.showPoints !== false;
   return s;
 })();
 
@@ -176,6 +177,7 @@ function renderTitle() {
   $('sound-toggle').checked = settings.sound;
   $('speech-toggle').checked = canSpeak && settings.speech;
   $('speech-toggle').disabled = !canSpeak;
+  $('points-toggle').checked = settings.showPoints;
 
   const best = store.get(bestKey(), null);
   $('best-line').textContent = best
@@ -211,6 +213,10 @@ function initTitle() {
   });
   $('speech-toggle').addEventListener('change', (e) => {
     settings.speech = e.target.checked;
+    saveSettings();
+  });
+  $('points-toggle').addEventListener('change', (e) => {
+    settings.showPoints = e.target.checked;
     saveSettings();
   });
   $('btn-start').addEventListener('click', startGame);
@@ -250,6 +256,10 @@ function startGame() {
 
   showScreen('play');
   hideIme();
+  $('type-points').hidden = !settings.showPoints;
+  $('play-help').innerHTML = settings.mode === 'recall'
+    ? '<kbd>Space</kbd> でヒント　<kbd>Esc</kbd> でやめる'
+    : '<kbd>Esc</kbd> でやめる';
   $('pause').hidden = true;
   lane.querySelectorAll('.ghost, .pop').forEach(n => n.remove());
   spawn();
@@ -275,6 +285,9 @@ function spawn() {
 
   $('card-pos').textContent = POS_JA[w.pos] || w.pos;
   $('card-meaning').textContent = w.meaning;
+  // 流れるカードとは別に、中央のパネルにも意味を固定表示する
+  $('type-pos').textContent = POS_JA[w.pos] || w.pos;
+  $('type-meaning-text').textContent = w.meaning;
   card.classList.remove('danger');
   measure();
   positionCard();
@@ -330,6 +343,19 @@ function renderWord() {
     el.appendChild(s);
   });
   el.classList.toggle('hinted', settings.mode === 'recall' && hinted);
+  fitWord();
+}
+
+// 英単語は折り返さず1行で表示する。パネルに収まらない長さなら文字を縮める
+function fitWord() {
+  const el = $('type-word');
+  el.style.fontSize = '';
+  const cs = getComputedStyle($('type-panel'));
+  const avail = lane.clientWidth - 24 - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
+  const width = el.scrollWidth;
+  if (width > avail) {
+    el.style.fontSize = (parseFloat(getComputedStyle(el).fontSize) * avail / width * 0.98) + 'px';
+  }
 }
 
 function multiplier() {
@@ -619,6 +645,11 @@ document.addEventListener('keydown', (e) => {
   if (e.key.length !== 1) return;   // Shift / Tab などは無視
   e.preventDefault();               // Space でのスクロールや ' のクイック検索を止める
   if (e.repeat) return;
+  // Space はヒント（単語自体に空白が含まれ、今その位置を打つ場面だけは文字として扱う）
+  if (e.key === ' ' && g.cur.chars[g.cur.pos] !== ' ') {
+    if (settings.mode === 'recall') { giveHint(); updateHud(); }
+    return;
+  }
   handleChar(e.key);
 });
 
@@ -627,6 +658,7 @@ window.addEventListener('resize', () => {
   if (!g || screen !== 'play') return;
   measure();
   positionCard();
+  fitWord();
 });
 
 // ===========================
